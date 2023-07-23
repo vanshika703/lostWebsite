@@ -1,9 +1,9 @@
-import React from 'react'
+import footerimg from "../img/banner.png";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div></div>
+  );
+};
 
-export default Footer
+export default Footer;
