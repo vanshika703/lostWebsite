@@ -68,9 +68,14 @@ const Locations = () => {
               accommodation offering a garden, indoor games and shared
               dormitories.
             </p>
-            <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
-              Book Now
-            </button>
+            <a
+              href="https://live.ipms247.com/booking/book-rooms-thelosthostelsgoapalolembeach"
+              target="_blank"
+            >
+              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+                Book Now
+              </button>
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -84,9 +89,14 @@ const Locations = () => {
               Hostel offers enthralling stays complete with exciting outdoor and
               indoor activities.
             </p>
-            <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
-              Book Now
-            </button>
+            <a
+              href="https://live.ipms247.com/booking/book-rooms-thelosthostelvarkalahelipad"
+              target="_blank"
+            >
+              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+                Book Now
+              </button>
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -132,9 +142,14 @@ const Locations = () => {
               accommodation offering a garden, indoor games and shared
               dormitories.
             </p>
-            <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
-              Book Now
-            </button>
+            <a
+              href="https://live.ipms247.com/booking/book-rooms-thelosthostelsgoapalolembeach"
+              target="_blank"
+            >
+              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+                Book Now
+              </button>
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -148,9 +163,14 @@ const Locations = () => {
               Hostel offers enthralling stays complete with exciting outdoor and
               indoor activities.
             </p>
-            <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
-              Book Now
-            </button>
+            <a
+              href="https://live.ipms247.com/booking/book-rooms-thelosthostelvarkalahelipad"
+              target="_blank"
+            >
+              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+                Book Now
+              </button>
+            </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
