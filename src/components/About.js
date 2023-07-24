@@ -13,7 +13,7 @@ const About = () => {
 
 At The Lost Hostels, we pride ourselves on providing affordable and comfortable accommodations in some of India's most famous destinations. Each hostel is strategically located, allowing guests to easily access the city's top attractions, nightlife, and cultural experiences.
         </p>
-        <button className="border-2 border-[#008DBB] p-1 px-3 my-4 rounded-md text-[#008DBB] font-medium">know more</button>
+        <button className="my-4 text-[#008DBB] font-medium underline font-playfair">Know More</button>
       </div>
     </div>
   );

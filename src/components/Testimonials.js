@@ -1,65 +1,95 @@
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
+import QUOTE_IMG from "../img/quote.png";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
-const handleDragStart = (e) => e.preventDefault();
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
+import "swiper/css/effect-fade";
 
-const items = [
-  <div className="flex"><div className="flex flex-col justify-start items-start border-b-2 border-[#49A2C8] w-1/3 mx-auto rounded-lg shadow-xl p-5 m-5">
-  <img src="" />
-  <h1 className="text-xl font-medium">Loved the place , people , dogs ♥️</h1>
-  <p className="mb-2">⭐⭐⭐⭐⭐</p>
-  It was an amazing place to stay at , made a lot of friends and felt at home
-  for a good two weeks ( we had initially planned to leave on the fourth night
-  - says - made some memories . I’d suggest
-  anyone plannion’t regret it .<br></br>
-  <br></br>
-  <p>Madhumitha</p>
-  <p>LOST HOSTEL GOA</p>
-</div>
-<div className="flex flex-col justify-around items-center border-b-2 border-[#49A2C8] w-1/3 text-left p-12 mx-auto rounded-lg shadow-xl">
-    <img src="" />
-    <h1 className="text-xl font-medium">Loved the place , people , dogs ♥️</h1>
-    <p className="mb-2">⭐⭐⭐⭐⭐</p>
-    It was an amazing place to stay at , made a lot of friends and felt at home
-    for a good two weeks ( we had initially planned to leave on the fourth night
-    - says a lot) . me beautiunsets ,
-    bd over to Palolem and make your stay at
-    The Lost Hostels , you won’t regret it .<br></br>
-    <br></br>
-    <p>Madhumitha</p>
-    <p>LOST HOSTEL GOA</p>
-  </div>
-  <div className="flex flex-col justify-around items-center border-b-2 border-[#49A2C8] w-1/3 text-left p-12 mx-auto rounded-lg shadow-xl">
-    <img src="" />
-    <h1 className="text-xl font-medium">Loved the place , people , dogs ♥️</h1>
-    <p className="mb-2">⭐⭐⭐⭐⭐</p>
-    ry kind enough to take us around
-    and show us some off beat hidden places and we saw some beautiful sunsets ,
-    bioluminescence , sunrises and all in all - made some memories . I’d suggest
-    anyone planning to go to Goa - to head over to Palolem and make your stay at
-    The Lost Hostels , you won’t regret it .<br></br>
-    <br></br>
-    <p>Madhumitha</p>
-    <p>LOST HOSTEL GOA</p>
-  </div></div>,
-  
-  <div className=" border-2 border-[#49A2C8] w-2/3 text-left p-20 mx-auto rounded-lg ">
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam quis
-    voluptates minima aperiam dicta non hic iusto aliquam quaerat, laborum modi
-    veniam ea architecto unde, quos ut recusandae debitis veritatis?"<br></br>
-    <br></br>-Vanshika
-  </div>,
-  <div className=" border-2 border-[#49A2C8] w-2/3 text-left p-20 mx-auto rounded-lg ">
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam quis
-    voluptates minima aperiam dicta non hic iusto aliquam quaerat, laborum modi
-    veniam ea architecto unde, quos ut recusandae debitis veritatis?"<br></br>
-    <br></br>-Vanshika
-  </div>,
-];
+// import required modules
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 const Testimonials = () => {
   return (
-    <div></div>
+    <section className="relative h-[100vh] w-[100vw] testimonials flex justify-end items-center pr-28">
+      <div className="w-1/2 h-96 bg-[#116b89] relative opacity-80 rounded-md shadow-md">
+        <Swiper
+          allowTouchMove={true}
+          slidesPerView={1}
+          navigation={true}
+          pagination={true}
+          modules={[Pagination, Navigation, Autoplay]}
+          className="mySwiper h-full rounded-md bg-[#116b89]"
+        >
+          <SwiperSlide>
+            <div className="bg-[#116b89] h-full flex flex-col justify-center items-center p-20 text-white relative rounded-md shadow-md">
+              <img
+                src={QUOTE_IMG}
+                className="absolute top-20 left-20 opacity-40 w-12"
+              />
+              <h1 className="text-2xl font-medium font-playfair">
+                Amazing staff and <br></br>Memorable experience!
+              </h1>
+              <p className="italic my-8">
+                I had an incredible stay at the lost hostel. The staff was
+                exceptional, welcoming, and went above and beyond to make me
+                feel at home. The hostel itself had a cozy atmosphere, and the
+                common areas were clean and well-maintained.
+              </p>
+
+              <p className="text-sm">
+                by Ardra Malviya . Business Traveller . Jul 03, 2023
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="bg-[#116b89] h-full flex flex-col justify-center items-center p-20 text-white relative rounded-md shadow-md">
+              <img
+                src={QUOTE_IMG}
+                className="absolute top-20 left-20 opacity-40 w-12"
+              />
+              <h1 className="text-2xl font-medium font-playfair">
+                Excellent Stay!
+              </h1>
+              <p className="italic my-8">
+                Best hostel in south goa. Clean and amazing property. Filled
+                with fun games, great manager, live bar/food counter. A very
+                lively and happening place. Very close to beach and bike
+                rentals. Highly recommended for solo travellers.
+              </p>
+
+              <p className="text-sm">by Omkar Karandikar . . Jun 20, 2022</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="bg-[#116b89] h-full flex flex-col justify-center items-center p-20 text-white relative rounded-md shadow-md">
+              <img
+                src={QUOTE_IMG}
+                className="absolute top-20 left-20 opacity-40 w-12"
+              />
+              <h1 className="text-2xl font-medium font-playfair">
+                Best hostel in Goa
+              </h1>
+              <p className="italic my-8">
+                I stayed over there for 2 days and it was beautiful. The night
+                was fun with all the music (other travelers) and lighting. The
+                beach is just 1 km away so you can easily visit it at night. The
+                staff is friendly and helpful.
+              </p>
+
+              <p className="text-sm">
+                {" "}
+                by Swaroop Singh . Solo Traveller . Apr 05, 2023
+              </p>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </section>
   );
 };
 

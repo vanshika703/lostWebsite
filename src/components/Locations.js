@@ -39,7 +39,7 @@ const Locations = () => {
         }}
         loop={true}
         modules={[Pagination, Navigation, Autoplay]}
-        className="mySwiper"
+        className="mySwiper locationslider"
       >
         <SwiperSlide className="relative">
           <img src={SRILANKA_IMG} alt="goa" className="rounded-md shadow-lg" />
@@ -52,8 +52,8 @@ const Locations = () => {
               accommodation offering a garden, indoor games and shared
               dormitories.
             </p>
-            <button className="font-medium text-sm text-[#008DBB] underline decoration-[1.5px]">
-              BOOK NOW
+            <button className="font-medium font-playfair text-sm text-[#008DBB] underline decoration-[1.5px]">
+              Book Now
             </button>
           </div>
         </SwiperSlide>
@@ -68,8 +68,8 @@ const Locations = () => {
               accommodation offering a garden, indoor games and shared
               dormitories.
             </p>
-            <button className="font-medium text-sm text-[#008DBB] underline decoration-[1.5px]">
-              BOOK NOW
+            <button className="font-medium font-playfair text-sm text-[#008DBB] underline decoration-[1.5px]">
+              Book Now
             </button>
           </div>
         </SwiperSlide>
@@ -84,22 +84,24 @@ const Locations = () => {
               Hostel offers enthralling stays complete with exciting outdoor and
               indoor activities.
             </p>
-            <button className="font-medium text-sm text-[#008DBB] underline decoration-[1.5px]">
-              BOOK NOW
+            <button className="font-medium font-playfair text-sm text-[#008DBB] underline decoration-[1.5px]">
+              Book Now
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <img src={BIR} alt="goa" className="rounded-md shadow-lg" />
           <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
-            <h3 className=" text-[#008DBB] font-playfair font-semibold text-lg mb-1">Bir</h3>
+            <h3 className=" text-[#008DBB] font-playfair font-semibold text-lg mb-1">
+              Bir
+            </h3>
             <p className="text-sm text-[#a9a9a9]">
               Located near the Paragliding landing site, The Lost Hostels Bir
               offers river stream & mountain view with unique facilities in a
               relaxing and peaceful atmosphere.
             </p>
-            <button className="font-medium text-sm text-[#008DBB] underline decoration-[1.5px]">
-              BOOK NOW
+            <button className="font-medium font-playfair text-sm text-[#008DBB] underline decoration-[1.5px]">
+              Book Now
             </button>
           </div>
         </SwiperSlide>
@@ -114,8 +116,8 @@ const Locations = () => {
               accommodation offering a garden, indoor games and shared
               dormitories.
             </p>
-            <button className="font-medium text-sm text-[#008DBB] underline decoration-[1.5px]">
-              BOOK NOW
+            <button className="font-medium font-playfair text-sm text-[#008DBB] underline decoration-[1.5px]">
+              Book Now
             </button>
           </div>
         </SwiperSlide>
@@ -130,8 +132,8 @@ const Locations = () => {
               accommodation offering a garden, indoor games and shared
               dormitories.
             </p>
-            <button className="font-medium text-sm text-[#008DBB] underline decoration-[1.5px]">
-              BOOK NOW
+            <button className="font-medium font-playfair text-sm text-[#008DBB] underline decoration-[1.5px]">
+              Book Now
             </button>
           </div>
         </SwiperSlide>
@@ -146,22 +148,24 @@ const Locations = () => {
               Hostel offers enthralling stays complete with exciting outdoor and
               indoor activities.
             </p>
-            <button className="font-medium text-sm text-[#008DBB] underline decoration-[1.5px]">
-              BOOK NOW
+            <button className="font-medium font-playfair text-sm text-[#008DBB] underline decoration-[1.5px]">
+              Book Now
             </button>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <img src={BIR} alt="goa" className="rounded-md shadow-lg" />
           <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
-            <h3 className=" text-[#008DBB] font-playfair font-semibold text-lg mb-1">Bir</h3>
+            <h3 className=" text-[#008DBB] font-playfair font-semibold text-lg mb-1">
+              Bir
+            </h3>
             <p className="text-sm text-[#a9a9a9]">
               Located near the Paragliding landing site, The Lost Hostels Bir
               offers river stream & mountain view with unique facilities in a
               relaxing and peaceful atmosphere.
             </p>
-            <button className="font-medium text-sm text-[#008DBB] underline decoration-[1.5px]">
-              BOOK NOW
+            <button className="font-medium font-playfair text-sm text-[#008DBB] underline decoration-[1.5px]">
+              Book Now
             </button>
           </div>
         </SwiperSlide>
