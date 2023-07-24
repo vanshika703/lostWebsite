@@ -15,15 +15,15 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 const Testimonials = () => {
   return (
-    <section className="relative h-[100vh] w-[100vw] testimonials flex justify-end items-center pr-28">
-      <div className="w-1/2 h-96 bg-[#116b89] relative opacity-80 rounded-md shadow-md">
+    <section className="relative h-[100vh] w-[100vw] testimonials flex sm:justify-end justify-center items-center sm:pr-28 px-2">
+      <div className="sm:w-1/2 w-[90vw] h-[80vh] sm:h-96 bg-[#116b89] relative opacity-80 rounded-md shadow-md">
         <Swiper
           allowTouchMove={true}
           slidesPerView={1}
           navigation={true}
           pagination={true}
           modules={[Pagination, Navigation, Autoplay]}
-          className="mySwiper h-full rounded-md bg-[#116b89]"
+          className="mySwiper w-full h-full rounded-md bg-[#116b89]"
         >
           <SwiperSlide>
             <div className="bg-[#116b89] h-full flex flex-col justify-center items-center p-20 text-white relative rounded-md shadow-md">
