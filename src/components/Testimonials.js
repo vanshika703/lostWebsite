@@ -16,7 +16,7 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 const Testimonials = () => {
   return (
     <section className="relative h-[100vh] w-[100vw] testimonials flex sm:justify-end justify-center items-center sm:pr-28 px-2">
-      <div className="sm:w-1/2 w-[90vw] h-[80vh] sm:h-96 bg-[#116b89] relative opacity-80 rounded-md shadow-md">
+      <div className="sm:w-1/2 w-[90vw] h-[60vh] sm:h-96 bg-[#116b89] relative opacity-80 rounded-md shadow-md">
         <Swiper
           allowTouchMove={true}
           slidesPerView={1}
@@ -26,10 +26,10 @@ const Testimonials = () => {
           className="mySwiper w-full h-full rounded-md bg-[#116b89]"
         >
           <SwiperSlide>
-            <div className="bg-[#116b89] h-full flex flex-col justify-center items-center p-20 text-white relative rounded-md shadow-md">
+            <div className="bg-[#116b89] h-full flex flex-col justify-center items-center p-10 sm:p-20 text-white relative rounded-md shadow-md">
               <img
                 src={QUOTE_IMG}
-                className="absolute top-20 left-20 opacity-40 w-12"
+                className="absolute top-10 left-10 opacity-40 w-12"
               />
               <h1 className="text-2xl font-medium font-playfair">
                 Amazing staff and <br></br>Memorable experience!
@@ -41,16 +41,16 @@ const Testimonials = () => {
                 common areas were clean and well-maintained.
               </p>
 
-              <p className="text-sm">
+              <p className="text-sm text-[#8cb6c4]">
                 by Ardra Malviya . Business Traveller . Jul 03, 2023
               </p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-[#116b89] h-full flex flex-col justify-center items-center p-20 text-white relative rounded-md shadow-md">
+            <div className="bg-[#116b89] h-full flex flex-col justify-center items-center p-10 sm:p-20 text-white relative rounded-md shadow-md">
               <img
                 src={QUOTE_IMG}
-                className="absolute top-20 left-20 opacity-40 w-12"
+                className="absolute top-10 left-10 opacity-40 w-12"
               />
               <h1 className="text-2xl font-medium font-playfair">
                 Excellent Stay!
@@ -62,14 +62,14 @@ const Testimonials = () => {
                 rentals. Highly recommended for solo travellers.
               </p>
 
-              <p className="text-sm">by Omkar Karandikar . . Jun 20, 2022</p>
+              <p className="text-sm text-[#8cb6c4]">by Omkar Karandikar . . Jun 20, 2022</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-[#116b89] h-full flex flex-col justify-center items-center p-20 text-white relative rounded-md shadow-md">
+            <div className="bg-[#116b89] h-full flex flex-col justify-center items-center p-10 sm:p-20 text-white relative rounded-md shadow-md">
               <img
                 src={QUOTE_IMG}
-                className="absolute top-20 left-20 opacity-40 w-12"
+                className="absolute top-10 left-10 opacity-40 w-12"
               />
               <h1 className="text-2xl font-medium font-playfair">
                 Best hostel in Goa
@@ -81,7 +81,7 @@ const Testimonials = () => {
                 staff is friendly and helpful.
               </p>
 
-              <p className="text-sm">
+              <p className="text-sm text-[#8cb6c4]">
                 {" "}
                 by Swaroop Singh . Solo Traveller . Apr 05, 2023
               </p>

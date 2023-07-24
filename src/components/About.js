@@ -7,7 +7,7 @@ const About = () => {
         <img src={aboutimg} alt="about" className="w-4/5" />
       </div>
       <div className=" w-[100vw] sm:w-[50vw] h-[100vh] flex flex-col justify-center items-start mx-auto sm:pr-32 px-10">
-        <h1 className="text-3xl font-playfair font-semibold py-4 text-[#008DBB]">
+        <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
           A Backpacker's Paradise
         </h1>
         <p className="text-[#a9a9a9]">
@@ -22,7 +22,7 @@ const About = () => {
           easily access the city's top attractions, nightlife, and cultural
           experiences.
         </p>
-        <button className="my-4 text-[#008DBB] font-medium underline font-playfair">
+        <button className="my-4 text-[#116b89] font-medium underline font-playfair">
           Know More
         </button>
       </div>
