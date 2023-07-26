@@ -1,4 +1,3 @@
-import footerimg from "../img/banner.png";
 import facebook from "../img/facebook (1).png";
 import instagram from "../img/instagram (1).png";
 
@@ -6,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <div className="w-[100vw] bg-[#116b89] flex flex-col sm:flex-row  justify-between px-10 sm:px-28 py-12 text-white">
-        <div className="w-[100vw] sm:w-1/2 ">
+        <div className="w-[100vw] sm:w-1/2">
           <h1 className="text-3xl font-playfair font-medium">
             The Lost Hostels
           </h1>
@@ -15,7 +14,7 @@ const Footer = () => {
             Book Now
           </button>
         </div>
-        <div className="w-[100vw] sm:w-1/2 ">
+        <div className="w-[100vw] sm:w-1/2 flex flex-col sm:items-end">
           <ul>
             <li className="text-sm">Contact Us</li>
             <li className="text-sm text-[#8cb6c4]">Varkala: +91 7012416343</li>
