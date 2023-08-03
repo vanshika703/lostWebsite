@@ -19,12 +19,11 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 const Locations = () => {
   return (
-    <div className="h-[100vh] w-[100vw] flex flex-col justify-around items-center">
-      <h1 className="text-3xl font-playfair font-semibold text-[#116b89]">
-        Our Locations
+    <div className="h-[150vh] w-[100vw] flex flex-col justify-around items-center">
+      <h1 className="text-3xl font-playfair font-semibold text-[#116b89] my-5">
+        Newest Destinations
       </h1>
       <Swiper
-        allowTouchMove={true}
         slidesPerView={1}
         spaceBetween={30}
         breakpoints={{
@@ -33,11 +32,6 @@ const Locations = () => {
             spaceBetween: 30,
           },
         }}
-        autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }}
-        loop={true}
         modules={[Pagination, Navigation, Autoplay]}
         className="mySwiper locationslider"
       >
@@ -61,7 +55,7 @@ const Locations = () => {
           <img src={GOA_IMG} alt="goa" className="rounded-md shadow-lg" />
           <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
             <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              South Goa
+              Hiriketiya
             </h3>
             <p className="text-sm text-[#a9a9a9]">
               In the lap of South Goa, The Lost Hostel is a budget-friendly
@@ -82,7 +76,7 @@ const Locations = () => {
           <img src={VARKALA_IMG_1} alt="goa" className="rounded-md shadow-lg" />
           <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
             <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              Varkala
+              Sri Lanka
             </h3>
             <p className="text-sm text-[#a9a9a9]">
               Located along the famous cliffs and beaches of Varkala, The Lost
@@ -115,22 +109,22 @@ const Locations = () => {
             </button>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="relative">
-          <img src={SRILANKA_IMG} alt="goa" className="rounded-md shadow-lg" />
-          <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
-            <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              Weligama
-            </h3>
-            <p className="text-sm text-[#a9a9a9]">
-              50m from the bustling surfers paradise of Weligama beach, the
-              hostel offers peaceful accommodation with a garden, yoga area,
-              indoor games and shared dorms
-            </p>
-            <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
-              Book Now
-            </button>
-          </div>
-        </SwiperSlide>
+      </Swiper>
+      <h1 className="text-3xl font-playfair font-semibold text-[#116b89] my-5">
+        Explore more Destinations
+      </h1>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        breakpoints={{
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
+        modules={[Pagination, Navigation, Autoplay]}
+        className="mySwiper locationslider"
+      >
         <SwiperSlide>
           <img src={GOA_IMG} alt="goa" className="rounded-md shadow-lg" />
           <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
