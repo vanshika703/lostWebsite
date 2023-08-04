@@ -92,7 +92,7 @@ const Locations = () => {
           />
           <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
             <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              Sri Lanka
+              Coming soon
             </h3>
           </div>
         </SwiperSlide>
