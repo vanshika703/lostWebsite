@@ -1,8 +1,6 @@
-import GOA_IMG from "../img/Goa.JPG";
-import SRILANKA_IMG from "../img/Srilanka.jpg";
-import VARKALA_IMG_1 from "../img/varkala1.jpg";
-import VARKALA_IMG_2 from "../img/varkala2.png";
+import GOA_IMG from "../img/GOA.png";
 import BIR from "../img/bir.jpg";
+import varkalaimg from "../img/varkala.jpg";
 import weligamaimg from "../img/weligama.jpg";
 import hiriketiyaimg from "../img/hirektya.jpg";
 import comingsoonimg from "../img/COMING SOON.png";
@@ -84,27 +82,15 @@ const Locations = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={comingsoonimg} alt="comingsoonimg" className="rounded-md shadow-lg" />
+          <img
+            src={comingsoonimg}
+            alt="comingsoonimg"
+            className="rounded-md shadow-lg"
+          />
           <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
             <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
               Sri Lanka
             </h3>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={BIR} alt="goa" className="rounded-md shadow-lg" />
-          <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
-            <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              Bir
-            </h3>
-            <p className="text-sm text-[#a9a9a9]">
-              Located near the Paragliding landing site, The Lost Hostels Bir
-              offers river stream & mountain view with unique facilities in a
-              relaxing and peaceful atmosphere.
-            </p>
-            <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
-              Book Now
-            </button>
           </div>
         </SwiperSlide>
       </Swiper>
@@ -145,10 +131,10 @@ const Locations = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={VARKALA_IMG_1} alt="goa" className="rounded-md shadow-lg" />
+          <img src={varkalaimg} alt="goa" className="rounded-md shadow-lg" />
           <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
             <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              Varkala - North Cliff
+              Varkala - Helipad
             </h3>
             <p className="text-sm text-[#a9a9a9]">
               Located along the famous cliffs and beaches of Varkala, The Lost
