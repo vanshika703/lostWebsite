@@ -12,7 +12,7 @@ const Hero = () => {
         </ul>
       </div>
       <div className="hero-content relative mx-auto text-center">
-        <h1 className="text-5xl font-playfair mt-60">LOST WITH US.</h1>
+        <h1 className="text-5xl font-playfair mt-60">Lost with us.</h1>
         <a href="#destinations">
           <button className="border-2 border-white p-1 px-3 my-4 rounded-md font-medium font-dmsans">
             Book Now
