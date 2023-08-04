@@ -10,6 +10,7 @@
     "react-alice-carousel": "^2.7.1",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "react-social-media-embed": "^2.3.5",
     "swiper": "^10.0.4",
     "web-vitals": "^2.1.4"
   },
