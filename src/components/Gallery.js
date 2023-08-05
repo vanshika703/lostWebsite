@@ -19,14 +19,14 @@ const Gallery = () => {
         Gallery
       </h1>
       <div className="flex flex-col flex-wrap sm:flex-row sm:mx-28 justify-center items-center">
-        <img src={instagram1} className="p-1 w-96 h-96 cursor-pointer "></img>
-        <img src={instagram2} className="p-1 w-96 h-96 cursor-pointer "></img>
-        <img src={instagram3} className="p-1 w-96 h-96 cursor-pointer "></img>
-        <img src={instagram4} className="p-1 w-96 h-96 cursor-pointer "></img>
-        <img src={instagram5} className="p-1 w-96 h-96 cursor-pointer  "></img>
-        <img src={instagram6} className="p-1 w-96 h-96 cursor-pointer "></img>
-        <img src={instagram7} className="p-1 w-96 h-96 cursor-pointer "></img>
-        <img src={instagram8} className="p-1 w-96 h-96 cursor-pointer "></img>
+        <img src={instagram1} className="p-1 w-80 h-80 cursor-pointer "></img>
+        <img src={instagram2} className="p-1 w-80 h-80 cursor-pointer "></img>
+        <img src={instagram3} className="p-1 w-80 h-80 cursor-pointer "></img>
+        <img src={instagram4} className="p-1 w-80 h-80 cursor-pointer "></img>
+        <img src={instagram5} className="p-1 w-80 h-80 cursor-pointer  "></img>
+        <img src={instagram6} className="p-1 w-80 h-80 cursor-pointer "></img>
+        <img src={instagram7} className="p-1 w-80 h-80 cursor-pointer "></img>
+        <img src={instagram8} className="p-1 w-80 h-80 cursor-pointer "></img>
       </div>
       {/* <div style={{ display: "flex", justifyContent: "center" }}>
         <InstagramEmbed

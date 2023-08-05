@@ -20,7 +20,10 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 const Locations = () => {
   return (
-    <div className="h-[150vh] w-[100vw] flex flex-col justify-around items-center">
+    <div
+      className="h-[150vh] w-[100vw] flex flex-col justify-around items-center pt-14"
+      id="destinations"
+    >
       <h1 className="text-3xl font-playfair font-semibold text-[#116b89] my-5">
         Newest Destinations
       </h1>
@@ -94,7 +97,7 @@ const Locations = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      <h1 className="text-3xl font-playfair font-semibold text-[#116b89] my-5">
+      <h1 className="text-3xl font-playfair font-semibold text-[#116b89] my-5 pt-8">
         Explore more Destinations
       </h1>
       <Swiper
