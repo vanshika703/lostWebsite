@@ -48,6 +48,10 @@ body {
   filter: brightness(75%);
 }
 
+.hero ::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
 .locationslider {
   width: 85%;
   height: 80%;
