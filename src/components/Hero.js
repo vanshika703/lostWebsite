@@ -26,7 +26,6 @@ const Hero = () => {
   1. Default value
   2. Validation
   3. Nights bug
-  
 
   */
   const forwardUser = () => {
