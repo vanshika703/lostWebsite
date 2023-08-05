@@ -11,6 +11,11 @@ const Hero = () => {
     adult: 1,
     room: 1,
   });
+  const [errors, setErrors] = useState({
+    checkOutDate: null,
+    checkInDate: null,
+    hostel: false,
+  });
 
   function formatDate(input) {
     var datePart = input.match(/\d+/g),
@@ -29,11 +34,30 @@ const Hero = () => {
 
   */
   const forwardUser = () => {
+    console.log(formData);
+    if (!formData.checkInDate) {
+      setErrors({ ...errors, checkInDate: true });
+      return;
+    }
+    if (!formData.checkOutDate) {
+      setErrors({ ...errors, checkOutDate: true });
+      return;
+    }
+    if (!formData.hostel) {
+      setErrors({ hostel: true });
+      return;
+    }
     const checkInDate = new Date(formData.checkInDate);
     const checkoutDate = new Date(formData.checkOutDate);
     const daysDifference = Math.round(
       (checkoutDate - checkInDate) / (24 * 60 * 60 * 1000)
     );
+
+    setErrors({
+      hostel: false,
+      checkInDate: false,
+      checkoutDate: false,
+    });
 
     window.open(
       `https://live.ipms247.com/booking/mroominfo.php?HotelId=${
@@ -60,21 +84,25 @@ const Hero = () => {
         <p className="text-xl font-playfair relative">The Lost Hostels</p>
         <ul className="sm:flex w-[40VW] justify-between text-sm hidden font-dmsans relative">
           {navItems.map((navItem, index) => (
-            <li className="uppercase tracking-wider">{navItem}</li>
+            <li className="uppercase tracking-wider" key={index}>
+              {navItem}
+            </li>
           ))}
         </ul>
       </div>
       <div className="hero-content relative mx-auto text-center ">
-        <h1 className="text-5xl font-playfair">Lost with us.</h1>
-        <div className="flex flex-col sm:flex-row border-2 border-white rounded-lg px-5 md:px-10 py-2 my-5 justify-around items-center gap-2 md:gap-16">
-          <div className="flex flex-col">
-            <label for="locations" className="text-lg">
-              Location:
+        <h1 className="text-5xl font-playfair font-semibold mb-8 mt-20">
+          Lost with us.
+        </h1>
+        <div className="flex flex-col sm:flex-row border-2 border-white rounded-md px-5 md:px-10 py-2 justify-around items-center gap-2 md:gap-16 pt-6">
+          <div className="flex flex-col items-start">
+            <label for="locations" className="text-xs uppercase">
+              Location
             </label>
             <select
               name="locations"
               id="locations"
-              className="bg-transparent  border-b-2 border-white p-2 hover:outline-none"
+              className="bg-transparent  border-b-2 border-white py-2 hover:outline-none"
               onChange={(e) =>
                 setFormData({ ...formData, hostel: e.target.value })
               }
@@ -103,21 +131,35 @@ const Hero = () => {
                 Welligama
               </option>
             </select>
+            {errors.hostel && (
+              <p className="text-xs pt-1 text-red-600">
+                Please select a location
+              </p>
+            )}
+            {!errors.hostel && <p className="mb-5"></p>}
           </div>
-          <div className="flex flex-col hover:outline-none">
-            <label for="Checkin" className="text-lg">
-              Checkin date:
+          <div className="flex flex-col hover:outline-none items-start">
+            <label for="Checkin" className="text-xs uppercase font-medium">
+              Checkin date
             </label>
             <DateInput onChange={onChangeCheckin} />
+            {errors.checkInDate && (
+              <p className="text-xs pt-1 text-red-600">Please select a date</p>
+            )}
+            {!errors.checkInDate && <p className="mb-5"></p>}
           </div>
-          <div className="flex flex-col">
-            <label for="Checkout" className="text-lg">
-              Checkout date:
+          <div className="flex flex-col items-start">
+            <label for="Checkout" className="text-xs uppercase">
+              Checkout date
             </label>
             <DateInput onChange={onChangeChekout} />
+            {errors.checkOutDate && (
+              <p className="text-xs pt-1 text-red-600">Please select a date</p>
+            )}
+            {!errors.checkOutDate && <p className="mb-5"></p>}
           </div>
           <button
-            className="border-2 border-white p-2 px-5 my-4 rounded-md font-medium font-dmsans text-lg w-max"
+            className="border-2 border-white p-2 px-5 -mt-5 rounded-md font-medium font-dmsans text-lg w-max"
             onClick={() => {
               forwardUser();
             }}
