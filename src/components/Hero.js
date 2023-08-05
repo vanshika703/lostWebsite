@@ -1,27 +1,59 @@
 import { useState } from "react";
+import DateInput from "./Date";
 
 const navItems = ["Home", "About us", "Locations", "Gallery", "Testimonials"];
 
 const Hero = () => {
   const [formData, setFormData] = useState({
+    checkOutDate: null,
     checkInDate: null,
-    nights: null,
-    hostel: null,
+    hostel: "thelosthostelsgoapalolembeach",
     adult: 1,
     room: 1,
   });
-  if (
-    formData.nights == null ||
-    formData.checkInDate == null ||
-    formData.hostel == null
-  ) {
-    alert("Error");
+
+  function formatDate(input) {
+    var datePart = input.match(/\d+/g),
+      year = datePart[0], // get only two digits
+      month = datePart[1],
+      day = datePart[2];
+
+    return day + "-" + month + "-" + year;
   }
+
+  // TOOD:
+  /*
+  1. Default value
+  2. Validation
+  3. Nights bug
+  
+
+  */
   const forwardUser = () => {
+    const checkInDate = new Date(formData.checkInDate);
+    const checkoutDate = new Date(formData.checkOutDate);
+    const daysDifference = Math.round(
+      (checkoutDate - checkInDate) / (24 * 60 * 60 * 1000)
+    );
+
     window.open(
-      `https://live.ipms247.com/booking/mroominfo.php?HotelId=${formData.hostel}&eZ_chkin=${formData.checkInDate}&eZ_Nights=${formData.nights}&eZ_adult=${formData.adult}&eZ_room=${formData.room}&executepage=mroominfo`,
+      `https://live.ipms247.com/booking/mroominfo.php?HotelId=${
+        formData.hostel
+      }&eZ_chkin=${formatDate(
+        formData.checkInDate
+      )}&eZ_Nights=${daysDifference}&eZ_adult=${formData.adult}&eZ_room=${
+        formData.room
+      }&executepage=mroominfo`,
       "_blank"
     );
+  };
+
+  const onChangeChekout = (value) => {
+    setFormData({ ...formData, checkOutDate: value });
+  };
+  const onChangeCheckin = (value) => {
+    console.log("setting checkin date", value);
+    setFormData({ ...formData, checkInDate: value });
   };
   return (
     <section className="hero relative h-[100vh] w-[100vw] flex flex-col justify-center items-start text-white">
@@ -43,35 +75,47 @@ const Hero = () => {
             <select
               name="locations"
               id="locations"
-              className="bg-transparent  border-b-2 border-white p-2"
+              className="bg-transparent  border-b-2 border-white p-2 hover:outline-none"
+              onChange={(e) =>
+                setFormData({ ...formData, hostel: e.target.value })
+              }
+              value={formData.hostel}
+              defaultValue="thelosthostelsgoapalolembeach"
             >
-              <option value="Goa">Goa</option>
-              <option value="Varkala">Varkala</option>
-              <option value="Bir">Bir</option>
-              <option value="Welligama">Welligama</option>
+              <option
+                value="thelosthostelsgoapalolembeach"
+                className="text-black"
+              >
+                Goa
+              </option>
+              <option
+                value="thelosthostelvarkalahelipad"
+                className="text-black"
+              >
+                Varkala
+              </option>
+              <option
+                value="thelosthostelsbirbillinglandingsite"
+                className="text-black"
+              >
+                Bir
+              </option>
+              <option value="Welligama" className="text-black">
+                Welligama
+              </option>
             </select>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col hover:outline-none">
             <label for="Checkin" className="text-lg">
               Checkin date:
             </label>
-            <input
-              type="date"
-              id="Checkin"
-              name="Checkin"
-              className="bg-transparent border-b-2 border-white p-2"
-            />
+            <DateInput onChange={onChangeCheckin} />
           </div>
           <div className="flex flex-col">
             <label for="Checkout" className="text-lg">
               Checkout date:
             </label>
-            <input
-              type="date"
-              id="Checkout"
-              name="Checkout"
-              className="bg-transparent border-b-2 border-white p-2"
-            />
+            <DateInput onChange={onChangeChekout} />
           </div>
           <button
             className="border-2 border-white p-2 px-5 my-4 rounded-md font-medium font-dmsans text-lg w-max"
