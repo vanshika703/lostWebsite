@@ -4,7 +4,6 @@ import varkalaimg from "../img/varkala.jpg";
 import weligamaimg from "../img/weligama.jpg";
 import hiriketiyaimg from "../img/hirektya.jpg";
 import comingsoonimg from "../img/COMING SOON.png";
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -77,6 +76,7 @@ const Locations = () => {
             <a
               href="https://live.ipms247.com/booking/book-rooms-thelosthostelsgoapalolembeach"
               target="_blank"
+              rel="noreferrer"
             >
               <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
                 Book Now
@@ -126,6 +126,7 @@ const Locations = () => {
             <a
               href="https://live.ipms247.com/booking/book-rooms-thelosthostelsgoapalolembeach"
               target="_blank"
+              rel="noreferrer"
             >
               <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
                 Book Now
@@ -147,6 +148,7 @@ const Locations = () => {
             <a
               href="https://live.ipms247.com/booking/book-rooms-thelosthostelvarkalahelipad"
               target="_blank"
+              rel="noreferrer"
             >
               <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
                 Book Now
