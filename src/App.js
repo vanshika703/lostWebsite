@@ -1,28 +1,38 @@
 import "./App.css";
-import About from "./components/About";
-import Footer from "./components/Footer";
-import Gallery from "./components/Gallery";
-import Hero from "./components/Hero";
-import HostelDetails from "./components/HostelDetails/HostelDetails";
-import Locations from "./components/Locations";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Testimonials from "./components/Testimonials";
+import Body from "./components/Body";
+import HostelDetails from "./components/HostelDetails/HostelDetails";
+import Footer from "./components/Footer";
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
+      {
+        path: "/hostel",
+        element: <HostelDetails />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return (
     <div className="font-dmsans">
-      {/*  
-      <Hero />
-      <About/>
-      <Locations/>
-      <Gallery/>
-      <Testimonials/> */}
       <Navbar />
-      <HostelDetails />
-
+      <Outlet />
       <Footer />
     </div>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router={appRouter} />);

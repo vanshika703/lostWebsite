@@ -9,6 +9,16 @@ import instagram6 from "../img/instagram6.png";
 import instagram7 from "../img/instagram7.png";
 import instagram8 from "../img/instagram8.png";
 
+const images = [
+  instagram1,
+  instagram2,
+  instagram3,
+  instagram4,
+  instagram5,
+  instagram6,
+  instagram7,
+  instagram8,
+];
 const Gallery = () => {
   return (
     <section
@@ -18,15 +28,18 @@ const Gallery = () => {
       <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89] mb-2">
         Gallery
       </h1>
-      <div className="flex flex-col flex-wrap sm:flex-row sm:mx-28 justify-center items-center">
-        <img src={instagram1} className="p-1 w-80 h-80 cursor-pointer "></img>
-        <img src={instagram2} className="p-1 w-80 h-80 cursor-pointer "></img>
-        <img src={instagram3} className="p-1 w-80 h-80 cursor-pointer "></img>
-        <img src={instagram4} className="p-1 w-80 h-80 cursor-pointer "></img>
-        <img src={instagram5} className="p-1 w-80 h-80 cursor-pointer  "></img>
-        <img src={instagram6} className="p-1 w-80 h-80 cursor-pointer "></img>
-        <img src={instagram7} className="p-1 w-80 h-80 cursor-pointer "></img>
-        <img src={instagram8} className="p-1 w-80 h-80 cursor-pointer "></img>
+      <div className="flex flex-col flex-wrap sm:flex-row sm:mx-28 justify-center items-center ">
+        {images.map((index) => {
+          return (
+            <div class="img-div">
+              <img
+                src={index}
+                className="p-1 w-80 h-80 cursor-pointer"
+                alt="gallery"
+              ></img>
+            </div>
+          );
+        })}
       </div>
       {/* <div style={{ display: "flex", justifyContent: "center" }}>
         <InstagramEmbed
