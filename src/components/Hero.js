@@ -1,20 +1,13 @@
 import { useState } from "react";
+import BookNow from "./BookNow";
 
-const navItems = ["Home", "About us", "Locations", "Gallery", "Testimonials"];
 
 const Hero = () => {
   const [location, setLocation] = useState("thelosthostelsgoapalolembeach");
 
   return (
     <section className="hero relative h-[100vh] w-[100vw] flex flex-col justify-center items-start text-white">
-      <div className="fixed top-0 left-0 w-[100vw] bg-transparent h-[10vh] flex justify-between items-center sm:px-28 px-5 font-medium navbar z-20">
-        <p className="text-xl font-playfair relative">The Lost Hostels</p>
-        <ul className="sm:flex w-[40VW] justify-between text-sm hidden font-dmsans relative">
-          {navItems.map((navItem, index) => (
-            <li className="uppercase tracking-wider">{navItem}</li>
-          ))}
-        </ul>
-      </div>
+     
       <div className="hero-content relative mx-auto text-center w-1/2">
         <h1 className="text-5xl font-playfair">Lost with us.</h1>
         <div className="flex flex-col sm:flex-row border-2 border-white rounded-lg px-5 py-2 my-5 justify-around items-center">
@@ -73,9 +66,7 @@ const Hero = () => {
               className="bg-transparent border-b-2 border-white p-2 hover:outline-none"
             />
           </div>
-          <button className="border-2 border-white p-2 px-5 my-4 rounded-md font-medium font-dmsans text-lg">
-            Book Now
-          </button>
+          <BookNow/>
         </div>
       </div>
     </section>
