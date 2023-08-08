@@ -4,6 +4,7 @@ import varkalaimg from "../img/varkala.jpg";
 import weligamaimg from "../img/weligama.jpg";
 import hiriketiyaimg from "../img/hirektya.jpg";
 import comingsoonimg from "../img/COMING SOON.png";
+import { Link } from "react-router-dom";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -113,26 +114,28 @@ const Locations = () => {
         className="mySwiper locationslider"
       >
         <SwiperSlide>
-          <img src={GOA_IMG} alt="goa" className="rounded-md shadow-lg" />
-          <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
-            <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              South Goa - Palolem
-            </h3>
-            <p className="text-sm text-[#a9a9a9]">
-              In the lap of South Goa, The Lost Hostel is a budget-friendly
-              accommodation offering a garden, indoor games and shared
-              dormitories.
-            </p>
-            <a
-              href="https://live.ipms247.com/booking/book-rooms-thelosthostelsgoapalolembeach"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
-                Book Now
-              </button>
-            </a>
-          </div>
+          <Link to="/hostel/goa">
+            <img src={GOA_IMG} alt="goa" className="rounded-md shadow-lg" />
+            <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
+              <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
+                South Goa - Palolem
+              </h3>
+              <p className="text-sm text-[#a9a9a9]">
+                In the lap of South Goa, The Lost Hostel is a budget-friendly
+                accommodation offering a garden, indoor games and shared
+                dormitories.
+              </p>
+              <a
+                href="https://live.ipms247.com/booking/book-rooms-thelosthostelsgoapalolembeach"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+                  Book Now
+                </button>
+              </a>
+            </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
           <img src={varkalaimg} alt="goa" className="rounded-md shadow-lg" />

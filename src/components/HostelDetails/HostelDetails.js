@@ -13,15 +13,15 @@ const HostelDetails = () => {
 
   useEffect(() => {
     (async () => {
-      setHostelData((await import(`./data/${id}.json`)).name);
+      setHostelData(await import(`./data/${id}.json`));
     })();
   }, []);
   return (
     <div>
-      <Gallery hostelData={hostelData} />
-      <About hostelData={hostelData} />
+      <Gallery hostelData={hostelData?.gallery} />
+      <About hostelData={hostelData?.about} />
       <Location hostelData={hostelData} />
-      <FAQ hostelData={hostelData} />
+      <FAQ/>
     </div>
   );
 };

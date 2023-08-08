@@ -55,7 +55,7 @@ const Location = () => {
     <div className="sm:mx-28 flex flex-col sm:flex-row justify-center items-start">
       <div className="sm:w-5/12">
         <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
-          Around the Lost Hostel Palolem
+          Around the Lost Hostel
         </h1>
         <ul className="flex flex-wrap ">
           {nearbyPlaces.map((nearbyPlace) => (
