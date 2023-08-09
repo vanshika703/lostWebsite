@@ -1,8 +1,8 @@
-import about1 from "../img/about1.jpg"
-import about2 from "../img/about2.JPG"
-import about3 from "../img/about3.jpg"
-import about4 from "../img/about4.JPG"
-import about5 from "../img/about5.JPG"
+import about1 from "../img/about1.jpg";
+import about2 from "../img/about2.JPG";
+import about3 from "../img/about3.jpg";
+import about4 from "../img/about4.JPG";
+import about5 from "../img/about5.JPG";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,7 +14,7 @@ import { EffectCards } from "swiper/modules";
 
 const About = () => {
   return (
-    <div className="h-[100vh] w-[100vw] flex flex-col sm:flex-row">
+    <div className="h-[100vh] w-[100vw] flex flex-col sm:flex-row" id="our-story">
       <div className=" w-[100vw] sm:w-[50vw] h-[100vh] flex justify-center items-center">
         <Swiper
           effect={"cards"}
@@ -23,23 +23,39 @@ const About = () => {
           className="mySwiper w-1/2 h-3/4"
         >
           <SwiperSlide className="w-full h-full shadow-none">
-            <img src={about1} alt="about" className="w-full shadow-none"/>
+            <img src={about1} alt="about" className="w-full shadow-none" />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <img src={about2} alt="about" className="w-full h-full shadow-none"/>
+            <img
+              src={about2}
+              alt="about"
+              className="w-full h-full shadow-none"
+            />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <img src={about3} alt="about" className="w-full h-full shadow-none"/>
+            <img
+              src={about3}
+              alt="about"
+              className="w-full h-full shadow-none"
+            />
           </SwiperSlide>
           <SwiperSlide>
             {" "}
-            <img src={about5} alt="about" className="w-full h-full shadow-none"/>
+            <img
+              src={about5}
+              alt="about"
+              className="w-full h-full shadow-none"
+            />
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className=" w-[100vw] sm:w-[50vw] h-[100vh] flex flex-col justify-center items-start mx-auto sm:pr-32 px-10">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        className=" w-[100vw] sm:w-[50vw] h-[100vh] flex flex-col justify-center items-start mx-auto sm:pr-32 px-10"
+      >
         <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
           Our Story
         </h1>

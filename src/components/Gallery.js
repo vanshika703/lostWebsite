@@ -28,7 +28,11 @@ const Gallery = () => {
       <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89] mb-2">
         Gallery
       </h1>
-      <div className="flex flex-col flex-wrap sm:flex-row sm:mx-28 justify-center items-center ">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        className="flex flex-col flex-wrap sm:flex-row sm:mx-28 justify-center items-center "
+      >
         {images.map((index) => {
           return (
             <div class="img-div">

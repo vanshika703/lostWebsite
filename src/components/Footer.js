@@ -1,7 +1,11 @@
 const Footer = () => {
   return (
     <>
-      <div className="w-[100vw] bg-[#116b89] flex flex-col sm:flex-row  justify-between px-10 sm:px-28 py-12 text-white">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        className="w-[100vw] bg-[#116b89] flex flex-col sm:flex-row  justify-between px-10 sm:px-28 py-12 text-white"
+      >
         <div className="">
           <h1 className="text-3xl font-playfair font-medium">
             The Lost Hostels

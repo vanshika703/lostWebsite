@@ -16,7 +16,11 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 const Testimonials = () => {
   return (
     <section className="relative h-[100vh] w-[100vw] testimonials flex sm:justify-end justify-center items-center sm:pr-28 px-2">
-      <div className="sm:w-1/2 w-[90vw] h-[60vh] sm:h-96 bg-[#116b89] relative opacity-80 rounded-md shadow-md">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        className="sm:w-1/2 w-[90vw] h-[60vh] sm:h-96 bg-[#116b89] relative opacity-80 rounded-md shadow-md"
+      >
         <Swiper
           allowTouchMove={true}
           slidesPerView={1}
@@ -62,7 +66,9 @@ const Testimonials = () => {
                 rentals. Highly recommended for solo travellers.
               </p>
 
-              <p className="text-sm text-[#8cb6c4]">by Omkar Karandikar . . Jun 20, 2022</p>
+              <p className="text-sm text-[#8cb6c4]">
+                by Omkar Karandikar . . Jun 20, 2022
+              </p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
