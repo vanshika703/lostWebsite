@@ -30,7 +30,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  filter: brightness(75%);
+  filter: brightness(70%);
 }
 
 .hero::before {
@@ -45,7 +45,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  filter: brightness(75%);
+  filter: brightness(70%);
 }
 
 .hero ::-webkit-calendar-picker-indicator {

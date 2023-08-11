@@ -2,6 +2,7 @@ import { useState } from "react";
 import BookNow from "./BookNow";
 import DateInput from "./Date";
 
+
 const Hero = () => {
   const [formData, setFormData] = useState({
     checkOutDate: null,
@@ -79,13 +80,11 @@ const Hero = () => {
   };
   return (
     <section className="hero relative h-[100vh] w-[100vw] flex flex-col justify-center items-start text-white">
-      <div
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        className="hero-content relative mx-auto text-center w-1/2"
-      >
-        <h1 className="text-5xl font-playfair">Lost with us.</h1>
-        <div className="flex flex-col sm:flex-row border-2 border-white rounded-lg px-5 py-2 my-5 justify-around items-center">
+     
+      <div  data-aos="fade-up"
+      data-aos-duration="2000" className="hero-content relative mx-auto text-center w-1/2">
+        <h1 className="text-3xl font-playfair lowercase italic text-left ml-10">SOME BEAUTIFUL PATHS CAN ONLY BE DISCOVERED<br></br> WHEN YOU ARE LOST...</h1>
+        <div className="flex flex-col sm:flex-row rounded-lg px-5 py-2 my-5 justify-around items-center">
           <div className="flex flex-col">
             <label for="locations" className="text-lg">
               Location:

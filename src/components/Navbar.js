@@ -20,11 +20,11 @@ const Navbar = () => {
     },
     {
       title: "Gallery",
-      link: "#gallery",
+      link: "/#gallery",
     },
     {
       title: "Testimonials",
-      link: "#testimonials",
+      link: "/#testimonials",
     },
   ];
 

@@ -24,7 +24,7 @@ const Locations = () => {
       data-aos="fade-up"
       data-aos-duration="2000"
       className="h-[150vh] w-[100vw] flex flex-col justify-around items-center pt-14"
-      id="destinations"
+      id="locations"
     >
       <h1 className="text-3xl font-playfair font-semibold text-[#116b89] my-5">
         Newest Destinations
