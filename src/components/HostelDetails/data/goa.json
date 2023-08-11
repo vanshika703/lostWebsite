@@ -1,13 +1,14 @@
 {
   "gallery": {
-    "photo1": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=8",
-    "photo2": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=8",
-    "photo3": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=8",
-    "photo4": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=8"
+    "photo1": "https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/300222/lxwxhk91jb6ycqjjso6w",
+    "photo2": "https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/300222/xyjmlny8puvn7wtkf1gv",
+    "photo3": "https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/300222/dhit1oq5uqcbmby6iywn",
+    "photo4": "https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/300222/dgwyhartmrrn7ulceiel"
   },
   "about": {
-    "info": "Located in the heart of South Goa, just a stone throw away from the famous Palolem beach & other beaches of the area. The Lost Hostel, Goa is based on a theme of varieties of hooks, since we are all hooked on to something, whether it's a job, a passion or a feeling. We Provide you with enough hooks to hang your worries and enjoy the time here.Our goal is to make you feel home away from home with our unique facilities in a peaceful and relaxing atmosphere. In our huge garden with loads of space to relax and chill, we always have a fridge full of beer to serve to our lost souls. You can secure stuff in the free luggage lockers. We've got CCTV to help keep you safe and laundry facilities if you need to freshen up your backpacking gear. We have board games for a laid-back afternoon and movie nights for these long cozy nights. When you want some quiet time check out the book exchange or use the free Wi-Fi to catch up with family at home. Looking for any recommendations for making the best out of your time in Goa? Our staff can sort it out for you. We strive to ensure that our travelers get to stay with us as a part of the family.",
-    "bookingLink": ""
+    "header": "Lost Hostel Goa",
+    "info": "Located in the heart of South Goa, just a stone throw away from the famous Palolem beach & other beaches of the area. The Lost Hostel, Goa is based on a theme of varieties of hooks, since we are all hooked on to something, whether it's a job, a passion or a feeling. We Provide you with enough hooks to hang your worries and enjoy the time here.Our goal is to make you feel home away from home with our unique facilities in a peaceful and relaxing atmosphere. In our huge garden with loads of space to relax and chill, we always have a fridge full of beer to serve to our lost souls. Travelers choose us because they like to meet new people, share their experience & stories with each other and learn new culture while staying in a homely atmosphere but not for the facilities.",
+    "bookingLink": "https://live.ipms247.com/booking/book-rooms-thelosthostelsgoapalolembeach"
   },
   "location": {
     "nearbyPlaces": [
@@ -56,6 +57,7 @@
         "distance": "23 km",
         "place": "Cabo de Rama"
       }
-    ]
+    ],
+    "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3853.698700959404!2d74.02679797466475!3d15.009421566937812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbe45122f2adc77%3A0xfb96c92f9f1b0bd8!2sThe%20Lost%20Hostel%2C%20Goa%20-%20Palolem%20Beach!5e0!3m2!1sen!2sin!4v1691260417488!5m2!1sen!2sin"
   }
 }

@@ -1,0 +1,63 @@
+{
+  "gallery": {
+    "photo1": "https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/316857/chi8vpj3lrt0ogheelfv",
+    "photo2": "https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/316857/p8ffatmiwnpsraclhkdh",
+    "photo3": "https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/316857/eyqstvwsplpdwjbvkka7",
+    "photo4": "https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/316857/df65r5unvvtbnxp94qnw"
+  },
+  "about": {
+    "header": "Lost Hostel Bir",
+    "info": "Located near to the Paragliding landing site, The Lost Hostels Bir - Landing Site offers river stream & mountain view with unique facilities in a relaxing and peaceful atmosphere. Throughout your stay we offer safe and clean facilities with OPEN KITCHEN, free Wi-Fi, en-suite bathrooms, common places to hang out and many more. We strive to ensure that our travelers get to stay with us as a part of the family. Travelers choose us because they like to meet new people, share their experiences & stories with each other and learn new culture while staying in the homely atmosphere but not for the facilities.",
+    "bookingLink": "https://live.ipms247.com/booking/book-rooms-thelosthostelsbirbillinglandingsite"
+  },
+  "location": {
+    "nearbyPlaces": [
+      {
+        "icon": "Beach",
+        "distance": "1 km",
+        "place": "Palolem Beach"
+      },
+      {
+        "icon": "Beach",
+        "distance": "1.8 km",
+        "place": "Patnem Beach"
+      },
+      {
+        "icon": "Beach",
+        "distance": "6.3 km",
+        "place": "Butterfly Beach"
+      },
+      {
+        "icon": "Eatery",
+        "distance": "1.1 km",
+        "place": "Kala Bahia"
+      },
+      {
+        "icon": "Eatery",
+        "distance": "270 m",
+        "place": "The Mill"
+      },
+      {
+        "icon": "Eatery",
+        "distance": "4.3 km",
+        "place": "Leopard Valley"
+      },
+      {
+        "icon": "Eatery",
+        "distance": "700 m",
+        "place": "Art Resort"
+      },
+      {
+        "icon": "Beach",
+        "distance": "8.4 km",
+        "place": "Agonda Beach"
+      },
+      {
+        "icon": "Beach",
+        "distance": "23 km",
+        "place": "Cabo de Rama"
+      }
+    ],
+    "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.8598803334935!2d76.70766987516527!3d32.04598392098662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904b8c934a8a105%3A0xfc28dac94dd88cd7!2sThe%20Lost%20Hostels%20Bir!5e0!3m2!1sen!2sin!4v1691759851073!5m2!1sen!2sin"
+  }
+}

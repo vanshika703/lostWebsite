@@ -9,6 +9,22 @@ import Footer from "./components/Footer";
 import WorkWithUsPage from "./components/WorkWithUs/WorkWithUsPage";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  useLocation,
+} from "react-router-dom";
+import { useLayoutEffect } from "react";
+
+const Wrapper = ({ children }) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children;
+};
 
 const appRouter = createBrowserRouter([
   {
@@ -38,11 +54,13 @@ function App() {
   }, []);
 
   return (
-    <div className="font-dmsans">
-      <Navbar />
-      <Outlet />
-      <Footer />
-    </div>
+    <Wrapper>
+      <div className="font-dmsans">
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </div>
+    </Wrapper>
   );
 }
 

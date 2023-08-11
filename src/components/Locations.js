@@ -20,7 +20,7 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 const Locations = () => {
   return (
-    <div
+    <section
       data-aos="fade-up"
       data-aos-duration="2000"
       className="h-[150vh] w-[100vw] flex flex-col justify-around items-center pt-14"
@@ -57,7 +57,7 @@ const Locations = () => {
               indoor games and shared dorms
             </p>
             <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
-              Book Now
+              Know More
             </button>
           </div>
         </SwiperSlide>
@@ -82,7 +82,7 @@ const Locations = () => {
               rel="noreferrer"
             >
               <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
-                Book Now
+                Know More
               </button>
             </a>
           </div>
@@ -127,58 +127,60 @@ const Locations = () => {
                 accommodation offering a garden, indoor games and shared
                 dormitories.
               </p>
+              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+                Know More
+              </button>
+            </div>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link to="/hostel/varkala">
+            <img
+              src={varkalaimg}
+              alt="varkala"
+              className="rounded-md shadow-lg"
+            />
+            <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
+              <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
+                Varkala - Helipad
+              </h3>
+              <p className="text-sm text-[#a9a9a9]">
+                Located along the famous cliffs and beaches of Varkala, The Lost
+                Hostel offers enthralling stays complete with exciting outdoor
+                and indoor activities.
+              </p>
               <a
-                href="https://live.ipms247.com/booking/book-rooms-thelosthostelsgoapalolembeach"
+                href="https://live.ipms247.com/booking/book-rooms-thelosthostelvarkalahelipad"
                 target="_blank"
                 rel="noreferrer"
               >
                 <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
-                  Book Now
+                  Know More
                 </button>
               </a>
             </div>
           </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={varkalaimg} alt="goa" className="rounded-md shadow-lg" />
-          <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
-            <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              Varkala - Helipad
-            </h3>
-            <p className="text-sm text-[#a9a9a9]">
-              Located along the famous cliffs and beaches of Varkala, The Lost
-              Hostel offers enthralling stays complete with exciting outdoor and
-              indoor activities.
-            </p>
-            <a
-              href="https://live.ipms247.com/booking/book-rooms-thelosthostelvarkalahelipad"
-              target="_blank"
-              rel="noreferrer"
-            >
+          <Link to="/hostel/bir">
+            <img src={BIR} alt="bir" className="rounded-md shadow-lg" />
+            <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
+              <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
+                Bir - Landing Site
+              </h3>
+              <p className="text-sm text-[#a9a9a9]">
+                Located near the Paragliding landing site, The Lost Hostels Bir
+                offers river stream & mountain view with unique facilities in a
+                relaxing and peaceful atmosphere.
+              </p>
               <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
-                Book Now
+                Know More
               </button>
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={BIR} alt="goa" className="rounded-md shadow-lg" />
-          <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
-            <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              Bir - Landing Site
-            </h3>
-            <p className="text-sm text-[#a9a9a9]">
-              Located near the Paragliding landing site, The Lost Hostels Bir
-              offers river stream & mountain view with unique facilities in a
-              relaxing and peaceful atmosphere.
-            </p>
-            <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
-              Book Now
-            </button>
-          </div>
+            </div>
+          </Link>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 };
 

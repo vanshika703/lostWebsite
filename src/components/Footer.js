@@ -1,12 +1,8 @@
 const Footer = () => {
   return (
     <>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        className="w-[100vw] bg-[#116b89] flex flex-col sm:flex-row  justify-between px-10 sm:px-28 py-12 text-white"
-      >
-        <div className="">
+      <div className="w-[100vw] bg-[#116b89] flex flex-col sm:flex-row  justify-between px-10 sm:px-28 py-12 text-white">
+        <div className="" data-aos="fade-up" data-aos-duration="2000">
           <h1 className="text-3xl font-playfair font-medium">
             The Lost Hostels
           </h1>
@@ -15,7 +11,11 @@ const Footer = () => {
             Book Now
           </button>
         </div>
-        <div className="flex flex-col sm:items-end">
+        <div
+          className="flex flex-col sm:items-end"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <ul>
             <li className="text-sm">Contact Us</li>
             <li className="text-sm text-[#8cb6c4]">Varkala: +91 7012416343</li>

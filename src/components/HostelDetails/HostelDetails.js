@@ -17,11 +17,12 @@ const HostelDetails = () => {
       setHostelData(await import(`./data/${id}.json`));
     })();
   }, []);
+
   return (
     <div>
       <Gallery hostelData={hostelData?.gallery} />
       <About hostelData={hostelData?.about} />
-      <Location hostelData={hostelData} />
+      <Location hostelData={hostelData?.location} />
       <FAQ/>
     </div>
   );
