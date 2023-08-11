@@ -48,9 +48,16 @@ const Testimonials = () => {
                 common areas were clean and well-maintained.
               </p>
 
-              <p className="text-sm text-[#8cb6c4]">
-                by Ardra Malviya . Business Traveller . Jul 03, 2023
-              </p>
+              <div className="flex justify-around items-center">
+                <p className="text-sm text-[#8cb6c4]">
+                  by Ardra Malviya . Business Traveller . Jul 03, 2023
+                </p>
+                <img
+                  className="w-10 p-2"
+                  src="https://companieslogo.com/img/orig/MMYT-ca98a9f1.png?t=1683788455"
+                  alt="mmt"
+                />
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -68,10 +75,16 @@ const Testimonials = () => {
                 lively and happening place. Very close to beach and bike
                 rentals. Highly recommended for solo travellers.
               </p>
-
-              <p className="text-sm text-[#8cb6c4]">
-                by Omkar Karandikar . . Jun 20, 2022
-              </p>
+              <div className="flex justify-around items-center">
+                <p className="text-sm text-[#8cb6c4]">
+                  by Omkar Karandikar . . Jun 20, 2022
+                </p>
+                <img
+                  className="w-10 p-2"
+                  src="https://companieslogo.com/img/orig/MMYT-ca98a9f1.png?t=1683788455"
+                  alt="mmt"
+                />
+              </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -89,11 +102,17 @@ const Testimonials = () => {
                 beach is just 1 km away so you can easily visit it at night. The
                 staff is friendly and helpful.
               </p>
-
-              <p className="text-sm text-[#8cb6c4]">
-                {" "}
-                by Swaroop Singh . Solo Traveller . Apr 05, 2023
-              </p>
+              <div className="flex justify-around items-center">
+                <p className="text-sm text-[#8cb6c4]">
+                  {" "}
+                  by Swaroop Singh . Solo Traveller . Apr 05, 2023
+                </p>
+                <img
+                  className="w-10 p-2"
+                  src="https://companieslogo.com/img/orig/MMYT-ca98a9f1.png?t=1683788455"
+                  alt="mmt"
+                />
+              </div>
             </div>
           </SwiperSlide>
         </Swiper>

@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <section className="py-16 px-8 bg-white text-center" data-aos="fade-up">
+    <section className="py-16 px-8 bg-white text-center" data-aos="fade-up" id="contactus">
       <h2 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
         Contact Us
       </h2>
