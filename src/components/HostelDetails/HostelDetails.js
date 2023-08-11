@@ -11,6 +11,7 @@ const HostelDetails = () => {
   const [hostelData, setHostelData] = useState(null);
   const id = params.id;
 
+  //importing each hostel info
   useEffect(() => {
     (async () => {
       setHostelData(await import(`./data/${id}.json`));
