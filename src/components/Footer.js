@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <>
@@ -10,6 +12,50 @@ const Footer = () => {
           <button className="border-2 border-[#8cb6c4] p-1 px-3 my-4 rounded-md font-medium font-dmsans">
             Book Now
           </button>
+        </div>
+        <div
+          className="flex flex-col sm:items-end"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <ul>
+            <li className="text-sm">Rules and Legal</li>
+            <Link to="/terms">
+              <li className="text-sm text-[#8cb6c4]">Terms and Conditions</li>
+            </Link>
+            <Link to="/privacy">
+              <li className="text-sm text-[#8cb6c4]">Privacy Policy</li>
+            </Link>
+            <Link to="/guest">
+              <li className="text-sm text-[#8cb6c4]">
+                Guest Policy
+              </li>
+            </Link>
+            <Link to="/cancellation">
+              <li className="text-sm text-[#8cb6c4]">
+                Cancellation Policy
+              </li>
+            </Link>
+            <Link to="/tourgroups">
+              <li className="text-sm text-[#8cb6c4]">
+                Tour Groups and Sex Tourists
+              </li>
+            </Link>
+          </ul>
+        </div>
+        <div
+          className="flex flex-col sm:items-end"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <ul>
+            <li className="text-sm">Navigate</li>
+            <li className="text-sm text-[#8cb6c4]">Home</li>
+            <li className="text-sm text-[#8cb6c4]">Our Story</li>
+            <li className="text-sm text-[#8cb6c4]">Locations</li>
+            <li className="text-sm text-[#8cb6c4]">Work with Us</li>
+            <li className="text-sm text-[#8cb6c4]">Gallery</li>
+          </ul>
         </div>
         <div
           className="flex flex-col sm:items-end"

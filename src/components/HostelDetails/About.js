@@ -65,19 +65,19 @@ const amenities = [
   },
 ];
 
-const About = ({hostelData}) => {
+const About = ({ hostelData }) => {
   return (
     <div className=" flex flex-col sm:flex-row sm:mx-28 my-2 justify-center items-start">
       <div className="sm:w-2/3 p-5">
         <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
           {hostelData?.header}
         </h1>
-        <p className="text-[#a9a9a9]">
-          {hostelData?.info}
-        </p>
-        <a href={hostelData?.bookingLink} target="_blank"><button className="border-2 border-[#116b89] p-2 px-5 my-4 rounded-md font-medium font-dmsans text-lg text-[#116b89]">
-          Book Now
-        </button></a>
+        <p className="text-[#4c4e4e]">{hostelData?.info}</p>
+        <a href={hostelData?.bookingLink} target="_blank">
+          <button className="border-2 border-[#116b89] p-2 px-5 my-4 rounded-md font-medium font-dmsans text-lg text-[#116b89]">
+            Book Now
+          </button>
+        </a>
       </div>
       <div className="sm:w-1/3 p-5">
         <div class="w-full sm:flex-grow py-2 mt-4 sm:mt-0">
@@ -88,7 +88,7 @@ const About = ({hostelData}) => {
             {amenities.map((amenity) => (
               <div class="flex items-center pr-4 pt-2 w-1/3 flex-shrink-0 relative group hover:scale-110 transition-all ">
                 <amenity.icon className="w-8 h-8 m-2" />
-                <span class="font-medium text-base text-text text-[#a9a9a9] font-play">
+                <span class="font-medium text-base text-text text-[#4c4e4e] font-play">
                   {amenity.title}
                 </span>
               </div>

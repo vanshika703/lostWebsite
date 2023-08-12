@@ -17,7 +17,7 @@ const Location = ({ hostelData }) => {
               <p className="text-[#116b89] font-semibold mr-2 text-lg font-playfair">
                 {nearbyPlace.place}
               </p>
-              <span className="text-[#a9a9a9]">{nearbyPlace.distance}</span>
+              <span className="text-[#4c4e4e]">{nearbyPlace.distance}</span>
             </li>
           ))}
         </ul>

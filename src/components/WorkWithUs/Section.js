@@ -16,7 +16,7 @@ const Section = ({ title, text, buttonLabel, image, isImageRight }) => {
             <h2 className="text-xl font-playfair font-semibold py-4 text-[#116b89]">
               {title}
             </h2>
-            <p className="text-[#a9a9a9] w-11/12">{text}</p>
+            <p className="text-[#4c4e4e] w-11/12">{text}</p>
             <a href="#contactus">
               <button className="border-2 border-[#116b89] p-2 px-5 my-4 rounded-md font-medium font-dmsans text-sm text-[#116b89]">
                 {buttonLabel}
@@ -31,7 +31,7 @@ const Section = ({ title, text, buttonLabel, image, isImageRight }) => {
             <h2 className="text-xl font-playfair font-semibold py-4 text-[#116b89]">
               {title}
             </h2>
-            <p className="text-[#a9a9a9] w-11/12">{text}</p>
+            <p className="text-[#4c4e4e] w-11/12">{text}</p>
             <a href="#contactus">
               <button className="border-2 border-[#116b89] p-2 px-5 my-4 rounded-md font-medium font-dmsans text-sm text-[#116b89]">
                 {buttonLabel}

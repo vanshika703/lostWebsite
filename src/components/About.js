@@ -14,7 +14,10 @@ import { EffectCards } from "swiper/modules";
 
 const About = () => {
   return (
-    <div className="h-[100vh] w-[100vw] flex flex-col sm:flex-row" id="our-story">
+    <div
+      className="h-[100vh] w-[100vw] flex flex-col sm:flex-row"
+      id="our-story"
+    >
       <div className=" w-[100vw] sm:w-[50vw] h-[100vh] flex justify-center items-center">
         <Swiper
           effect={"cards"}
@@ -59,7 +62,7 @@ const About = () => {
         <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
           Our Story
         </h1>
-        <p className="text-[#a9a9a9]">
+        <p className="text-[#4c4e4e]">
           Welcome to The Lost Hostels, where adventure and comfort come together
           to create a unique travel experience. Our hostels are designed for
           travellers seeking to explore new destinations, make new friends, and

@@ -7,6 +7,12 @@ import Body from "./components/Body";
 import HostelDetails from "./components/HostelDetails/HostelDetails";
 import Footer from "./components/Footer";
 import WorkWithUsPage from "./components/WorkWithUs/WorkWithUsPage";
+import Terms from "./components/RulesAndLegal/Terms"
+import Privacy from "./components/RulesAndLegal/Privacy"
+import Guest from "./components/RulesAndLegal/Guest"
+import Cancellation from "./components/RulesAndLegal/Cancellation"
+import TourGroups from "./components/RulesAndLegal/TourGroups"
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {
@@ -43,6 +49,26 @@ const appRouter = createBrowserRouter([
         path: "/workwithus",
         element: <WorkWithUsPage />,
       },
+      {
+        path: "/terms",
+        element: <Terms />
+      },
+      {
+        path: "/privacy",
+        element: <Privacy />
+      },
+      {
+        path: "/guest",
+        element: <Guest />
+      },
+      {
+        path: "/cancellation",
+        element: <Cancellation />
+      },
+      {
+        path: "/tourgroups",
+        element: <TourGroups />
+      }
     ],
   },
 ]);

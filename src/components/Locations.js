@@ -51,7 +51,7 @@ const Locations = () => {
             <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
               Weligama
             </h3>
-            <p className="text-sm text-[#a9a9a9]">
+            <p className="text-sm text-[#4c4e4e]">
               50m from the bustling surfers paradise of Weligama beach, the
               hostel offers peaceful accommodation with a garden, yoga area,
               indoor games and shared dorms
@@ -71,7 +71,7 @@ const Locations = () => {
             <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
               Hiriketiya
             </h3>
-            <p className="text-sm text-[#a9a9a9]">
+            <p className="text-sm text-[#4c4e4e]">
               50m from the bustling surfers paradise of Weligama beach, the
               hostel offers peaceful accommodation with a garden, yoga area,
               indoor games and shared dorms
@@ -122,7 +122,7 @@ const Locations = () => {
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
                 South Goa - Palolem
               </h3>
-              <p className="text-sm text-[#a9a9a9]">
+              <p className="text-sm text-[#4c4e4e]">
                 In the lap of South Goa, The Lost Hostel is a budget-friendly
                 accommodation offering a garden, indoor games and shared
                 dormitories.
@@ -144,7 +144,7 @@ const Locations = () => {
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
                 Varkala - Helipad
               </h3>
-              <p className="text-sm text-[#a9a9a9]">
+              <p className="text-sm text-[#4c4e4e]">
                 Located along the famous cliffs and beaches of Varkala, The Lost
                 Hostel offers enthralling stays complete with exciting outdoor
                 and indoor activities.
@@ -168,7 +168,7 @@ const Locations = () => {
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
                 Bir - Landing Site
               </h3>
-              <p className="text-sm text-[#a9a9a9]">
+              <p className="text-sm text-[#4c4e4e]">
                 Located near the Paragliding landing site, The Lost Hostels Bir
                 offers river stream & mountain view with unique facilities in a
                 relaxing and peaceful atmosphere.

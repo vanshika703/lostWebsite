@@ -42,7 +42,9 @@ const FAQ = () => {
 
   return (
     <div className="flex flex-col justify-center items-center text-left w-[100vw] p-5 my-10">
-      <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">FAQs</h1>
+      <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
+        FAQs
+      </h1>
       {FAQs.map((faq, index) => {
         return (
           <div
@@ -50,7 +52,9 @@ const FAQ = () => {
             onClick={() => handleToggleFaq(index)}
           >
             <div className="flex justify-between py-2">
-              <h3 className="font-semibold text-[#116b89] font-playfair text-lg">{faq.question}</h3>
+              <h3 className="font-semibold text-[#116b89] font-playfair text-lg">
+                {faq.question}
+              </h3>
               {openFaqs?.indexOf(index) === -1 ? (
                 <button>
                   <svg
@@ -88,7 +92,7 @@ const FAQ = () => {
             {openFaqs.indexOf(index) === -1 ? (
               ""
             ) : (
-              <p className="text-[#a9a9a9] text-lg">{faq.answer}</p>
+              <p className="text-[#4c4e4e] text-lg">{faq.answer}</p>
             )}
           </div>
         );
