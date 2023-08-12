@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   const navItems = [
@@ -8,11 +9,11 @@ const Navbar = () => {
     },
     {
       title: "Our Story",
-      link: "#our-story",
+      link: "/#our-story",
     },
     {
       title: "Locations",
-      link: "#locations",
+      link: "/#locations",
     },
     {
       title: "Work with Us",
@@ -33,11 +34,11 @@ const Navbar = () => {
       <p className="text-xl font-playfair relative">The Lost Hostels</p>
       <ul className="sm:flex w-[50VW] justify-between text-sm hidden font-dmsans relative">
         {navItems.map((navItem, index) => (
-          <a href={navItem?.link}>
+          <HashLink to={navItem.link} key={navItem.link}>
             <li className="uppercase tracking-wider cursor-pointer">
               {navItem?.title}
             </li>
-          </a>
+          </HashLink>
         ))}
       </ul>
     </div>
