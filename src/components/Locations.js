@@ -26,7 +26,7 @@ const Locations = () => {
       className="h-[150vh] w-[100vw] flex flex-col justify-around items-center pt-14"
       id="locations"
     >
-      <h1 className="text-3xl font-playfair font-semibold text-[#116b89] my-5">
+      <h1 className="text-3xl font-playfair font-semibold text-[#116b89] mt-16 sm:my-5">
         Newest Destinations
       </h1>
       <Swiper

@@ -72,7 +72,12 @@ const About = () => {
           comfortable accommodations in some of India's most famous
           destinations. Each hostel is strategically located, allowing guests to
           easily access the city's top attractions, nightlife, and cultural
-          experiences.
+          experiences.<br></br>
+          <br></br>
+          Whether you're a solo traveller or part of a group, The Lost Hostels
+          offers the perfect blend of adventure and comfort. Book your stay with
+          us today and get ready to discover India's most fascinating
+          destinations.
         </p>
       </div>
     </div>
