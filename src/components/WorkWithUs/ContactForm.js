@@ -8,7 +8,7 @@ const ContactForm = () => {
   }
   return (
     <section
-      className="py-16 px-8 bg-white text-center flex flex-col justify-center items-center"
+      className="py-16 px-5 sm:px-8 bg-white text-center flex flex-col justify-center items-center"
       data-aos="fade-up"
       id="contactus"
     >
@@ -17,7 +17,7 @@ const ContactForm = () => {
       </h2>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col  text-[#4c4e4e] w-1/3 text-left"
+        className="flex flex-col  text-[#4c4e4e] w-full sm:w-1/3 text-left"
       >
         <label htmlFor="name" className="text-sm">Name : </label>
         <input

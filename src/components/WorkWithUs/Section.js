@@ -3,16 +3,16 @@ import React from "react";
 const Section = ({ title, text, buttonLabel, image, isImageRight }) => {
   return (
     <section
-      className="py-16 px-28 md:flex"
+      className="py-16 px-5 sm:px-28 md:flex"
       data-aos="fade-up"
       data-aos-duration="3000"
     >
       {isImageRight && (
         <>
-          <div className="md:w-1/2">
+          <div className="w-full md:w-1/2">
             <img src={image} alt={title} className="w-96 mx-auto" />
           </div>
-          <div className="md:w-1/2 md:ml-8 md:mr-8 mt-4 md:mt-0">
+          <div className="md:w-1/2 md:ml-8 md:mr-8 md:mt-0">
             <h2 className="text-xl font-playfair font-semibold py-4 text-[#116b89]">
               {title}
             </h2>
@@ -27,7 +27,7 @@ const Section = ({ title, text, buttonLabel, image, isImageRight }) => {
       )}
       {!isImageRight && (
         <>
-          <div className="md:w-1/2 md:ml-8 md:mr-8 mt-4 md:mt-0">
+          <div className="w-full md:w-1/2 md:ml-8 md:mr-8 md:mt-0">
             <h2 className="text-xl font-playfair font-semibold py-4 text-[#116b89]">
               {title}
             </h2>
