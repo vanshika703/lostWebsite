@@ -21,14 +21,10 @@ const images = [
 ];
 const Gallery = () => {
   return (
-    <section
-      id="gallery"
-      className="w-[100vw] flex flex-col justify-center items-center pb-40"
-    >
-      <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89] mb-2">
-        Gallery
-      </h1>
-      <div
+    <section id="gallery" className="my-20 w-[100vw]">
+      <div data-mc-src="e27d942c-2886-4274-bb5a-5e82b888e827#null"></div>
+
+      {/* <div
         data-aos="fade-up"
         data-aos-duration="2000"
         className="flex flex-col flex-wrap sm:flex-row sm:mx-28 justify-center items-center "
@@ -44,7 +40,7 @@ const Gallery = () => {
             </div>
           );
         })}
-      </div>
+      </div> */}
       {/* <div style={{ display: "flex", justifyContent: "center" }}>
         <InstagramEmbed
           url="https://www.instagram.com/p/CvfHWD2yoM7/?img_index=1"

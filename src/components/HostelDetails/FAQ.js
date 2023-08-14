@@ -92,7 +92,7 @@ const FAQ = () => {
             {openFaqs.indexOf(index) === -1 ? (
               ""
             ) : (
-              <p className="text-[#4c4e4e] text-lg">{faq.answer}</p>
+              <p className="text-[#4c4e4e]">{faq.answer}</p>
             )}
           </div>
         );
