@@ -1,5 +1,4 @@
 import React from "react";
-import BookNow from "../BookNow";
 import { ReactComponent as Parking } from "../../icons/parking.svg";
 import { ReactComponent as Activities } from "../../icons/activities.svg";
 import { ReactComponent as Storage } from "../../icons/storage.svg";
@@ -12,7 +11,6 @@ import { ReactComponent as Light } from "../../icons/light.svg";
 import { ReactComponent as Housekeeping } from "../../icons/housekeeping.svg";
 import { ReactComponent as Credit } from "../../icons/credit.svg";
 import { ReactComponent as Mic } from "../../icons/mic.svg";
-import HostelDetails from "./HostelDetails";
 
 const amenities = [
   {
@@ -73,7 +71,7 @@ const About = ({ hostelData }) => {
           {hostelData?.header}
         </h1>
         <p className="text-[#4c4e4e]">{hostelData?.info}</p>
-        <a href={hostelData?.bookingLink} target="_blank">
+        <a href={hostelData?.bookingLink} target="_blank" rel="noreferrer">
           <button className="border-2 border-[#116b89] p-2 px-5 my-4 rounded-md font-medium font-dmsans text-lg text-[#116b89]">
             Book Now
           </button>

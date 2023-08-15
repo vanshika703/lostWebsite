@@ -16,8 +16,6 @@ const DateInput = ({ onChange }) => {
       className="bg-transparent border-b-2 border-white py-2 hover:outline-none"
       onChange={onChangeDate}
       placeholder="Date"
-      //   onfocus="(this.type='date')"
-      //   onblur="(this.type='text')"
     />
   );
 };

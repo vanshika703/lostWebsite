@@ -7,21 +7,15 @@ import Body from "./components/Body";
 import HostelDetails from "./components/HostelDetails/HostelDetails";
 import Footer from "./components/Footer";
 import WorkWithUsPage from "./components/WorkWithUs/WorkWithUsPage";
-import Terms from "./components/RulesAndLegal/Terms"
-import Privacy from "./components/RulesAndLegal/Privacy"
-import Guest from "./components/RulesAndLegal/Guest"
-import Cancellation from "./components/RulesAndLegal/Cancellation"
-import TourGroups from "./components/RulesAndLegal/TourGroups"
+import Terms from "./components/RulesAndLegal/Terms";
+import Privacy from "./components/RulesAndLegal/Privacy";
+import Guest from "./components/RulesAndLegal/Guest";
+import Cancellation from "./components/RulesAndLegal/Cancellation";
+import TourGroups from "./components/RulesAndLegal/TourGroups";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link,
-  useLocation,
-} from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
 
 const Wrapper = ({ children }) => {
@@ -51,24 +45,24 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/terms",
-        element: <Terms />
+        element: <Terms />,
       },
       {
         path: "/privacy",
-        element: <Privacy />
+        element: <Privacy />,
       },
       {
         path: "/guest",
-        element: <Guest />
+        element: <Guest />,
       },
       {
         path: "/cancellation",
-        element: <Cancellation />
+        element: <Cancellation />,
       },
       {
         path: "/tourgroups",
-        element: <TourGroups />
-      }
+        element: <TourGroups />,
+      },
     ],
   },
 ]);
