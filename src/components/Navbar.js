@@ -1,4 +1,5 @@
 import { HashLink } from "react-router-hash-link";
+import logo from "../img/logo.png";
 
 const Navbar = () => {
   const navItems = [
@@ -30,7 +31,8 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 w-[100vw] bg-transparent h-[10vh] flex justify-between items-center sm:px-28 px-5 font-medium navbar z-20 text-white">
-      <p className="text-xl font-playfair relative">The Lost Hostels</p>
+      
+      <p className="text-xl font-playfair relative flex justify-center items-center"><img src={logo} className="w-12 mr-5"></img>The Lost Hostels</p>
       <ul className="sm:flex w-[50VW] justify-between text-sm hidden font-dmsans relative">
         {navItems.map((navItem, index) => (
           <HashLink to={navItem.link} key={navItem.link}>
