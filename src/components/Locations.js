@@ -3,7 +3,7 @@ import BIR from "../img/bir.jpg";
 import varkalaimg from "../img/varkala.jpg";
 import weligamaimg from "../img/weligama.jpg";
 import hiriketiyaimg from "../img/hiriketiya.jpg";
-import comingsoonimg from "../img/COMING SOON.png";
+import comingsoonimg from "../img/beach.jpg";
 import { Link } from "react-router-dom";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -95,7 +95,7 @@ const Locations = () => {
           />
           <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
             <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              Coming Soon...
+              Where do you want to see us next?
             </h3>
           </div>
         </SwiperSlide>

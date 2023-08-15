@@ -1,4 +1,3 @@
-import img from "../../img/COMING SOON.png";
 
 const Gallery = ({ hostelData }) => {
   return (
