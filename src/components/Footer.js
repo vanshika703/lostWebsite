@@ -159,7 +159,12 @@ const Footer = () => {
       </div>
       <div className="bg-[#094256] flex flex-row  justify-between px-10 sm:px-28 py-2 text-[#3e7a8e] text-xs items-center">
         <p>&#169; 2023 Lost Hostels</p>
-        <p> &lt;Made by V /&gt;</p>
+        <a
+          href="https://www.linkedin.com/in/vanshika-bhojnagarwala/"
+          target="_blank"
+        >
+          <p> &lt;Made by V /&gt;</p>
+        </a>
       </div>
     </>
   );
