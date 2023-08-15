@@ -1,16 +1,14 @@
 import QUOTE_IMG from "../img/quote.png";
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
 
-// import required modules
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 const Testimonials = () => {
@@ -37,6 +35,7 @@ const Testimonials = () => {
               <img
                 src={QUOTE_IMG}
                 className="absolute top-10 left-10 opacity-40 w-12"
+                alt="quote"
               />
               <h1 className="text-2xl font-medium font-playfair">
                 Amazing staff and <br></br>Memorable experience!
@@ -65,6 +64,7 @@ const Testimonials = () => {
               <img
                 src={QUOTE_IMG}
                 className="absolute top-10 left-10 opacity-40 w-12"
+                alt="omkar"
               />
               <h1 className="text-2xl font-medium font-playfair">
                 Excellent Stay!
@@ -92,6 +92,7 @@ const Testimonials = () => {
               <img
                 src={QUOTE_IMG}
                 className="absolute top-10 left-10 opacity-40 w-12"
+                alt="swaroop"
               />
               <h1 className="text-2xl font-medium font-playfair">
                 Best hostel in Goa
