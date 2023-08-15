@@ -14,10 +14,10 @@ import { EffectCards } from "swiper/modules";
 const About = () => {
   return (
     <div
-      className="min-h-screen w-[100vw] flex flex-col sm:flex-row"
+      className="h-screen w-[100vw] flex flex-col sm:flex-row"
       id="our-story"
     >
-      <div className=" w-[100vw] sm:w-[50vw] md:min-h-screen flex justify-center items-center">
+      <div className=" w-[100vw] sm:w-[50vw] md:min-h-[100vh] flex justify-center items-center">
         <Swiper
           effect={"cards"}
           grabCursor={true}
