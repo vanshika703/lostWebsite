@@ -14,7 +14,7 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 const Testimonials = () => {
   return (
     <section
-      className="relative h-[100vh] w-[100vw] testimonials flex sm:justify-end justify-center items-center sm:pr-28 px-2"
+      className="relative min-h-screen w-[100vw] testimonials flex sm:justify-end justify-center items-center sm:pr-28 px-2"
       id="testimonials"
     >
       <div

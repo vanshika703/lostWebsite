@@ -77,15 +77,18 @@ const Hero = () => {
     setFormData({ ...formData, checkInDate: value });
   };
   return (
-    <section className="hero relative h-[100vh] w-[100vw] flex flex-col justify-center items-start text-white">
+    <section className="hero relative min-h-screen w-[100vw] flex flex-col justify-center items-start text-white">
       <div
         data-aos="fade-up"
         data-aos-duration="2000"
         className="hero-content relative mx-auto text-left sm:w-1/2"
       >
         <h1 className="text-3xl font-playfair  italic text-left px-10 sm:ml-10">
-          S<span className="lowercase">ome BEAUTIFUL PATHS CAN ONLY BE DISCOVERED<br></br> WHEN YOU ARE
-          LOST...</span>
+          S
+          <span className="lowercase">
+            ome BEAUTIFUL PATHS CAN ONLY BE DISCOVERED<br></br> WHEN YOU ARE
+            LOST...
+          </span>
         </h1>
         <div className="flex flex-col sm:flex-row rounded-lg px-5 py-2 my-5 justify-around items-center">
           <div className="flex flex-col">

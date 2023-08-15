@@ -14,10 +14,10 @@ import { EffectCards } from "swiper/modules";
 const About = () => {
   return (
     <div
-      className="h-[100vh] w-[100vw] flex flex-col sm:flex-row"
+      className="min-h-screen w-[100vw] flex flex-col sm:flex-row"
       id="our-story"
     >
-      <div className=" w-[100vw] sm:w-[50vw] h-[100vh] flex justify-center items-center">
+      <div className=" w-[100vw] sm:w-[50vw] md:min-h-screen flex justify-center items-center">
         <Swiper
           effect={"cards"}
           grabCursor={true}
@@ -56,7 +56,7 @@ const About = () => {
       <div
         data-aos="fade-up"
         data-aos-duration="2000"
-        className=" w-[100vw] sm:w-[50vw] h-[100vh] flex flex-col justify-center items-start mx-auto sm:pr-32 px-10"
+        className=" w-[100vw] sm:w-[50vw] md:min-h-screen flex flex-col justify-center items-start mx-auto sm:pr-32 px-10"
       >
         <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
           Our Story
