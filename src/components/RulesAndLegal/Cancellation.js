@@ -2,7 +2,7 @@ import React from "react";
 
 const Cancellation = () => {
   return (
-    <div className="w-[100vw] h-[100vh] flex flex-col justify-center items-center my-16">
+    <div className="w-[100vw] min-h-screen flex flex-col justify-center items-center my-16">
       <h2 className="text-xl font-playfair font-semibold py-4 text-[#116b89]">
         Cancellation policy
       </h2>

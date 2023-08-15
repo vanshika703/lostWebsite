@@ -2,7 +2,7 @@ import React from "react";
 
 const Guest = () => {
   return (
-    <div className="w-[100vw] h-[100vh] flex flex-col justify-center items-center my-16">
+    <div className="w-[100vw] min-h-screen flex flex-col justify-center items-center my-16">
       <h2 className="text-xl font-playfair font-semibold py-4 text-[#116b89]">
         Guest policy
       </h2>
@@ -26,15 +26,21 @@ const Guest = () => {
         and dormitories tidy. Dispose of trash properly.
         <br></br>
         <br></br>
-        <span className="font-semibold">Alcohol and Drugs:</span> Consumption of illegal substances is prohibited on our premises.<br></br>
+        <span className="font-semibold">Alcohol and Drugs:</span> Consumption of
+        illegal substances is prohibited on our premises.<br></br>
         <br></br>
-        <span className="font-semibold">Smoking:</span> Smoking is not allowed indoors. Designated smoking areas are provided. <br></br>
+        <span className="font-semibold">Smoking:</span> Smoking is not allowed
+        indoors. Designated smoking areas are provided. <br></br>
         <br></br>
-        <span className="font-semibold">Behavior:</span>  Any disruptive or disrespectful behavior toward fellow guests, staff, or property will not be tolerated.<br></br>
+        <span className="font-semibold">Behavior:</span> Any disruptive or
+        disrespectful behavior toward fellow guests, staff, or property will not
+        be tolerated.<br></br>
         <br></br>
-        <span className="font-semibold">Damages:</span> Any intentional damage to property will result in additional charges.<br></br>
+        <span className="font-semibold">Damages:</span> Any intentional damage
+        to property will result in additional charges.<br></br>
         <br></br>
-        <span className="font-semibold">Compliance:</span> Guests are expected to comply with all hostel policies and local laws.
+        <span className="font-semibold">Compliance:</span> Guests are expected
+        to comply with all hostel policies and local laws.
       </p>
     </div>
   );
