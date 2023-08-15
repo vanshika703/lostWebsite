@@ -67,21 +67,22 @@ const Testimonials = () => {
                 className="absolute top-10 left-10 opacity-40 w-12"
               />
               <h1 className="text-2xl font-medium font-playfair">
-                Excellent Stay!
+                Will return again to Lost Hostel
               </h1>
               <p className="italic my-8">
-                Best hostel in south goa. Clean and amazing property. Filled
-                with fun games, great manager, live bar/food counter. A very
-                lively and happening place. Very close to beach and bike
-                rentals. Highly recommended for solo travellers.
+                Wonderful place for solo female travellers and other budget
+                travellers alike. The room was basic and good, the staff were
+                courteous and loved how the hostel is close to all the
+                restaurants, cafes and very close to the beach! Would love to
+                come back again!
               </p>
               <div className="flex justify-around items-center">
                 <p className="text-sm text-[#8cb6c4]">
-                  by Omkar Karandikar . . Jun 20, 2022
+                  by Rushitha . Solo Traveller . April 10, 2022
                 </p>
                 <img
-                  className="w-10 p-2"
-                  src="https://companieslogo.com/img/orig/MMYT-ca98a9f1.png?t=1683788455"
+                  className="w-14 p-2"
+                  src="https://logos-world.net/wp-content/uploads/2021/08/Booking-Emblem.png"
                   alt="mmt"
                 />
               </div>

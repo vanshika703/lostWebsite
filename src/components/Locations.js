@@ -1,8 +1,8 @@
-import GOA_IMG from "../img/GOA.png";
+import GOA_IMG from "../img/goa.jpg";
 import BIR from "../img/bir.jpg";
 import varkalaimg from "../img/varkala.jpg";
 import weligamaimg from "../img/weligama.jpg";
-import hiriketiyaimg from "../img/hirektya.jpg";
+import hiriketiyaimg from "../img/hiriketiya.jpg";
 import comingsoonimg from "../img/COMING SOON.png";
 import { Link } from "react-router-dom";
 // Import Swiper React components

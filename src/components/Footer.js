@@ -67,6 +67,8 @@ const Footer = () => {
             <li className="text-sm text-[#8cb6c4]">Varkala: +91 7012416343</li>
             <li className="text-sm text-[#8cb6c4]">Goa: +91 9307762867</li>
             <li className="text-sm text-[#8cb6c4]">Bir: +91 6230267754</li>
+            <li className="text-sm text-[#8cb6c4]">Weligama: +94 77 834 0685</li>
+            <li className="text-sm text-[#8cb6c4]">Hiriketiya: +94 74 220 4478</li>
             <div class="flex items-center mt-2">
               <a
                 rel="noopener noreferrer"
@@ -111,6 +113,7 @@ const Footer = () => {
             </div>
           </ul>
         </div>
+        
       </div>
       <div className="bg-[#094256] flex flex-row  justify-between px-10 sm:px-28 py-2 text-[#3e7a8e] text-xs items-center">
         <p>&#169; 2023 Lost Hostels</p>

@@ -22,7 +22,7 @@ const images = [
 const Gallery = () => {
   return (
     <section id="gallery" className="my-20 w-[100vw]">
-      <div data-mc-src="e27d942c-2886-4274-bb5a-5e82b888e827#null"></div>
+      <div data-mc-src="e5d04892-6959-4e57-ab88-235f4c8eaf24#instagram"></div>
 
       {/* <div
         data-aos="fade-up"
