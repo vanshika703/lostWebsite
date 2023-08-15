@@ -51,7 +51,7 @@ const Navbar = () => {
       )}
 
       <div className="fixed top-0 left-0 w-[100vw] bg-transparent h-[10vh] flex justify-between items-center sm:px-28 px-5 font-medium navbar z-20 text-white">
-        <p className="text-xl font-playfair relative"><img src={logo} className="w-12 mr-5"></img>The Lost Hostels</p>
+        <p className="text-xl font-playfair relative flex justify-center items-center"><img src={logo} className="w-12 mr-5"></img>The Lost Hostels</p>
         <div
           className="z-10 block sm:hidden"
           onClick={() => {
