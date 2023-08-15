@@ -12,11 +12,7 @@ const Cancellation = () => {
         </span>
         <br></br>
         <br></br>
-        Cancellations made [X] days before arrival will receive a full refund.
-        <br></br>
-        <br></br>
-        Cancellations made within [X] days of arrival will be subject to a [X]%
-        cancellation fee.
+        Bookings made with the Lost Hostels are non refundable.
         <br></br>
         <br></br>
         No-shows will be charged the full amount.<br></br>
