@@ -90,8 +90,8 @@ const Hero = () => {
             LOST...
           </span>
         </h1>
-        <div className="flex flex-col sm:flex-row rounded-lg px-5 py-2 my-5 justify-around items-center">
-          <div className="flex flex-col">
+        <div className="flex flex-col sm:flex-row rounded-lg px-5 py-2 my-5 justify-around items-center mx-auto w-1/3 md:w-full">
+          <div className="flex flex-col w-full sm:w-fit">
             <label for="locations" className="text-xs uppercase font-medium">
               Location:
             </label>
