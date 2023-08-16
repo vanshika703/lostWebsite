@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import logo from "../img/logo.png";
 
 const Navbar = () => {
   const [isPhoneNavOpen, setIsPhoneNavOpen] = useState(false);
@@ -39,11 +37,17 @@ const Navbar = () => {
           <div class="flex sm:hidden bg-transparent flex-col md:flex-row md:items-center mx-5">
             {navItems.map(({ title, link }) => {
               return (
-                <Link href={link} key={title}>
+                <HashLink
+                  to={link}
+                  key={title}
+                  onClick={() => {
+                    setIsPhoneNavOpen(false);
+                  }}
+                >
                   <p class="text-white md:my-2 mx-2 my-2 px-2 py-1 transition duration-500 ease-in-out hover:border-orange300 cursor-pointer border-b-2 border-transparent">
                     {title}
                   </p>
-                </Link>
+                </HashLink>
               );
             })}
           </div>
@@ -51,7 +55,7 @@ const Navbar = () => {
       )}
 
       <div className="fixed top-0 left-0 w-[100vw] bg-transparent h-[10vh] flex justify-between items-center sm:px-28 px-5 font-medium navbar z-20 text-white">
-        <p className="text-xl font-playfair relative flex justify-center items-center"><img src={logo} className="w-12 mr-5"></img>The Lost Hostels</p>
+        <p className="text-xl font-playfair relative">The Lost Hostels</p>
         <div
           className="z-10 block sm:hidden"
           onClick={() => {
