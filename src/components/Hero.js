@@ -123,7 +123,7 @@ const Hero = () => {
                 Bir
               </option>
               <option value="185812" className="text-black">
-                Welligama
+                Weligama
               </option>
             </select>
             {errors.hostel && (
