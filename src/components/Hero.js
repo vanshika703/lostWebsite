@@ -81,16 +81,16 @@ const Hero = () => {
       <div
         data-aos="fade-up"
         data-aos-duration="2000"
-        className="hero-content relative mx-auto text-left sm:w-1/2"
+        className="hero-content relative mx-auto text-left sm:w-7/12"
       >
-        <h1 className="text-3xl font-playfair italic text-left px-10 md:ml-10">
+        <h1 className="text-3xl font-playfair italic text-center px-10 md:ml-10 mt-16">
           S
           <span className="lowercase">
             ome BEAUTIFUL PATHS CAN ONLY BE DISCOVERED<br></br> WHEN YOU ARE
             LOST...
           </span>
         </h1>
-        <div className="flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-2 lg:gap-0 py-2 my-5 justify-around items-center mx-auto w-1/2 md:w-full">
+        <div className="flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-5 lg:gap-0 py-2 my-5 justify-around items-center mx-auto w-1/2 md:w-full mt-10">
           <div className="flex flex-col w-full sm:w-fit">
             <label for="locations" className="text-xs uppercase font-medium">
               Location:
