@@ -63,21 +63,28 @@
   "FAQ": {
     "FAQs": [
       {
-        "question": "What is the check out time & where we can leave our baggage after that ?",
-        "answer": "Our standard checkout time is 11 AM & you can leave your baggage at reception & can use our common facilities till 6 PM."
+        "question": "What IDs are required at the time of check in?",
+        "answer": "When checking in at Lost Hostel, it is important to have a valid government-issued ID or passport. This requirement applies to all guests, including foreign visitors. If you are a foreign guest, please ensure that you have both your passport and a valid visa with you during the check-in process. These documents are necessary to verify your identity and ensure compliance with local regulations."
       },
       {
-        "question": "Can we also bring our Pet ?",
-        "answer": "We also love pets & they allowed in our common space area but not inside the room or dorms."
+        "question": "Are pets allowed?",
+        "answer": "At Lost Hostel, we have a policy in place that does not permit pets on the premises. We understand that pets are dear companions to many, but we have implemented this rule to ensure the comfort and safety of all our guests. While we appreciate the love and affection pets bring, we strive to maintain a clean and allergen-free environment for our guests, some of whom may have allergies or sensitivities to pet dander. "
+        
       },
       {
-        "question": "Do you have Parking?",
-        "answer": "Sorry, we don’t provide parking facility. You can park your scooter outside of our property in a specific area & there is a Car Parking just 200 Meters just opposite Sai Family Restaurant & Dhaba. Please note that we will not be responsible for any loss."
+        "question": "Can you cook your own food at the hostel?",
+        "answer": "At Lost Hostel Palolem, you don't have to worry about cooking your own meals because we have our own restaurant right here on-site. Unfortunately, we don't have a community kitchen available at Lost Hostel Palolem. So you can simply enjoy the convenience of having delicious meals served to you without any hassle. Our in-house restaurant takes care of all your dining needs during your stay with us."
       },
       {
-        "question": "Can we make our own food in hostel ?",
-        "answer": "We have common kitchen & water purifier free to use for our guests.Anyhow you can use our kitchen to make Tea/Coffe/ Maggie & some light meals. We have inhouse Cafe where you can enjoy tasty & affordable meals."
+        "question": "Is the common area open 24/7?",
+        "answer": "That's correct! The common area at Lost Hostel is indeed open 24 hours a day, allowing you to enjoy the space and facilities at any time that suits you. Whether you're looking to relax, socialize with other guests, or simply unwind after a long day of exploring, you'll have access to the common area whenever you need it. "
+
+      },
+      {
+        "question": "Do they have female dorms?",
+        "answer": "Yes, we are pleased to inform you that we have a female-specific dorm at Lost Hostel. This dorm is exclusively for female guests, providing a safe and comfortable space for female travelers to stay and interact with one another."
       }
+
     ]
   }
 }

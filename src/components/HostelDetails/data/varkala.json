@@ -15,47 +15,52 @@
       {
         "icon": "Beach",
         "distance": "1 km",
-        "place": "Palolem Beach"
+        "place": "Varkala Beach"
       },
       {
         "icon": "Beach",
         "distance": "1.8 km",
-        "place": "Patnem Beach"
+        "place": "Janardhana Swamy Temple"
       },
       {
         "icon": "Beach",
         "distance": "6.3 km",
-        "place": "Butterfly Beach"
+        "place": "Sivagiri Mutt"
       },
       {
         "icon": "Eatery",
         "distance": "1.1 km",
-        "place": "Kala Bahia"
+        "place": "Varkala Cliff"
       },
       {
         "icon": "Eatery",
         "distance": "270 m",
-        "place": "The Mill"
+        "place": "Kappil Beach"
       },
       {
         "icon": "Eatery",
         "distance": "4.3 km",
-        "place": "Leopard Valley"
+        "place": "The Buddha Bar Cafe"
       },
       {
         "icon": "Eatery",
         "distance": "700 m",
-        "place": "Art Resort"
+        "place": "Darjeeling Cafe & Bar"
       },
       {
         "icon": "Beach",
         "distance": "8.4 km",
-        "place": "Agonda Beach"
+        "place": "Cafe Del Mar"
       },
       {
         "icon": "Beach",
         "distance": "23 km",
-        "place": "Cabo de Rama"
+        "place": "Rock n Roll Cafe"
+      },
+      {
+        "icon": "Beach",
+        "distance": "23 km",
+        "place": "The Juice Shack"
       }
     ],
     "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1114.633475565476!2d76.70267932601557!3d8.736521261564429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05ef1ea530b0cf%3A0xf14152a688dabb88!2sThe%20Lost%20Hostel%2C%20Varkala%20-%20Helipad!5e0!3m2!1sen!2sin!4v1691759042186!5m2!1sen!2sin"
@@ -63,20 +68,24 @@
   "FAQ": {
     "FAQs": [
       {
-        "question": "What is the check out time & where we can leave our baggage after that ?",
-        "answer": "Our standard checkout time is 11 AM & you can leave your baggage at reception & can use our common facilities till 6 PM."
+        "question": "Can you cook your own food at the hostel?",
+        "answer": "Yes, we have a communal kitchen area available for all of our guests to use. The kitchen is equipped with everything you need to cook your own meals. We also provide basic cooking utensils and cutlery, so you can prepare your own meals at your convenience."
       },
       {
-        "question": "Can we also bring our Pet ?",
-        "answer": "We also love pets & they allowed in our common space area but not inside the room or dorms."
+        "question": "Is it a good place to work from?",
+        "answer": "Absolutely! Lost Hostel Varkala is indeed a great place to work from, thanks to its popularity and relaxed atmosphere. The hostel provides various common areas that are conducive to work and productivity. The library is an excellent spot for quiet and focused work. It offers a peaceful environment where you can concentrate on your tasks while surrounded by books and a tranquil ambiance."
       },
       {
-        "question": "Do you have Parking?",
-        "answer": "Sorry, we don’t provide parking facility. You can park your scooter outside of our property in a specific area & there is a Car Parking just 200 Meters just opposite Sai Family Restaurant & Dhaba. Please note that we will not be responsible for any loss."
+        "question": "Can i rent surf board from the hostel ?",
+        "answer": "No, we do not rent surf boards, but you can rent it from near the hostel."
       },
       {
-        "question": "Can we make our own food in hostel ?",
-        "answer": "We have common kitchen & water purifier free to use for our guests.Anyhow you can use our kitchen to make Tea/Coffe/ Maggie & some light meals. We have inhouse Cafe where you can enjoy tasty & affordable meals."
+        "question": "Are there any activities?",
+        "answer": "Welcome to Lost Hostel Varkala! We take great pleasure in organizing a variety of activities and events for our valued guests. Whether it's engaging nearby tours, entertaining game nights, or relaxing movie nights, we offer a range of options throughout the year. Participating in these activities is not only enjoyable but also a fantastic opportunity to connect with fellow travelers, forge new friendships, and delve into the wonders of Varkala."
+      },
+      {
+        "question": "Does the Hostel have its own bar?",
+        "answer": "Apologies for the confusion. At Lost Hostel Varkala, we do not have an on-site bar. However, there are several nearby bars and establishments where guests can enjoy a variety of drinks and socialize. These establishments offer a range of options and atmospheres to suit different preferences."
       }
     ]
   }

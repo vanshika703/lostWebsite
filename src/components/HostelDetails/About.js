@@ -31,7 +31,7 @@ const amenities = [
   },
   {
     icon: Water,
-    title: "Water",
+    title: "Hot Water",
   },
   {
     icon: Laundry,
@@ -39,7 +39,7 @@ const amenities = [
   },
   {
     icon: Hangout,
-    title: "Hangout",
+    title: "Hangouts",
   },
   {
     icon: Wifi,
@@ -51,15 +51,15 @@ const amenities = [
   },
   {
     icon: Light,
-    title: "Light",
+    title: "Bed Light",
   },
   {
     icon: Credit,
-    title: "Credit",
+    title: "Credit card",
   },
   {
     icon: Mic,
-    title: "Mic",
+    title: "Events",
   },
 ];
 

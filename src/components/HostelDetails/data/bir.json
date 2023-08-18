@@ -15,47 +15,52 @@
       {
         "icon": "Beach",
         "distance": "1 km",
-        "place": "Palolem Beach"
+        "place": "Bir Billing Paragliding"
       },
       {
         "icon": "Beach",
         "distance": "1.8 km",
-        "place": "Patnem Beach"
+        "place": "Tibetan Colony"
       },
       {
         "icon": "Beach",
         "distance": "6.3 km",
-        "place": "Butterfly Beach"
+        "place": "Sherab Ling Monastery"
       },
       {
         "icon": "Eatery",
         "distance": "1.1 km",
-        "place": "Kala Bahia"
+        "place": "Chokling Monastery"
       },
       {
         "icon": "Eatery",
         "distance": "270 m",
-        "place": "The Mill"
+        "place": "The Northern cafe"
       },
       {
         "icon": "Eatery",
         "distance": "4.3 km",
-        "place": "Leopard Valley"
+        "place": "Baijnath Temple"
       },
       {
         "icon": "Eatery",
         "distance": "700 m",
-        "place": "Art Resort"
+        "place": "Musafir cafe"
       },
       {
         "icon": "Beach",
         "distance": "8.4 km",
-        "place": "Agonda Beach"
+        "place": "Avva Cafe"
       },
       {
         "icon": "Beach",
         "distance": "23 km",
-        "place": "Cabo de Rama"
+        "place": "Silver Lining Cafe"
+      },
+      {
+        "icon": "Beach",
+        "distance": "23 km",
+        "place": "Himalayan Pizza cafe"
       }
     ],
     "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.8598803334935!2d76.70766987516527!3d32.04598392098662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3904b8c934a8a105%3A0xfc28dac94dd88cd7!2sThe%20Lost%20Hostels%20Bir!5e0!3m2!1sen!2sin!4v1691759851073!5m2!1sen!2sin"
@@ -63,20 +68,24 @@
   "FAQ": {
     "FAQs": [
       {
-        "question": "What is the check out time & where we can leave our baggage after that ?",
-        "answer": "Our standard checkout time is 11 AM & you can leave your baggage at reception & can use our common facilities till 6 PM."
+        "question": "Can you cook your own food at the hostel?",
+        "answer": "Yes, we have a communal kitchen area available for all of our guests to use. The kitchen is equipped with everything you need to cook your own meals. We also provide basic cooking utensils and cutlery, so you can prepare your own meals at your convenience."
       },
       {
-        "question": "Can we also bring our Pet ?",
-        "answer": "We also love pets & they allowed in our common space area but not inside the room or dorms."
+        "question": "Is the property safe?",
+        "answer": "Lost Hostel has 24-hour reception and the hostel is equipped with CCTV cameras, so the property is generally considered safe. However, like any accommodation, it is always recommended to take basic safety precautions, such as locking your belongings and being aware of your surroundings. "
       },
       {
-        "question": "Do you have Parking?",
-        "answer": "Sorry, we don’t provide parking facility. You can park your scooter outside of our property in a specific area & there is a Car Parking just 200 Meters just opposite Sai Family Restaurant & Dhaba. Please note that we will not be responsible for any loss."
+        "question": "How's the internet speed?",
+        "answer": "Internet speed at Lost Hostel is really good. The hostel offers free WiFi throughout the property, and the speeds are typically fast enough to do office work, stream videos, download files, and use social media."
       },
       {
-        "question": "Can we make our own food in hostel ?",
-        "answer": "We have common kitchen & water purifier free to use for our guests.Anyhow you can use our kitchen to make Tea/Coffe/ Maggie & some light meals. We have inhouse Cafe where you can enjoy tasty & affordable meals."
+        "question": "Where can i go for paragliding ?",
+        "answer": "You can contact at reception to book your paragliding session"
+      },
+      {
+        "question": "Do they have female dorms?",
+        "answer": "No, We don't have a female specific dorm"
       }
     ]
   }
