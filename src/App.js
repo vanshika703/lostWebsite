@@ -17,6 +17,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
+import Popup from "./components/Popup";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -76,6 +77,7 @@ function App() {
   return (
     <Wrapper>
       <div className="font-dmsans">
+        <Popup/>
         <Navbar />
         <Outlet />
         <Footer />
