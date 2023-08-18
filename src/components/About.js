@@ -23,6 +23,7 @@ const About = () => {
           grabCursor={true}
           modules={[EffectCards]}
           className="mySwiper w-1/2 h-3/4"
+          navigation={true}
         >
           <SwiperSlide className="w-full h-full shadow-none">
             <img src={about1} alt="about" className="w-full shadow-none" />

@@ -23,7 +23,7 @@ const HostelDetails = () => {
       <Gallery hostelData={hostelData?.gallery} />
       <About hostelData={hostelData?.about} />
       <Location hostelData={hostelData?.location} />
-      <FAQ/>
+      <FAQ hostelData={hostelData?.FAQ}/>
     </div>
   );
 };

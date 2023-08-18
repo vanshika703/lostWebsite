@@ -1,30 +1,6 @@
 import { useState } from "react";
 
-const FAQs = [
-  {
-    question:
-      "What is the check out time & where we can leave our baggage after that ?",
-    answer:
-      "Our standard checkout time is 11 AM & you can leave your baggage at reception & can use our common facilities till 6 PM.",
-  },
-  {
-    question: "Can we also bring our Pet ?",
-    answer:
-      "We also love pets & they allowed in our common space area but not inside the room or dorms.",
-  },
-  {
-    question: "Do you have Parking?",
-    answer:
-      "Sorry, we don’t provide parking facility. You can park your scooter outside of our property in a specific area & there is a Car Parking just 200 Meters just opposite Sai Family Restaurant & Dhaba. Please note that we will not be responsible for any loss.",
-  },
-  {
-    question: "Can we make our own food in hostel ?",
-    answer:
-      "We have common kitchen & water purifier free to use for our guests.Anyhow you can use our kitchen to make Tea/Coffe/ Maggie & some light meals. We have inhouse Cafe where you can enjoy tasty & affordable meals.",
-  },
-];
-
-const FAQ = () => {
+const FAQ = ({ hostelData }) => {
   const [openFaqs, setOpenFaqs] = useState([]);
 
   const handleToggleFaq = (index) => {
@@ -45,7 +21,7 @@ const FAQ = () => {
       <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
         FAQs
       </h1>
-      {FAQs.map((faq, index) => {
+      {hostelData?.FAQs?.map((faq, index) => {
         return (
           <div
             className="border-b-2 border-[#afd1dc] p-2 m-2 w-full sm:w-1/2"

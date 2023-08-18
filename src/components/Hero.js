@@ -92,7 +92,7 @@ const Hero = () => {
         </h1>
         <div className="flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-5 lg:gap-0 py-2 my-5 justify-around items-center mx-auto w-1/2 md:w-full mt-14">
           <div className="flex flex-col w-full sm:w-fit">
-            <label for="locations" className="text uppercase font-medium">
+            <label for="locations" className="text-base uppercase font-medium">
               Location:
             </label>
             <select
@@ -134,7 +134,7 @@ const Hero = () => {
             {!errors.hostel && <p className="mb-5"></p>}
           </div>
           <div className="flex flex-col hover:outline-none items-start">
-            <label for="Checkin" className="text-xs uppercase font-medium">
+            <label for="Checkin" className="text-base uppercase font-medium">
               Checkin date
             </label>
             <DateInput onChange={onChangeCheckin} />
@@ -144,7 +144,7 @@ const Hero = () => {
             {!errors.checkInDate && <p className="mb-5"></p>}
           </div>
           <div className="flex flex-col items-start">
-            <label for="Checkout" className="text-xs uppercase">
+            <label for="Checkout" className="text-base uppercase">
               Checkout date
             </label>
             <DateInput onChange={onChangeChekout} />
