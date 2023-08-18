@@ -83,16 +83,16 @@ const Hero = () => {
         data-aos-duration="2000"
         className="hero-content relative mx-auto text-left sm:w-7/12"
       >
-        <h1 className="text-3xl font-playfair italic text-center px-10 md:ml-10 mt-16">
+        <h1 className="text-3xl font-playfair italic text-center px-10 md:ml-10 mt-20">
           S
           <span className="lowercase">
             ome BEAUTIFUL PATHS CAN ONLY BE DISCOVERED<br></br> WHEN YOU ARE
             LOST...
           </span>
         </h1>
-        <div className="flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-5 lg:gap-0 py-2 my-5 justify-around items-center mx-auto w-1/2 md:w-full mt-10">
+        <div className="flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-5 lg:gap-0 py-2 my-5 justify-around items-center mx-auto w-1/2 md:w-full mt-14">
           <div className="flex flex-col w-full sm:w-fit">
-            <label for="locations" className="text-xs uppercase font-medium">
+            <label for="locations" className="text uppercase font-medium">
               Location:
             </label>
             <select
@@ -108,22 +108,22 @@ const Hero = () => {
                 value="thelosthostelsgoapalolembeach"
                 className="text-black"
               >
-                Goa
+                Palolem, South Goa
               </option>
               <option
                 value="thelosthostelvarkalahelipad"
                 className="text-black"
               >
-                Varkala
+                Varkala, Kerela
               </option>
               <option
                 value="thelosthostelsbirbillinglandingsite"
                 className="text-black"
               >
-                Bir
+                Bir, Himachal Pradesh
               </option>
               <option value="185812" className="text-black">
-                Weligama
+                Weligama, Sri Lanka
               </option>
             </select>
             {errors.hostel && (
@@ -139,7 +139,7 @@ const Hero = () => {
             </label>
             <DateInput onChange={onChangeCheckin} />
             {errors.checkInDate && (
-              <p className="text-xs pt-1 text-red-600">Please select a date</p>
+              <p className="text pt-1 text-red-600">Please select a date</p>
             )}
             {!errors.checkInDate && <p className="mb-5"></p>}
           </div>
@@ -149,7 +149,7 @@ const Hero = () => {
             </label>
             <DateInput onChange={onChangeChekout} />
             {errors.checkOutDate && (
-              <p className="text-xs pt-1 text-red-600">Please select a date</p>
+              <p className="text pt-1 text-red-600">Please select a date</p>
             )}
             {!errors.checkOutDate && <p className="mb-5"></p>}
           </div>

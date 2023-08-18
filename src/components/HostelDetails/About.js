@@ -65,7 +65,7 @@ const amenities = [
 
 const About = ({ hostelData }) => {
   return (
-    <div className=" flex flex-col sm:flex-row mx-5 sm:mx-28 my-2 justify-center items-start">
+    <div className=" flex flex-col sm:flex-row mx-5 sm:mx-28 my-2 justify-center items-center">
       <div className="w-full sm:w-2/3 p-5">
         <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
           {hostelData?.header}

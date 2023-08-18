@@ -42,24 +42,26 @@ const Locations = () => {
         className="mySwiper locationslider"
       >
         <SwiperSlide className="relative">
-          <img
-            src={weligamaimg}
-            alt="weligamaimg"
-            className="rounded-md shadow-lg"
-          />
-          <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
-            <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              Weligama
-            </h3>
-            <p className="text-sm text-[#4c4e4e]">
-              50m from the bustling surfers paradise of Weligama beach, the
-              hostel offers peaceful accommodation with a garden, yoga area,
-              indoor games and shared dorms
-            </p>
-            <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
-              Know More
-            </button>
-          </div>
+          <Link to="/hostel/weligama">
+            <img
+              src={weligamaimg}
+              alt="weligamaimg"
+              className="rounded-md shadow-lg"
+            />
+            <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
+              <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
+                Weligama
+              </h3>
+              <p className="text-sm text-[#4c4e4e]">
+                50m from the bustling surfers paradise of Weligama beach, the
+                hostel offers peaceful accommodation with a garden, yoga area,
+                indoor games and shared dorms
+              </p>
+              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+                Know More
+              </button>
+            </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
           <img
