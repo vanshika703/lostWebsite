@@ -8,7 +8,7 @@ export default function Popup() {
     "5% off",
     "Better luck ",
     "20% off",
-    "15% off"
+    "15% off",
   ];
   const segColors = [
     "black",
@@ -16,22 +16,21 @@ export default function Popup() {
     "black",
     "#60BA97",
     "black",
-    "#60BA97"
+    "#60BA97",
   ];
   const onFinished = (winner) => {
     //console.log(winner);
   };
   return (
-    <div className="fixed inset-0 w-1/2 bg-white z-50 m-auto h-4/5">
+    <div className="fixed inset-0 bg-white z-50 w-1/2 h-3/4 m-auto flex flex-col justify-center items-center">
       <h1>wofhoog</h1>
-        <WheelComponent
-          segments={segments}
-          segColors={segColors}
-          onFinished={(winner) => onFinished(winner)}
-          buttonText="Start"
-          size={200}
-          className="absolute top-0 left-0"
-        />
+      <WheelComponent
+        segments={segments}
+        segColors={segColors}
+        onFinished={(winner) => onFinished(winner)}
+        buttonText="Start"
+        size={200}
+      />
       <h2> Spin the wheel and win exiting offers</h2>
     </div>
   );

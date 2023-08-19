@@ -109,3 +109,11 @@ body {
 .css-6kluu6{
   display: none!important;
 }
+
+#canvas
+  {
+    position: absolute;
+    margin: auto;
+    height: 80%;
+    flex-grow: 1;
+  }
