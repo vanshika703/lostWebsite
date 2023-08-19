@@ -12,6 +12,8 @@ import Privacy from "./components/RulesAndLegal/Privacy";
 import Guest from "./components/RulesAndLegal/Guest";
 import Cancellation from "./components/RulesAndLegal/Cancellation";
 import TourGroups from "./components/RulesAndLegal/TourGroups";
+import Blog from "./components/Blog/Blog.js"
+import Merch from "./components/Merch/Merch.js"
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -64,6 +66,14 @@ const appRouter = createBrowserRouter([
         path: "/tourgroups",
         element: <TourGroups />,
       },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/merch",
+        element: <Merch />,
+      },
     ],
   },
 ]);
@@ -77,7 +87,7 @@ function App() {
   return (
     <Wrapper>
       <div className="font-dmsans">
-        <Popup/>
+        {/* <Popup/> */}
         <Navbar />
         <Outlet />
         <Footer />

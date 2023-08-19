@@ -22,12 +22,12 @@ const Navbar = () => {
       link: "/workwithus",
     },
     {
-      title: "Gallery",
-      link: "/#gallery",
+      title: "Blog",
+      link: "/blog",
     },
     {
-      title: "Testimonials",
-      link: "/#testimonials",
+      title: "Merch",
+      link: "/merch",
     },
   ];
 

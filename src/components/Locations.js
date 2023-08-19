@@ -50,7 +50,7 @@ const Locations = () => {
             />
             <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-                Weligama
+                Weligama, Sri Lanka
               </h3>
               <p className="text-sm text-[#4c4e4e]">
                 50m from the bustling surfers paradise of Weligama beach, the
@@ -71,7 +71,7 @@ const Locations = () => {
           />
           <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
             <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              Hiriketiya
+              Hiriketiya, Sri Lanka
             </h3>
             <p className="text-sm text-[#4c4e4e]">
               50m from the bustling surfers paradise of Weligama beach, the
@@ -122,7 +122,7 @@ const Locations = () => {
             <img src={GOA_IMG} alt="goa" className="rounded-md shadow-lg" />
             <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-                South Goa - Palolem
+                Palolem, South Goa
               </h3>
               <p className="text-sm text-[#4c4e4e]">
                 In the lap of South Goa, The Lost Hostel is a budget-friendly
@@ -144,7 +144,7 @@ const Locations = () => {
             />
             <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-                Varkala - Helipad
+                Varkala, Kerela
               </h3>
               <p className="text-sm text-[#4c4e4e]">
                 Located along the famous cliffs and beaches of Varkala, The Lost
@@ -168,7 +168,7 @@ const Locations = () => {
             <img src={BIR} alt="bir" className="rounded-md shadow-lg" />
             <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-                Bir - Landing Site
+                Bir, Himachal Pradesh
               </h3>
               <p className="text-sm text-[#4c4e4e]">
                 Located near the Paragliding landing site, The Lost Hostels Bir
