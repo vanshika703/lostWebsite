@@ -79,10 +79,10 @@ const Hero = () => {
   return (
     <section className="hero relative min-h-screen w-[100vw] flex flex-col justify-center items-start text-white">
       <div className="hero-content relative mx-auto text-left sm:w-7/12">
-        <h1 className="text-3xl font-playfair italic text-center px-10 md:ml-10 mt-24">
+        <h1 className="text-5xl font-playfair italic text-center px-10 md:ml-0 mt-20 leading-snug">
           S
           <span className="lowercase">
-            ome BEAUTIFUL PATHS CAN ONLY BE DISCOVERED<br></br> WHEN YOU ARE
+            ome BEAUTIFUL PATHS CAN ONLY BE DISCOVERED WHEN YOU ARE
             LOST...
           </span>
         </h1>
