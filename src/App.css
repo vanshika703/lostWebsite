@@ -133,8 +133,7 @@ body {
 }
 #wheel {
   border-radius: 50%;
-  border: 5px solid #a72810;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px rgba(1, 1, 1, 0.3);
   height: 400px;
   left: 0;
   position: absolute;
@@ -168,9 +167,40 @@ body {
 }
 
 .arrow {
-  position: absolute;
+  position: fixed;
   top: 24px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 500;
+  background: #000;
+}
+
+.wheel-div{
+  background-color: rgba(255,255,255,0.9)!important;
+}
+
+#wheel {
+  border: 5px solid white;
+  zoom: 1;
+  color: #000!important;
+}
+
+.canvas-container{
+  background: #2f2f2f;
+  color: #000!important;
+  box-shadow: 0 0 10px rgb(188, 188, 188);
+  border: 5px solid white;
+  opacity: 100%;
+  font-family: dm;
+}
+
+@media (max-width: 768px) {
+  .canvas-container {
+    zoom: 0.5;
+  }
+}
+
+#spin {
+  background: #000;
+  color: white;
 }

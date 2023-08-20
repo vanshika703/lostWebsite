@@ -94,6 +94,7 @@ const SpinAndWin = forwardRef(
         let winner = data[random];
 
         handleCheckWinner(winner);
+        console.log("hi", winner)
         if (!winner) {
           winner = [""];
         }
