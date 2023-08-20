@@ -6,7 +6,7 @@
     "photo4": "https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/2/279580/iqmuz97wchylpbhjnmed"
   },
   "about": {
-    "header": "Lost Hostel Varkala",
+    "header": "Lost Hostel Varkala, Kerela",
     "info": "Located on the famous Cliffs & beaches of Varkala, The Lost Hostels Varkala - Helipad offers a sea view with unique facilities in a relaxing and peaceful atmosphere. Throughout your stay we offer safe and clean facilities with OPEN KITCHEN, free Wi-Fi, en-suite bathrooms, common places to hang out and many more. We strive to ensure that our travelers get to stay with us as a part of the family. Travelers choose us because they like to meet new people, share their experiences & stories with each other and learn new culture while staying in the homely atmosphere but not for the facilities.",
     "bookingLink": "https://live.ipms247.com/booking/book-rooms-thelosthostelvarkalahelipad"
   },
@@ -14,53 +14,53 @@
     "nearbyPlaces": [
       {
         "icon": "Beach",
-        "distance": "1 km",
+        "distance": "20 m",
         "place": "Varkala Beach"
       },
       {
         "icon": "Beach",
-        "distance": "1.8 km",
+        "distance": "2.8 km",
         "place": "Janardhana Swamy Temple"
       },
       {
         "icon": "Beach",
-        "distance": "6.3 km",
-        "place": "Sivagiri Mutt"
+        "distance": "1.9 km",
+        "place": "Black sand beach"
       },
       {
-        "icon": "Eatery",
-        "distance": "1.1 km",
-        "place": "Varkala Cliff"
-      },
-      {
-        "icon": "Eatery",
-        "distance": "270 m",
+        "icon": "Beach",
+        "distance": "6.6 km",
         "place": "Kappil Beach"
       },
       {
         "icon": "Eatery",
-        "distance": "4.3 km",
+        "distance": "20m",
         "place": "The Buddha Bar Cafe"
       },
       {
         "icon": "Eatery",
-        "distance": "700 m",
+        "distance": "500 m",
         "place": "Darjeeling Cafe & Bar"
       },
       {
         "icon": "Beach",
-        "distance": "8.4 km",
-        "place": "Cafe Del Mar"
+        "distance": "3.2 km",
+        "place": "Odayam Beach Mar"
       },
       {
         "icon": "Beach",
-        "distance": "23 km",
-        "place": "Rock n Roll Cafe"
+        "distance": "3.7 km",
+        "place": "Suprabhatam Restaurant"
       },
       {
         "icon": "Beach",
-        "distance": "23 km",
-        "place": "The Juice Shack"
+        "distance": "16 km",
+        "place": "Mangrove Island "
+      },
+      {
+        "icon": "Beach",
+        "distance": "49 km",
+        "place": "Munroe Island "
       }
     ],
     "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1114.633475565476!2d76.70267932601557!3d8.736521261564429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05ef1ea530b0cf%3A0xf14152a688dabb88!2sThe%20Lost%20Hostel%2C%20Varkala%20-%20Helipad!5e0!3m2!1sen!2sin!4v1691759042186!5m2!1sen!2sin"

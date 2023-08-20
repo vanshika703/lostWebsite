@@ -33,8 +33,7 @@ const Merch = () => {
 
   return (
     <div className="p-6 px-28">
-      <img src={blogimg} className="text-center w-72 mx-auto mt-16" />
-      <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89] text-center">
+      <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89] text-center mt-16">
         The Lost Merch
       </h1>
       <hr className="w-2/3 mx-auto py-4"></hr>

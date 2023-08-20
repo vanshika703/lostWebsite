@@ -10,14 +10,12 @@ const Footer = () => {
           </h1>
           <p className="text-xl text-[#8cb6c4]">Come get lost with us.</p>
           <Link to="/">
-            <button className="border-2 border-[#8cb6c4] p-1 px-3 my-4 rounded-md font-medium font-dmsans">
+            <button className="border-2 border-[#8cb6c4] p-1 px-3 my-4 rounded-md font-medium font-dmsans hover:bg-black hover:bg-opacity-40 duration-100 ease-in">
               Book Now
             </button>
           </Link>
         </div>
-        <div
-          className="flex flex-col sm:items-end"
-        >
+        <div className="flex flex-col sm:items-end">
           <ul>
             <li className="text-sm">Rules and Legal</li>
             <Link to="/terms">
@@ -39,9 +37,7 @@ const Footer = () => {
             </Link>
           </ul>
         </div>
-        <div
-          className="flex flex-col sm:items-end"
-        >
+        <div className="flex flex-col sm:items-end">
           <ul>
             <li className="text-sm">Navigate</li>
             <li className="text-sm text-[#8cb6c4]">Home</li>
@@ -51,9 +47,7 @@ const Footer = () => {
             <li className="text-sm text-[#8cb6c4]">Gallery</li>
           </ul>
         </div>
-        <div
-          className="flex flex-col sm:items-end"   
-        >
+        <div className="flex flex-col sm:items-end">
           <ul>
             <li className="text-sm">Contact Us</li>
             <li className="text-sm text-[#8cb6c4]">Varkala: +91 7012416343</li>

@@ -57,7 +57,7 @@ const Locations = () => {
                 hostel offers peaceful accommodation with a garden, yoga area,
                 indoor games and shared dorms
               </p>
-              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+              <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-in">
                 Know More
               </button>
             </div>
@@ -85,7 +85,7 @@ const Locations = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+              <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
                 Know More
               </button>
             </a>
@@ -139,7 +139,7 @@ const Locations = () => {
                 accommodation offering a garden, indoor games and shared
                 dormitories.
               </p>
-              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+              <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
                 Know More
               </button>
             </div>
@@ -168,7 +168,7 @@ const Locations = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+                <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
                   Know More
                 </button>
               </a>
@@ -193,7 +193,7 @@ const Locations = () => {
                 offers river stream & mountain view with unique facilities in a
                 relaxing and peaceful atmosphere.
               </p>
-              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+              <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
                 Know More
               </button>
             </div>

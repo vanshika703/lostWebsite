@@ -6,7 +6,7 @@
     "photo4": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/482950317.jpg?k=fdb6a8fafedf08d936c5be7b842b8efcd5fca9592f566df7adb45bdb13fa07cc&o=&hp=1"
   },
   "about": {
-    "header": "Lost Hostel Weligama",
+    "header": "Lost Hostel Weligama, Sri Lanka",
     "info": "Boasting a garden and a shared lounge, The Lost Hostels, Weligama Beach - Sri Lanka is situated in Weligama, 800 metres from Weligama Beach and 29 km from Galle International Cricket Stadium. The property is around 29 km from Galle Fort, 29 km from Dutch Church Galle and 29 km from Galle Light house. The accommodation features karaoke and a shared kitchen. All guest rooms in the hostel are fitted with a coffee machine. All rooms at The Lost Hostels, Weligama Beach - Sri Lanka are fitted with a private bathroom and bed linen. You can play table tennis at the accommodation, and bike hire is available.",
     "bookingLink": "https://live.ipms247.com/booking/book-rooms-185812"
   },
@@ -14,48 +14,53 @@
     "nearbyPlaces": [
       {
         "icon": "Beach",
-        "distance": "1 km",
-        "place": "Palolem Beach"
+        "distance": "70 m",
+        "place": "Weligama Beach "
       },
       {
         "icon": "Beach",
-        "distance": "1.8 km",
-        "place": "Patnem Beach"
+        "distance": "300 m",
+        "place": "Weligama Bay Surf"
+      },
+      {
+        "icon": "Beach",
+        "distance": "350 m",
+        "place": "Hangten Rooftop"
+      },
+      {
+        "icon": "Eatery",
+        "distance": "1.2 km",
+        "place": "Ceylon Sliders"
+      },
+      {
+        "icon": "Eatery",
+        "distance": "2.3km",
+        "place": "Fisherman's Bay Surf"
+      },
+      {
+        "icon": "Eatery",
+        "distance": "2.8 km",
+        "place": "Tiki Bar"
+      },
+      {
+        "icon": "Eatery",
+        "distance": "5.2 km",
+        "place": "Shady Lane"
+      },
+      {
+        "icon": "Beach",
+        "distance": "5.5 km",
+        "place": "Midigama Beach"
+      },
+      {
+        "icon": "Beach",
+        "distance": "5.8 km",
+        "place": "Mirissa Beach"
       },
       {
         "icon": "Beach",
         "distance": "6.3 km",
-        "place": "Butterfly Beach"
-      },
-      {
-        "icon": "Eatery",
-        "distance": "1.1 km",
-        "place": "Kala Bahia"
-      },
-      {
-        "icon": "Eatery",
-        "distance": "270 m",
-        "place": "The Mill"
-      },
-      {
-        "icon": "Eatery",
-        "distance": "4.3 km",
-        "place": "Leopard Valley"
-      },
-      {
-        "icon": "Eatery",
-        "distance": "700 m",
-        "place": "Art Resort"
-      },
-      {
-        "icon": "Beach",
-        "distance": "8.4 km",
-        "place": "Agonda Beach"
-      },
-      {
-        "icon": "Beach",
-        "distance": "23 km",
-        "place": "Cabo de Rama"
+        "place": "Turtle Beach"
       }
     ],
     "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.156378182819!2d80.42958557456481!3d5.973191729314513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae1156e0e14f353%3A0xfe476c45915ba3b6!2sThe%20Lost%20Hostels%2C%20Weligama%20-%20Beach%20Road!5e0!3m2!1sen!2sin!4v1692341448442!5m2!1sen!2sin"
@@ -63,20 +68,24 @@
   "FAQ": {
     "FAQs": [
       {
-        "question": "What is the check out time & where we can leave our baggage after that ?",
-        "answer": "Our standard checkout time is 11 AM & you can leave your baggage at reception & can use our common facilities till 6 PM."
+        "question": "Does the Hostel have its own bar?",
+        "answer": "We do not have an on-site bar. However, the supermarket is right next to us and there are several nearby bars and restaurants where people can enjoy a variety of drinks and socialize. These establishments offer a range of options and atmospheres to suit different preferences."
       },
       {
-        "question": "Can we also bring our Pet ?",
-        "answer": "We also love pets & they allowed in our common space area but not inside the room or dorms."
+        "question": "Are there any activities?",
+        "answer": "We take great pleasure in organizing a variety of activities and events for our valued guests. Whether it's engaging in local tours, physical and mental fitness activities, ice baths, exploring secret sunset spots, open mics, themed dinners, parties, ping pong tournaments, entertaining game nights, or relaxing movie nights, we offer a range of options throughout the year. Participating in these activities is not only enjoyable but also a fantastic opportunity to connect with fellow travelers and forge new friendships"
       },
       {
-        "question": "Do you have Parking?",
-        "answer": "Sorry, we don’t provide parking facility. You can park your scooter outside of our property in a specific area & there is a Car Parking just 200 Meters just opposite Sai Family Restaurant & Dhaba. Please note that we will not be responsible for any loss."
+        "question": "Can i rent surf board from the hostel ?",
+        "answer": "No, we do not rent surf boards, but you can rent it from near the hostel and keep them here safely for your convenience"
       },
       {
         "question": "Can we make our own food in hostel ?",
-        "answer": "We have common kitchen & water purifier free to use for our guests.Anyhow you can use our kitchen to make Tea/Coffe/ Maggie & some light meals. We have inhouse Cafe where you can enjoy tasty & affordable meals."
+        "answer": "Yes, we have a communal kitchen area available for all of our guests to use. The kitchen is equipped with everything you need to cook your own meals. We also provide basic cooking utensils and cutlery, so you can prepare your own meals at your convenience."
+      },
+      {
+        "question": "Is the common area open 24/7?",
+        "answer": "That's correct! Our outdoor common areas are open 24 hours a day. Whether you're looking to relax, socialize with other guests, or simply unwind after a long day of exploring, you'll have access to the common area whenever you need it. We advise not making any noise indoors for the convenience of other travelers."
       }
     ]
   }

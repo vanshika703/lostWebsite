@@ -99,7 +99,7 @@ const Navbar = () => {
           {navItems.map((navItem, index) => (
             <HashLink to={navItem.link} key={navItem.link}>
               <li className="uppercase tracking-wider cursor-pointer">
-                <p className="border-b-[3px] border-transparent hover:border-white pb-2 duration-200 ease-in">
+                <p className="border-b-[3px] border-transparent hover:border-white duration-200 ease-in">
                   {navItem?.title}
                 </p>
               </li>

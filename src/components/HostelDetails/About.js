@@ -73,7 +73,7 @@ const About = ({ hostelData }) => {
         <p className="text-[#4c4e4e]">{hostelData?.info}</p>
         <a href={hostelData?.bookingLink} target="_blank" rel="noreferrer">
           <button className="border-2 border-[#116b89] p-2 px-5 my-4 rounded-md font-medium font-dmsans text-lg text-[#116b89]">
-            Book Now
+            <p className=" hover:border-b-2 border-[#116b89] duration-100 ease-in">Book Now</p>
           </button>
         </a>
       </div>
