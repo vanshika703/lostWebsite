@@ -87,7 +87,7 @@ function App() {
   return (
     <Wrapper>
       <div className="font-dmsans">
-        <Popup />
+        {/* <Popup /> */}
         <Navbar />
         <Outlet />
         <Footer />
