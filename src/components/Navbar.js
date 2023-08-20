@@ -45,7 +45,7 @@ const Navbar = () => {
                     setIsPhoneNavOpen(false);
                   }}
                 >
-                  <p class="text-white md:my-2 mx-2 my-2 px-2 py-1 transition duration-500 ease-in-out hover:border-orange300 cursor-pointer border-b-2 border-transparent">
+                  <p class="text-white md:my-2 mx-2 my-2 px-2 py-1 transition duration-500 ease-in-out hover:border-orange300 cursor-pointer border-b-2 border-transparent underline">
                     {title}
                   </p>
                 </HashLink>
@@ -99,7 +99,9 @@ const Navbar = () => {
           {navItems.map((navItem, index) => (
             <HashLink to={navItem.link} key={navItem.link}>
               <li className="uppercase tracking-wider cursor-pointer">
-                {navItem?.title}
+                <p className="border-b-[3px] border-transparent hover:border-white pb-2 duration-200 ease-in">
+                  {navItem?.title}
+                </p>
               </li>
             </HashLink>
           ))}

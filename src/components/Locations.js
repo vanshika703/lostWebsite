@@ -41,11 +41,13 @@ const Locations = () => {
       >
         <SwiperSlide className="relative">
           <Link to="/hostel/weligama">
-            <img
-              src={weligamaimg}
-              alt="weligamaimg"
-              className="rounded-md shadow-lg"
-            />
+            <div className="overflow-hidden rounded-md w-full h-full">
+              <img
+                src={weligamaimg}
+                alt="weligamaimg"
+                className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+              />
+            </div>
             <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
                 Weligama, Sri Lanka
@@ -62,11 +64,13 @@ const Locations = () => {
           </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={hiriketiyaimg}
-            alt="hiriketiyaimg"
-            className="rounded-md shadow-lg"
-          />
+          <div className="overflow-hidden rounded-md w-full h-full">
+            <img
+              src={hiriketiyaimg}
+              alt="hiriketiyaimg"
+              className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+            />
+          </div>
           <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
             <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
               Hiriketiya, Sri Lanka
@@ -88,11 +92,13 @@ const Locations = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={comingsoonimg}
-            alt="comingsoonimg"
-            className="rounded-md shadow-lg"
-          />
+          <div className="overflow-hidden rounded-md w-full h-full">
+            <img
+              src={comingsoonimg}
+              alt="comingsoonimg"
+              className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+            />
+          </div>
           <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
             <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
               Where do you want to see us next?
@@ -117,7 +123,13 @@ const Locations = () => {
       >
         <SwiperSlide>
           <Link to="/hostel/goa">
-            <img src={GOA_IMG} alt="goa" className="rounded-md shadow-lg" />
+            <div className="overflow-hidden rounded-md w-full h-full">
+              <img
+                src={GOA_IMG}
+                alt="goa"
+                className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+              />
+            </div>
             <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
                 Palolem, South Goa
@@ -135,11 +147,13 @@ const Locations = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Link to="/hostel/varkala">
-            <img
-              src={varkalaimg}
-              alt="varkala"
-              className="rounded-md shadow-lg"
-            />
+            <div className="overflow-hidden rounded-md w-full h-full">
+              <img
+                src={varkalaimg}
+                alt="varkala"
+                className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+              />
+            </div>
             <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
                 Varkala, Kerela
@@ -163,7 +177,13 @@ const Locations = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Link to="/hostel/bir">
-            <img src={BIR} alt="bir" className="rounded-md shadow-lg" />
+            <div className="overflow-hidden rounded-md w-full h-full">
+              <img
+                src={BIR}
+                alt="bir"
+                className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+              />
+            </div>
             <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
                 Bir, Himachal Pradesh
