@@ -14,7 +14,7 @@ import { EffectCards } from "swiper/modules";
 const About = () => {
   return (
     <div
-      className="h-screen w-[100vw] flex flex-col sm:flex-row"
+      className="w-[100vw] flex flex-col sm:flex-row"
       id="our-story"
     >
       <div className=" w-[100vw] sm:w-[50vw] md:min-h-[100vh] flex justify-center items-center">
@@ -22,7 +22,7 @@ const About = () => {
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="mySwiper w-1/2 h-3/4"
+          className="mySwiper w-1/2 h-60 sm:h-2/3 mt-10"
           navigation={true}
         >
           <SwiperSlide className="w-full h-full shadow-none">
