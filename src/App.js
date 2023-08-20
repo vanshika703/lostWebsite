@@ -12,8 +12,8 @@ import Privacy from "./components/RulesAndLegal/Privacy";
 import Guest from "./components/RulesAndLegal/Guest";
 import Cancellation from "./components/RulesAndLegal/Cancellation";
 import TourGroups from "./components/RulesAndLegal/TourGroups";
-import Blog from "./components/Blog/Blog.js"
-import Merch from "./components/Merch/Merch.js"
+import Blog from "./components/Blog/Blog.js";
+import Merch from "./components/Merch/Merch.js";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -87,7 +87,7 @@ function App() {
   return (
     <Wrapper>
       <div className="font-dmsans">
-        {/* <Popup/> */}
+        <Popup />
         <Navbar />
         <Outlet />
         <Footer />

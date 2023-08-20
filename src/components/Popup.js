@@ -1,37 +1,31 @@
-import { useState } from "react";
-import WheelComponent from "react-wheel-of-prizes";
+import { useEffect, useRef } from "react";
+import SpinAndWin from "./Spin";
+// import SpinAndWin from "react-spin-game";
+// import "react-spin-game/dist/index.css";
+const Popup = () => {
+  const freeSpinGifts = [
+    ["test1", "red"],
+    ["test2", "black"],
+    ["test3", "#808080"],
+    ["test4", "blue"],
+    ["test5", "gray"],
+    ["test6", "blue"],
+  ];
 
-export default function Popup() {
-  const segments = [
-    "Better luck ",
-    "10% off",
-    "5% off",
-    "Better luck ",
-    "20% off",
-    "15% off",
-  ];
-  const segColors = [
-    "black",
-    "#60BA97",
-    "black",
-    "#60BA97",
-    "black",
-    "#60BA97",
-  ];
-  const onFinished = (winner) => {
-    //console.log(winner);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    console.log(ref);
+  }, []);
+
+  const handleCheckWinner = (winner) => {
+    console.log("eheheh, winner is", winner);
   };
   return (
-    <div className="fixed inset-0 bg-white z-50 w-1/2 h-3/4 m-auto flex flex-col justify-center items-center">
-      <h1>wofhoog</h1>
-      <WheelComponent
-        segments={segments}
-        segColors={segColors}
-        onFinished={(winner) => onFinished(winner)}
-        buttonText="Start"
-        size={200}
-      />
-      <h2> Spin the wheel and win exiting offers</h2>
+    <div className="py-20 bg-white absolute z-50 w-screen h-screen flex items-center justify-center">
+      <SpinAndWin data={freeSpinGifts} handleCheckWinner={handleCheckWinner} />
     </div>
   );
-}
+};
+
+export default Popup;
