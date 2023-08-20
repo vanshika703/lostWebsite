@@ -16,6 +16,7 @@ const Popup = () => {
   const ref = useRef(null);
 
   const [isPopupOpen, setIsPopupOpen] = useState(true);
+  const [prize, setPrize] = useState(null);
 
   useEffect(() => {
     console.log(ref);
@@ -23,19 +24,17 @@ const Popup = () => {
 
   const handleClosePopup = () => {
     setIsPopupOpen(false);
-  }
+  };
 
   const handleCheckWinner = (winner) => {
+    setPrize(winner);
     console.log("eheheh, winner is", winner);
   };
   return (
     <>
-      
-        {isPopupOpen && (<div className="wheel-div fixed inset-0 m-auto py-20 bg-white z-50 w-3/4 h-4/5 flex flex-col items-center justify-center rounded-md">
-          <button
-            className="absolute top-5 right-8"
-            onClick={handleClosePopup}
-          >
+      {isPopupOpen && (
+        <div className="wheel-div fixed inset-0 m-auto py-20 bg-white z-50 w-3/4 h-4/5 flex flex-col items-center justify-center rounded-md">
+          <button className="absolute top-5 right-8" onClick={handleClosePopup}>
             X
           </button>
           <p className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
@@ -45,9 +44,9 @@ const Popup = () => {
             data={freeSpinGifts}
             handleCheckWinner={handleCheckWinner}
           />
-          <p>prize</p>
-        </div>)}
-      
+          {prize && <p>Your prize is : {prize}</p>}
+        </div>
+      )}
     </>
   );
 };
