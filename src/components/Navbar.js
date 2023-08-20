@@ -95,7 +95,7 @@ const Navbar = () => {
             </defs>
           </svg>
         </div>
-        <ul className="sm:flex w-[50VW] justify-between text-sm hidden font-dmsans relative">
+        <ul className="sm:flex w-[50VW] justify-between text-sm hidden font-dmsans relative mt-3">
           {navItems.map((navItem, index) => (
             <HashLink to={navItem.link} key={navItem.link}>
               <li className="uppercase tracking-wider cursor-pointer">

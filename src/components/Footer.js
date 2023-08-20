@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -19,19 +20,27 @@ const Footer = () => {
           <ul>
             <li className="text-sm">Rules and Legal</li>
             <Link to="/terms">
-              <li className="text-sm text-[#8cb6c4]">Terms and Conditions</li>
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+                Terms and Conditions
+              </li>
             </Link>
             <Link to="/privacy">
-              <li className="text-sm text-[#8cb6c4]">Privacy Policy</li>
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+                Privacy Policy
+              </li>
             </Link>
             <Link to="/guest">
-              <li className="text-sm text-[#8cb6c4]">Guest Policy</li>
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+                Guest Policy
+              </li>
             </Link>
             <Link to="/cancellation">
-              <li className="text-sm text-[#8cb6c4]">Cancellation Policy</li>
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+                Cancellation Policy
+              </li>
             </Link>
             <Link to="/tourgroups">
-              <li className="text-sm text-[#8cb6c4]">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
                 Tour Groups and Sex Tourists
               </li>
             </Link>
@@ -40,19 +49,45 @@ const Footer = () => {
         <div className="flex flex-col sm:items-end">
           <ul>
             <li className="text-sm">Navigate</li>
-            <li className="text-sm text-[#8cb6c4]">Home</li>
-            <li className="text-sm text-[#8cb6c4]">Our Story</li>
-            <li className="text-sm text-[#8cb6c4]">Locations</li>
-            <li className="text-sm text-[#8cb6c4]">Work with Us</li>
-            <li className="text-sm text-[#8cb6c4]">Gallery</li>
+            <HashLink to="/">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+                Home
+              </li>
+            </HashLink>
+            <HashLink to="/#our-story">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+                Our Story
+              </li>
+            </HashLink>
+            <HashLink to="/#locations">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+                Locations
+              </li>
+            </HashLink>
+            <HashLink to="/workwithus">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+                Work with Us
+              </li>
+            </HashLink>
+            <HashLink to="/#gallery">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+                Gallery
+              </li>
+            </HashLink>
           </ul>
         </div>
         <div className="flex flex-col sm:items-end">
           <ul>
             <li className="text-sm">Contact Us</li>
-            <li className="text-sm text-[#8cb6c4]">Varkala: +91 7012416343</li>
-            <li className="text-sm text-[#8cb6c4]">Goa: +91 9307762867</li>
-            <li className="text-sm text-[#8cb6c4]">Bir: +91 6230267754</li>
+            <li className="text-sm text-[#8cb6c4]">
+              Varkala: <Link to="tel:+917012416343">+91 7012416343</Link>
+            </li>
+            <li className="text-sm text-[#8cb6c4]">
+              Goa: <Link to="tel:+919307762867">+91 9307762867</Link>
+            </li>
+            <li className="text-sm text-[#8cb6c4]">
+              Bir: <Link to="tel:+916230267754">+91 6230267754</Link>
+            </li>
             <li className="text-sm text-[#8cb6c4]">
               Weligama: +94 77 834 0685
             </li>
@@ -150,6 +185,7 @@ const Footer = () => {
         <a
           href="https://www.linkedin.com/in/vanshika-bhojnagarwala/"
           target="_blank"
+          rel="noreferrer"
         >
           <p> &lt;Made by V /&gt;</p>
         </a>

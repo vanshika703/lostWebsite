@@ -168,26 +168,26 @@ body {
 
 .arrow {
   position: fixed;
-  top: 24px;
+  top: 25.6%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 500;
   background: #000;
 }
 
-.wheel-div{
-  background-color: rgba(255,255,255,0.9)!important;
+.wheel-div {
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 #wheel {
   border: 5px solid white;
   zoom: 1;
-  color: #000!important;
+  color: #000 !important;
 }
 
-.canvas-container{
+.canvas-container {
   background: #2f2f2f;
-  color: #000!important;
+  color: #000 !important;
   box-shadow: 0 0 10px rgb(188, 188, 188);
   border: 5px solid white;
   opacity: 100%;
