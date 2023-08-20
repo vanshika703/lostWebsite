@@ -12,11 +12,15 @@ import Privacy from "./components/RulesAndLegal/Privacy";
 import Guest from "./components/RulesAndLegal/Guest";
 import Cancellation from "./components/RulesAndLegal/Cancellation";
 import TourGroups from "./components/RulesAndLegal/TourGroups";
+import Error from "./components/Error";
+/* import Blog from "./components/Blog/Blog.js";
+import Merch from "./components/Merch/Merch.js"; */
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
+/* import Popup from "./components/Popup"; */
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -30,6 +34,7 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
@@ -63,6 +68,14 @@ const appRouter = createBrowserRouter([
         path: "/tourgroups",
         element: <TourGroups />,
       },
+      /* {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/merch",
+        element: <Merch />,
+      }, */
     ],
   },
 ]);
@@ -77,6 +90,7 @@ function App() {
     <Wrapper>
       <div className="font-dmsans">
         <Navbar />
+        {/* <Popup /> */}
         <Outlet />
         <Footer />
       </div>

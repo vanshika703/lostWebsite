@@ -1,70 +1,93 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
     <>
       <div className="w-[100vw] bg-[#116b89] flex flex-col sm:flex-row  justify-between px-10 sm:px-28 py-12 text-white">
-        <div className="" data-aos="fade-up" data-aos-duration="2000">
+        <div className="">
           <h1 className="text-3xl font-playfair font-medium">
             The Lost Hostels
           </h1>
           <p className="text-xl text-[#8cb6c4]">Come get lost with us.</p>
           <Link to="/">
-            <button className="border-2 border-[#8cb6c4] p-1 px-3 my-4 rounded-md font-medium font-dmsans">
+            <button className="border-2 border-[#8cb6c4] p-1 px-3 my-4 rounded-md font-medium font-dmsans hover:bg-black hover:bg-opacity-40 duration-100 ease-in">
               Book Now
             </button>
           </Link>
         </div>
-        <div
-          className="flex flex-col sm:items-end"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-        >
+        <div className="flex flex-col sm:items-end">
           <ul>
             <li className="text-sm">Rules and Legal</li>
             <Link to="/terms">
-              <li className="text-sm text-[#8cb6c4]">Terms and Conditions</li>
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
+                Terms and Conditions
+              </li>
             </Link>
             <Link to="/privacy">
-              <li className="text-sm text-[#8cb6c4]">Privacy Policy</li>
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
+                Privacy Policy
+              </li>
             </Link>
             <Link to="/guest">
-              <li className="text-sm text-[#8cb6c4]">Guest Policy</li>
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
+                Guest Policy
+              </li>
             </Link>
             <Link to="/cancellation">
-              <li className="text-sm text-[#8cb6c4]">Cancellation Policy</li>
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
+                Cancellation Policy
+              </li>
             </Link>
             <Link to="/tourgroups">
-              <li className="text-sm text-[#8cb6c4]">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
                 Tour Groups and Sex Tourists
               </li>
             </Link>
           </ul>
         </div>
-        <div
-          className="flex flex-col sm:items-end"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-        >
+        <div className="flex flex-col sm:items-end">
           <ul>
             <li className="text-sm">Navigate</li>
-            <li className="text-sm text-[#8cb6c4]">Home</li>
-            <li className="text-sm text-[#8cb6c4]">Our Story</li>
-            <li className="text-sm text-[#8cb6c4]">Locations</li>
-            <li className="text-sm text-[#8cb6c4]">Work with Us</li>
-            <li className="text-sm text-[#8cb6c4]">Gallery</li>
+            <HashLink to="/">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
+                Home
+              </li>
+            </HashLink>
+            <HashLink to="/#our-story">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
+                Our Story
+              </li>
+            </HashLink>
+            <HashLink to="/#locations">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
+                Locations
+              </li>
+            </HashLink>
+            <HashLink to="/workwithus">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
+                Work with Us
+              </li>
+            </HashLink>
+            <HashLink to="/#gallery">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
+                Gallery
+              </li>
+            </HashLink>
           </ul>
         </div>
-        <div
-          className="flex flex-col sm:items-end"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-        >
+        <div className="flex flex-col sm:items-end">
           <ul>
             <li className="text-sm">Contact Us</li>
-            <li className="text-sm text-[#8cb6c4]">Varkala: +91 7012416343</li>
-            <li className="text-sm text-[#8cb6c4]">Goa: +91 9307762867</li>
-            <li className="text-sm text-[#8cb6c4]">Bir: +91 6230267754</li>
+            <li className="text-sm text-[#8cb6c4]">
+              Varkala: <Link to="tel:+917012416343">+91 7012416343</Link>
+            </li>
+            <li className="text-sm text-[#8cb6c4]">
+              Goa: <Link to="tel:+919307762867">+91 9307762867</Link>
+            </li>
+            <li className="text-sm text-[#8cb6c4]">
+              Bir: <Link to="tel:+916230267754">+91 6230267754</Link>
+            </li>
             <li className="text-sm text-[#8cb6c4]">
               Weligama: +94 77 834 0685
             </li>
@@ -162,6 +185,7 @@ const Footer = () => {
         <a
           href="https://www.linkedin.com/in/vanshika-bhojnagarwala/"
           target="_blank"
+          rel="noreferrer"
         >
           <p> &lt;Made by V /&gt;</p>
         </a>

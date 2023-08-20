@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
-import logo from "../img/logo.png"
+import logo from "../img/logo.png";
 
 const Navbar = () => {
   const [isPhoneNavOpen, setIsPhoneNavOpen] = useState(false);
@@ -22,12 +22,12 @@ const Navbar = () => {
       link: "/workwithus",
     },
     {
-      title: "Gallery",
-      link: "/#gallery",
+      title: "Blog",
+      link: "/blog",
     },
     {
-      title: "Testimonials",
-      link: "/#testimonials",
+      title: "Merch",
+      link: "/merch",
     },
   ];
 
@@ -45,7 +45,7 @@ const Navbar = () => {
                     setIsPhoneNavOpen(false);
                   }}
                 >
-                  <p class="text-white md:my-2 mx-2 my-2 px-2 py-1 transition duration-500 ease-in-out hover:border-orange300 cursor-pointer border-b-2 border-transparent">
+                  <p class="text-white md:my-2 mx-2 my-2 px-2 py-1 transition duration-500 ease-in-out hover:border-orange300 cursor-pointer border-b-2 border-transparent underline">
                     {title}
                   </p>
                 </HashLink>
@@ -56,7 +56,12 @@ const Navbar = () => {
       )}
 
       <div className="fixed top-0 left-0 w-[100vw] bg-transparent h-[10vh] flex justify-between items-center sm:px-28 px-5 font-medium navbar z-20 text-white">
-        <p className="text-xl font-playfair relative flex items-center"><img src={logo} className="mr-2 w-12"></img>The Lost Hostels</p>
+        <HashLink to="/">
+          <p className="text-xl font-playfair relative flex items-center">
+            <img src={logo} className="mr-2 w-12" alt="lost hostel logo"></img>
+            The Lost Hostels
+          </p>
+        </HashLink>
         <div
           className="z-10 block sm:hidden"
           onClick={() => {
@@ -90,11 +95,13 @@ const Navbar = () => {
             </defs>
           </svg>
         </div>
-        <ul className="sm:flex w-[50VW] justify-between text-sm hidden font-dmsans relative">
+        <ul className="sm:flex w-[50VW] justify-between text-sm hidden font-dmsans relative mt-3">
           {navItems.map((navItem, index) => (
             <HashLink to={navItem.link} key={navItem.link}>
               <li className="uppercase tracking-wider cursor-pointer">
-                {navItem?.title}
+                <p className="border-b-[3px] border-transparent hover:border-white duration-200 ease-in">
+                  {navItem?.title}
+                </p>
               </li>
             </HashLink>
           ))}

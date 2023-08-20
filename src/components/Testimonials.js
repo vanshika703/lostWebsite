@@ -17,11 +17,7 @@ const Testimonials = () => {
       className="relative min-h-screen w-[100vw] testimonials flex sm:justify-end justify-center items-center sm:pr-28 px-2"
       id="testimonials"
     >
-      <div
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        className="sm:w-1/2 w-[90vw] h-[60vh] sm:h-96 bg-[#116b89] relative opacity-80 rounded-md shadow-md"
-      >
+      <div className="sm:w-1/2 w-[90vw] h-[60vh] sm:h-96 bg-[#116b89] relative opacity-80 rounded-md shadow-md">
         <Swiper
           allowTouchMove={true}
           slidesPerView={1}

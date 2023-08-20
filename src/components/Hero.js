@@ -78,26 +78,22 @@ const Hero = () => {
   };
   return (
     <section className="hero relative min-h-screen w-[100vw] flex flex-col justify-center items-start text-white">
-      <div
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        className="hero-content relative mx-auto text-left sm:w-7/12"
-      >
-        <h1 className="text-3xl font-playfair italic text-center px-10 md:ml-10 mt-20">
+      <div className="hero-content relative mx-auto text-left sm:w-7/12">
+        <h1 className="text-3xl font-playfair italic text-center px-10 md:ml-10 mt-24">
           S
           <span className="lowercase">
             ome BEAUTIFUL PATHS CAN ONLY BE DISCOVERED<br></br> WHEN YOU ARE
             LOST...
           </span>
         </h1>
-        <div className="flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-5 lg:gap-0 py-2 my-5 justify-around items-center mx-auto w-1/2 md:w-full mt-14">
-          <div className="flex flex-col w-full sm:w-fit">
+        <div className="flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-5 lg:gap-0 py-2 my-5 justify-around items-center mx-auto w-1/2 md:w-full mt-16">
+          <div className="flex flex-col w-full sm:w-fit cursor-pointer">
             <label for="locations" className="text-base uppercase font-medium">
               Location:
             </label>
             <select
               name="locations"
-              className="bg-transparent  border-b-2 border-white py-2 hover:outline-none"
+              className="bg-transparent  border-b-2 border-white py-2 hover:outline-none text-xl"
               onChange={(e) =>
                 setFormData({ ...formData, hostel: e.target.value })
               }
@@ -133,7 +129,7 @@ const Hero = () => {
             )}
             {!errors.hostel && <p className="mb-5"></p>}
           </div>
-          <div className="flex flex-col hover:outline-none items-start">
+          <div className="flex flex-col hover:outline-none items-start cursor-pointer">
             <label for="Checkin" className="text-base uppercase font-medium">
               Checkin date
             </label>
@@ -143,7 +139,7 @@ const Hero = () => {
             )}
             {!errors.checkInDate && <p className="mb-5"></p>}
           </div>
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-start cursor-pointer">
             <label for="Checkout" className="text-base uppercase">
               Checkout date
             </label>
@@ -154,7 +150,7 @@ const Hero = () => {
             {!errors.checkOutDate && <p className="mb-5"></p>}
           </div>
           <button
-            className="border-2 border-white p-2 px-5  rounded-md font-medium font-dmsans text-lg w-max mt-5 sm:-mt-5"
+            className="border-2 border-white p-2 px-5  rounded-md font-medium font-dmsans text-lg w-max mt-5 sm:-mt-5 hover:bg-black hover:bg-opacity-40 duration-200 ease-in"
             onClick={() => {
               forwardUser();
             }}

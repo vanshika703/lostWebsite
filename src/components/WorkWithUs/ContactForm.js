@@ -9,7 +9,7 @@ const ContactForm = () => {
   return (
     <section
       className="py-16 px-5 sm:px-8 bg-white text-center flex flex-col justify-center items-center"
-      data-aos="fade-up"
+      
       id="contactus"
     >
       <h2 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">

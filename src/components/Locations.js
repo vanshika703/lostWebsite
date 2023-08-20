@@ -1,9 +1,9 @@
-import GOA_IMG from "../img/goa.jpg";
-import BIR from "../img/bir.jpg";
-import varkalaimg from "../img/varkala.jpg";
-import weligamaimg from "../img/weligama.jpg";
-import hiriketiyaimg from "../img/hiriketiya.jpg";
-import comingsoonimg from "../img/beach.jpg";
+import GOA_IMG from "../img/goa.webp";
+import BIR from "../img/bir.webp";
+import varkalaimg from "../img/varkala.webp";
+import weligamaimg from "../img/weligama.webp";
+import hiriketiyaimg from "../img/hiriketiya.webp";
+import comingsoonimg from "../img/beach.webp";
 import { Link } from "react-router-dom";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,8 +21,6 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 const Locations = () => {
   return (
     <section
-      data-aos="fade-up"
-      data-aos-duration="2000"
       className="h-[150vh] w-[100vw] flex flex-col justify-around items-center pt-14"
       id="locations"
     >
@@ -43,35 +41,39 @@ const Locations = () => {
       >
         <SwiperSlide className="relative">
           <Link to="/hostel/weligama">
-            <img
-              src={weligamaimg}
-              alt="weligamaimg"
-              className="rounded-md shadow-lg"
-            />
+            <div className="overflow-hidden rounded-md w-full h-full">
+              <img
+                src={weligamaimg}
+                alt="weligamaimg"
+                className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+              />
+            </div>
             <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-                Weligama
+                Weligama, Sri Lanka
               </h3>
               <p className="text-sm text-[#4c4e4e]">
                 50m from the bustling surfers paradise of Weligama beach, the
                 hostel offers peaceful accommodation with a garden, yoga area,
                 indoor games and shared dorms
               </p>
-              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+              <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-in">
                 Know More
               </button>
             </div>
           </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={hiriketiyaimg}
-            alt="hiriketiyaimg"
-            className="rounded-md shadow-lg"
-          />
+          <div className="overflow-hidden rounded-md w-full h-full">
+            <img
+              src={hiriketiyaimg}
+              alt="hiriketiyaimg"
+              className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+            />
+          </div>
           <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
             <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              Hiriketiya
+              Hiriketiya, Sri Lanka
             </h3>
             <p className="text-sm text-[#4c4e4e]">
               50m from the bustling surfers paradise of Weligama beach, the
@@ -83,18 +85,20 @@ const Locations = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+              <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
                 Know More
               </button>
             </a>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            src={comingsoonimg}
-            alt="comingsoonimg"
-            className="rounded-md shadow-lg"
-          />
+          <div className="overflow-hidden rounded-md w-full h-full">
+            <img
+              src={comingsoonimg}
+              alt="comingsoonimg"
+              className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+            />
+          </div>
           <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
             <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
               Where do you want to see us next?
@@ -119,17 +123,23 @@ const Locations = () => {
       >
         <SwiperSlide>
           <Link to="/hostel/goa">
-            <img src={GOA_IMG} alt="goa" className="rounded-md shadow-lg" />
+            <div className="overflow-hidden rounded-md w-full h-full">
+              <img
+                src={GOA_IMG}
+                alt="goa"
+                className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+              />
+            </div>
             <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-                South Goa - Palolem
+                Palolem, South Goa
               </h3>
               <p className="text-sm text-[#4c4e4e]">
                 In the lap of South Goa, The Lost Hostel is a budget-friendly
                 accommodation offering a garden, indoor games and shared
                 dormitories.
               </p>
-              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+              <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
                 Know More
               </button>
             </div>
@@ -137,14 +147,16 @@ const Locations = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Link to="/hostel/varkala">
-            <img
-              src={varkalaimg}
-              alt="varkala"
-              className="rounded-md shadow-lg"
-            />
+            <div className="overflow-hidden rounded-md w-full h-full">
+              <img
+                src={varkalaimg}
+                alt="varkala"
+                className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+              />
+            </div>
             <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-                Varkala - Helipad
+                Varkala, Kerela
               </h3>
               <p className="text-sm text-[#4c4e4e]">
                 Located along the famous cliffs and beaches of Varkala, The Lost
@@ -156,7 +168,7 @@ const Locations = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+                <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
                   Know More
                 </button>
               </a>
@@ -165,17 +177,23 @@ const Locations = () => {
         </SwiperSlide>
         <SwiperSlide>
           <Link to="/hostel/bir">
-            <img src={BIR} alt="bir" className="rounded-md shadow-lg" />
+            <div className="overflow-hidden rounded-md w-full h-full">
+              <img
+                src={BIR}
+                alt="bir"
+                className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+              />
+            </div>
             <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-                Bir - Landing Site
+                Bir, Himachal Pradesh
               </h3>
               <p className="text-sm text-[#4c4e4e]">
                 Located near the Paragliding landing site, The Lost Hostels Bir
                 offers river stream & mountain view with unique facilities in a
                 relaxing and peaceful atmosphere.
               </p>
-              <button className="font-medium font-playfair text-sm text-[#116b89] underline decoration-[1.5px]">
+              <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
                 Know More
               </button>
             </div>

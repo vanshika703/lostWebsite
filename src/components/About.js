@@ -1,7 +1,7 @@
-import about1 from "../img/about1.jpg";
-import about2 from "../img/about2.JPG";
-import about3 from "../img/about3.jpg";
-import about5 from "../img/about5.JPG";
+import about1 from "../img/about1.webp";
+import about2 from "../img/about2.webp";
+import about3 from "../img/about3.webp";
+import about5 from "../img/about5.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,7 +14,7 @@ import { EffectCards } from "swiper/modules";
 const About = () => {
   return (
     <div
-      className="h-screen w-[100vw] flex flex-col sm:flex-row"
+      className="w-[100vw] flex flex-col sm:flex-row"
       id="our-story"
     >
       <div className=" w-[100vw] sm:w-[50vw] md:min-h-[100vh] flex justify-center items-center">
@@ -22,14 +22,17 @@ const About = () => {
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="mySwiper w-1/2 h-3/4"
+          className="mySwiper w-1/2 h-60 sm:h-2/3 mt-10"
           navigation={true}
         >
           <SwiperSlide className="w-full h-full shadow-none">
-            <img src={about1} alt="about" className="w-full shadow-none" />
+            <img
+              src={about1}
+              alt="about"
+              className="w-full h-full shadow-none"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            {" "}
             <img
               src={about2}
               alt="about"
@@ -37,7 +40,6 @@ const About = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-            {" "}
             <img
               src={about3}
               alt="about"
@@ -45,7 +47,6 @@ const About = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-            {" "}
             <img
               src={about5}
               alt="about"
@@ -54,11 +55,7 @@ const About = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        className=" w-[100vw] sm:w-[50vw] md:min-h-screen flex flex-col justify-center items-start mx-auto sm:pr-32 px-10"
-      >
+      <div className=" w-[100vw] sm:w-[50vw] md:min-h-screen flex flex-col justify-center items-start mx-auto sm:pr-32 px-10">
         <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
           Our Story
         </h1>
