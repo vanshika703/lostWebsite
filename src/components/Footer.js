@@ -20,27 +20,27 @@ const Footer = () => {
           <ul>
             <li className="text-sm">Rules and Legal</li>
             <Link to="/terms">
-              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
                 Terms and Conditions
               </li>
             </Link>
             <Link to="/privacy">
-              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
                 Privacy Policy
               </li>
             </Link>
             <Link to="/guest">
-              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
                 Guest Policy
               </li>
             </Link>
             <Link to="/cancellation">
-              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
                 Cancellation Policy
               </li>
             </Link>
             <Link to="/tourgroups">
-              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
                 Tour Groups and Sex Tourists
               </li>
             </Link>
@@ -50,27 +50,27 @@ const Footer = () => {
           <ul>
             <li className="text-sm">Navigate</li>
             <HashLink to="/">
-              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
                 Home
               </li>
             </HashLink>
             <HashLink to="/#our-story">
-              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
                 Our Story
               </li>
             </HashLink>
             <HashLink to="/#locations">
-              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
                 Locations
               </li>
             </HashLink>
             <HashLink to="/workwithus">
-              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
                 Work with Us
               </li>
             </HashLink>
             <HashLink to="/#gallery">
-              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-white w-fit">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
                 Gallery
               </li>
             </HashLink>

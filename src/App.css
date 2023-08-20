@@ -172,7 +172,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 500;
-  background: #000;
 }
 
 .wheel-div {
@@ -182,11 +181,11 @@ body {
 #wheel {
   border: 5px solid white;
   zoom: 1;
-  color: #000 !important;
+  color: #2f2f2f !important;
 }
 
 .canvas-container {
-  background: #2f2f2f;
+  background: #181818;
   color: #000 !important;
   box-shadow: 0 0 10px rgb(188, 188, 188);
   border: 5px solid white;
@@ -201,6 +200,6 @@ body {
 }
 
 #spin {
-  background: #000;
+  background: #181818;
   color: white;
 }

@@ -22,8 +22,7 @@ const Terms = () => {
         additional charges incurred during your stay must be settled before
         check-out.<br></br>
         <br></br>
-        <span className="font-semibold">Cancellation:</span> Cancellations made
-        within [X] days of arrival will result in a [X]% cancellation fee.
+        <span className="font-semibold">Cancellation:</span> Bookings made are non refundable.
         No-shows will be charged the full amount.<br></br>
         <br></br>
         <span className="font-semibold">Guest Responsibility:</span> Guests are
@@ -31,14 +30,14 @@ const Terms = () => {
         Any damage will be charged to the guest's account. <br></br>
         <br></br>
         <span className="font-semibold">Check-in/Check-out:</span> Check-in time
-        is [X] and check-out time is [X]. Early check-in and late check-out may
+        is 2 PM and check-out time is 10:30 AM. Early check-in and late check-out may
         be available upon request and are subject to availability.<br></br>
         <br></br> <span className="font-semibold">Liability:</span> The Lost
         Hostel is not liable for any loss, theft, or damage to guests'
         belongings. Guests are advised to secure their valuables. <br></br>
         <br></br>
         <span className="font-semibold">Age Restrictions:</span> Guests under
-        the age of [X] must be accompanied by a parent or guardian. <br></br>
+        the age of 18 are not allowed at the property. <br></br>
         <br></br>
         <span className="font-semibold">Changes to Terms:</span> The Lost Hostel
         reserves the right to modify these terms and conditions at any time.

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+/* import { useState, useEffect, useRef } from "react";
 import SpinAndWin from "./Spin";
 // import SpinAndWin from "react-spin-game";
 // import "react-spin-game/dist/index.css";
@@ -44,7 +44,7 @@ const Popup = () => {
             data={freeSpinGifts}
             handleCheckWinner={handleCheckWinner}
           />
-          {prize && <p>Your prize is : {prize}</p>}
+          Spin to win a prize{prize && <p>Your prize is : {prize}</p>}
         </div>
       )}
     </>
@@ -52,3 +52,4 @@ const Popup = () => {
 };
 
 export default Popup;
+ */
