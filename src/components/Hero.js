@@ -78,11 +78,7 @@ const Hero = () => {
   };
   return (
     <section className="hero relative min-h-screen w-[100vw] flex flex-col justify-center items-start text-white">
-      <div
-        data-aos="fade-up"
-        data-aos-duration="2000"
-        className="hero-content relative mx-auto text-left sm:w-7/12"
-      >
+      <div className="hero-content relative mx-auto text-left sm:w-7/12">
         <h1 className="text-3xl font-playfair italic text-center px-10 md:ml-10 mt-20">
           S
           <span className="lowercase">

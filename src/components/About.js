@@ -55,8 +55,6 @@ const About = () => {
         </Swiper>
       </div>
       <div
-        data-aos="fade-up"
-        data-aos-duration="2000"
         className=" w-[100vw] sm:w-[50vw] md:min-h-screen flex flex-col justify-center items-start mx-auto sm:pr-32 px-10"
       >
         <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">

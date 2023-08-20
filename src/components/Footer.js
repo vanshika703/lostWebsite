@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <div className="w-[100vw] bg-[#116b89] flex flex-col sm:flex-row  justify-between px-10 sm:px-28 py-12 text-white">
-        <div className="" data-aos="fade-up" data-aos-duration="2000">
+        <div className="">
           <h1 className="text-3xl font-playfair font-medium">
             The Lost Hostels
           </h1>
@@ -17,8 +17,6 @@ const Footer = () => {
         </div>
         <div
           className="flex flex-col sm:items-end"
-          data-aos="fade-up"
-          data-aos-duration="2000"
         >
           <ul>
             <li className="text-sm">Rules and Legal</li>
@@ -43,8 +41,6 @@ const Footer = () => {
         </div>
         <div
           className="flex flex-col sm:items-end"
-          data-aos="fade-up"
-          data-aos-duration="2000"
         >
           <ul>
             <li className="text-sm">Navigate</li>
@@ -56,9 +52,7 @@ const Footer = () => {
           </ul>
         </div>
         <div
-          className="flex flex-col sm:items-end"
-          data-aos="fade-up"
-          data-aos-duration="2000"
+          className="flex flex-col sm:items-end"   
         >
           <ul>
             <li className="text-sm">Contact Us</li>

@@ -21,8 +21,6 @@ import { Pagination, Navigation, Autoplay } from "swiper/modules";
 const Locations = () => {
   return (
     <section
-      data-aos="fade-up"
-      data-aos-duration="2000"
       className="h-[150vh] w-[100vw] flex flex-col justify-around items-center pt-14"
       id="locations"
     >

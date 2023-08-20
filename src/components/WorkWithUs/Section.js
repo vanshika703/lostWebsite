@@ -4,8 +4,6 @@ const Section = ({ title, text, buttonLabel, image, isImageRight }) => {
   return (
     <section
       className="py-16 px-5 sm:px-28 md:flex"
-      data-aos="fade-up"
-      data-aos-duration="3000"
     >
       {isImageRight && (
         <>
