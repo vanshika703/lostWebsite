@@ -1,9 +1,9 @@
-import GOA_IMG from "../img/goa.jpg";
-import BIR from "../img/bir.jpg";
-import varkalaimg from "../img/varkala.jpg";
-import weligamaimg from "../img/weligama.jpg";
-import hiriketiyaimg from "../img/hiriketiya.jpg";
-import comingsoonimg from "../img/beach.jpg";
+import GOA_IMG from "../img/goa.webp";
+import BIR from "../img/bir.webp";
+import varkalaimg from "../img/varkala.webp";
+import weligamaimg from "../img/weligama.webp";
+import hiriketiyaimg from "../img/hiriketiya.webp";
+import comingsoonimg from "../img/beach.webp";
 import { Link } from "react-router-dom";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";

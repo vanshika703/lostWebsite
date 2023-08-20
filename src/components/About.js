@@ -1,7 +1,7 @@
-import about1 from "../img/about1.jpg";
-import about2 from "../img/about2.JPG";
-import about3 from "../img/about3.jpg";
-import about5 from "../img/about5.JPG";
+import about1 from "../img/about1.webp";
+import about2 from "../img/about2.webp";
+import about3 from "../img/about3.webp";
+import about5 from "../img/about5.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
