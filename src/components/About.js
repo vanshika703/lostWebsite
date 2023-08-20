@@ -26,10 +26,13 @@ const About = () => {
           navigation={true}
         >
           <SwiperSlide className="w-full h-full shadow-none">
-            <img src={about1} alt="about" className="w-full shadow-none" />
+            <img
+              src={about1}
+              alt="about"
+              className="w-full h-full shadow-none"
+            />
           </SwiperSlide>
           <SwiperSlide>
-            {" "}
             <img
               src={about2}
               alt="about"
@@ -37,7 +40,6 @@ const About = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-            {" "}
             <img
               src={about3}
               alt="about"
@@ -45,7 +47,6 @@ const About = () => {
             />
           </SwiperSlide>
           <SwiperSlide>
-            {" "}
             <img
               src={about5}
               alt="about"
@@ -54,9 +55,7 @@ const About = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div
-        className=" w-[100vw] sm:w-[50vw] md:min-h-screen flex flex-col justify-center items-start mx-auto sm:pr-32 px-10"
-      >
+      <div className=" w-[100vw] sm:w-[50vw] md:min-h-screen flex flex-col justify-center items-start mx-auto sm:pr-32 px-10">
         <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
           Our Story
         </h1>
