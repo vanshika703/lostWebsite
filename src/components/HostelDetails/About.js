@@ -80,7 +80,7 @@ const About = ({ hostelData }) => {
             </button>
           </a>
         </div>
-        <TextComponent text={hostelData?.info} maxLength={1000} />
+        <TextComponent text={hostelData?.info} maxLength={705} />
       </div>
       <div className="w-full sm:w-1/3 p-5">
         <div class="w-full sm:flex-grow py-2 mt-4 sm:mt-0">

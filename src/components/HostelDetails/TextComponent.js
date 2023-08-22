@@ -10,13 +10,20 @@ const TextComponent = ({ text, maxLength }) => {
     setShowFullText(!showFullText);
   };
 
-  console.log("text", text)
+  console.log("text", text);
 
   return (
     <div>
-      <p className="text-[#4c4e4e]">{truncatedText + "..."}</p>
+      {truncatedText?.split("\n").map((i, key) => {
+        return <p key={key} className="text-[#4c4e4e]">
+          {i}<br></br>
+        </p>;
+      })}
       {shouldTruncate && (
-        <button onClick={toggleText} className="text-[#116b89] text-sm underline">
+        <button
+          onClick={toggleText}
+          className="text-[#116b89] text-sm underline"
+        >
           {showFullText ? "View Less" : "View More"}
         </button>
       )}
