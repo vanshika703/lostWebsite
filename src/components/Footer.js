@@ -74,6 +74,11 @@ const Footer = () => {
                 Gallery
               </li>
             </HashLink>
+            <HashLink to="/workwithus#contactus">
+              <li className="text-sm text-[#8cb6c4] border-b border-transparent hover:border-[#8cb6c4] w-fit">
+                Contact Us
+              </li>
+            </HashLink>
           </ul>
         </div>
         <div className="flex flex-col sm:items-end">

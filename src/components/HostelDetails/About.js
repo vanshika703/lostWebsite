@@ -11,6 +11,7 @@ import { ReactComponent as Light } from "../../icons/light.svg";
 import { ReactComponent as Housekeeping } from "../../icons/housekeeping.svg";
 import { ReactComponent as Credit } from "../../icons/credit.svg";
 import { ReactComponent as Mic } from "../../icons/mic.svg";
+import TextComponent from "./TextComponent";
 
 const amenities = [
   {
@@ -65,17 +66,21 @@ const amenities = [
 
 const About = ({ hostelData }) => {
   return (
-    <div className=" flex flex-col sm:flex-row mx-5 sm:mx-28 my-2 justify-center items-center">
+    <div className=" flex flex-col sm:flex-row mx-5 sm:mx-28 my-2 justify-center items-start">
       <div className="w-full sm:w-2/3 p-5">
-        <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
-          {hostelData?.header}
-        </h1>
-        <p className="text-[#4c4e4e]">{hostelData?.info}</p>
-        <a href={hostelData?.bookingLink} target="_blank" rel="noreferrer">
-          <button className="border-2 border-[#116b89] p-2 px-5 my-4 rounded-md font-medium font-dmsans text-lg text-[#116b89]">
-            <p className=" hover:border-b-2 border-[#116b89] duration-100 ease-in">Book Now</p>
-          </button>
-        </a>
+        <div className="flex justify-between items-center">
+          <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
+            {hostelData?.header}
+          </h1>
+          <a href={hostelData?.bookingLink} target="_blank" rel="noreferrer">
+            <button className="border-2 border-[#116b89] p-2 px-5 my-4 rounded-md font-medium font-dmsans text-lg text-[#116b89]">
+              <p className=" hover:border-b-2 border-[#116b89] duration-100 ease-in">
+                Book Now
+              </p>
+            </button>
+          </a>
+        </div>
+        <TextComponent text={hostelData?.info} maxLength={1000} />
       </div>
       <div className="w-full sm:w-1/3 p-5">
         <div class="w-full sm:flex-grow py-2 mt-4 sm:mt-0">

@@ -203,3 +203,31 @@ body {
   background: #181818;
   color: white;
 }
+
+.swiper-button-next {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .swiper-button-next {
+    display: block !important;
+    margin-top: -40px !important;
+  }
+  .swiper-button-prev {
+    display: block !important;
+    margin-top: -40px !important;
+  }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}

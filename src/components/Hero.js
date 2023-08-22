@@ -77,13 +77,15 @@ const Hero = () => {
     setFormData({ ...formData, checkInDate: value });
   };
   return (
-    <section className="hero relative min-h-screen w-[100vw] flex flex-col justify-center items-start text-white">
+    <section
+      className="hero relative min-h-screen w-[100vw] flex flex-col justify-center items-start text-white"
+      id="#hero"
+    >
       <div className="hero-content relative mx-auto text-left sm:w-7/12">
         <h1 className=" text-3xl sm:text-5xl font-playfair text-center px-10 md:ml-0 mt-20 leading-snug">
           S
           <span className="lowercase">
-            ome BEAUTIFUL PATHS CAN ONLY BE DISCOVERED WHEN YOU ARE
-            LOST...
+            ome BEAUTIFUL PATHS CAN ONLY BE DISCOVERED WHEN YOU ARE LOST...
           </span>
         </h1>
         <div className="flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-5 lg:gap-0 py-2 my-5 justify-around items-center mx-auto w-1/2 md:w-full mt-16">
@@ -129,9 +131,25 @@ const Hero = () => {
             )}
             {!errors.hostel && <p className="mb-5"></p>}
           </div>
-          <div className="flex flex-col hover:outline-none items-start cursor-pointer">
-            <label for="Checkin" className="text-base uppercase font-medium">
-              Checkin date
+          <div className="flex flex-col hover:outline-none items-start cursor-pointer relative">
+            <label
+              for="Checkin"
+              className="flex items-center text-base uppercase font-medium"
+            >
+              Checkin date:
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute top-[38px] left-28"
+              >
+                <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zm5.402 9.746c.625 0 1.184-.484 1.184-1.18 0-.832-.527-1.23-1.16-1.23-.586 0-1.168.387-1.168 1.21 0 .817.543 1.2 1.144 1.2z"></path>
+                <path d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-6.664-1.21c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm-2.89-5.435v5.332H5.77V8.079h-.012c-.29.156-.883.52-1.258.777V8.16a12.6 12.6 0 0 1 1.313-.805h.632z"></path>
+              </svg>
             </label>
             <DateInput onChange={onChangeCheckin} />
             {errors.checkInDate && (
@@ -139,9 +157,25 @@ const Hero = () => {
             )}
             {!errors.checkInDate && <p className="mb-5"></p>}
           </div>
-          <div className="flex flex-col items-start cursor-pointer">
-            <label for="Checkout" className="text-base uppercase">
-              Checkout date
+          <div className="flex flex-col items-start cursor-pointer relative">
+            <label
+              for="Checkout"
+              className="flex items-center text-base uppercase"
+            >
+              Checkout date:
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute top-[38px] left-28"
+              >
+                <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zm5.402 9.746c.625 0 1.184-.484 1.184-1.18 0-.832-.527-1.23-1.16-1.23-.586 0-1.168.387-1.168 1.21 0 .817.543 1.2 1.144 1.2z"></path>
+                <path d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-6.664-1.21c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm-2.89-5.435v5.332H5.77V8.079h-.012c-.29.156-.883.52-1.258.777V8.16a12.6 12.6 0 0 1 1.313-.805h.632z"></path>
+              </svg>
             </label>
             <DateInput onChange={onChangeChekout} />
             {errors.checkOutDate && (

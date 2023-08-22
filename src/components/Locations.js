@@ -37,6 +37,7 @@ const Locations = () => {
           },
         }}
         modules={[Pagination, Navigation, Autoplay]}
+        navigation={true}
         className="mySwiper locationslider"
       >
         <SwiperSlide className="relative">
@@ -118,6 +119,8 @@ const Locations = () => {
             spaceBetween: 30,
           },
         }}
+        navigation={true}
+
         modules={[Pagination, Navigation, Autoplay]}
         className="mySwiper locationslider"
       >

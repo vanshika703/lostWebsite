@@ -66,7 +66,7 @@ const About = () => {
           create unforgettable memories.<br></br>
           <br></br>
           At The Lost Hostels, we pride ourselves on providing affordable and
-          comfortable accommodations in some of India's most famous
+          comfortable accommodations in some of India and Sri Lanka's most famous
           destinations. Each hostel is strategically located, allowing guests to
           easily access the city's top attractions, nightlife, and cultural
           experiences.<br></br>
