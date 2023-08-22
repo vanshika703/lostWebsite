@@ -2,6 +2,9 @@ import about1 from "../img/about1.webp";
 import about2 from "../img/about2.webp";
 import about3 from "../img/about3.webp";
 import about5 from "../img/about5.webp";
+import { useEffect } from "react";
+import lottie from 'lottie-web'
+import swipe from '../img/swipe.json'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,18 +15,25 @@ import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 
 const About = () => {
+
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: document.querySelector("#swipe"),
+      animationData: swipe
+    });
+  }, []);
+
   return (
     <div
       className="w-[100vw] flex flex-col sm:flex-row"
       id="our-story"
     >
-      <div className=" w-[100vw] sm:w-[50vw] md:min-h-[100vh] flex justify-center items-center">
+      <div className=" w-[100vw] sm:w-[50vw] md:min-h-[100vh] flex justify-center items-center relative">
         <Swiper
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
           className="mySwiper w-1/2 h-60 sm:h-2/3 mt-10"
-          navigation={true}
         >
           <SwiperSlide className="w-full h-full shadow-none">
             <img
@@ -54,6 +64,7 @@ const About = () => {
             />
           </SwiperSlide>
         </Swiper>
+        <div id="swipe" className="absolute z-50 w-32"/>
       </div>
       <div className=" w-[100vw] sm:w-[50vw] md:min-h-screen flex flex-col justify-center items-start mx-auto sm:pr-32 px-10">
         <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
