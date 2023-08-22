@@ -1,9 +1,10 @@
 {
   "gallery": {
-    "photo1": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/482950257.jpg?k=70298b346a81591b0c8570ba3deffaadde43635ff4c9fcbdd0c23fcc09be54f2&o=&hp=1",
-    "photo2": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/482950317.jpg?k=fdb6a8fafedf08d936c5be7b842b8efcd5fca9592f566df7adb45bdb13fa07cc&o=&hp=1",
-    "photo3": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/482950317.jpg?k=fdb6a8fafedf08d936c5be7b842b8efcd5fca9592f566df7adb45bdb13fa07cc&o=&hp=1",
-    "photo4": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/482950317.jpg?k=fdb6a8fafedf08d936c5be7b842b8efcd5fca9592f566df7adb45bdb13fa07cc&o=&hp=1"
+    "photo1": "https://img.freepik.com/free-photo/tropical-beach-with-palm-sri-lanka_167946-162.jpg?w=996&t=st=1692722789~exp=1692723389~hmac=50e793438cc1deb0ef886907ad613ebd2c9c5b85bbaf2c4a6fe3c374a88806f3",
+    "photo2": "https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/321018/l2snt0qcezlbpdncbhla",
+    "photo3": "https://img.freepik.com/free-photo/girl-posing-with-board-sunset_1321-1353.jpg?w=1060&t=st=1692722956~exp=1692723556~hmac=3c0f9afc57d9dbbfc1da5bb07ff67c67c3f7dd31603400e16c36cc37f788bb12",
+    "photo4": "https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/321018/q9ypqpo0xvhzdij1rkyw",
+    "photo5": "https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/321018/t2y02h0joolnwhnjxgwq"
   },
   "about": {
     "header": "The Lost Hostels, Weligama beach, Sri Lanka",
