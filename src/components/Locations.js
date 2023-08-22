@@ -77,18 +77,13 @@ const Locations = () => {
               Hiriketiya, Sri Lanka
             </h3>
             <p className="text-sm text-[#4c4e4e]">
-              50m from the bustling surfers paradise of Weligama beach, the
-              hostel offers peaceful accommodation with a garden, yoga area,
-              indoor games and shared dorms
+              Coming soon...
             </p>
             <a
               href="https://live.ipms247.com/booking/book-rooms-thelosthostelsgoapalolembeach"
               target="_blank"
               rel="noreferrer"
             >
-              <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
-                Know More
-              </button>
             </a>
           </div>
         </SwiperSlide>

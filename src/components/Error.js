@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 const Error = () => {
   return (
-    <>
+    <div className="h-[100vh]">
       <Navbar />
       <div className="flex flex-col justify-center items-center m-10 p-10">
         <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
@@ -22,7 +22,7 @@ const Error = () => {
         </p>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
