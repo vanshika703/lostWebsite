@@ -2,9 +2,7 @@ import React from "react";
 
 const Section = ({ title, text, buttonLabel, image, isImageRight }) => {
   return (
-    <section
-      className="py-16 px-5 sm:px-28 md:flex"
-    >
+    <section className="py-16 px-5 sm:px-28 md:flex">
       {isImageRight && (
         <>
           <div className="w-full md:w-1/2">
@@ -16,8 +14,8 @@ const Section = ({ title, text, buttonLabel, image, isImageRight }) => {
             </h2>
             <p className="text-[#4c4e4e] w-11/12">{text}</p>
             <a href="#contactus">
-              <button className="border-2 border-[#116b89] p-2 px-5 my-4 rounded-md font-medium font-dmsans text-sm text-[#116b89]">
-                <p className="hover:border-b-2 border-[#116b89] duration-100 ease-in">{buttonLabel}</p>
+              <button className="bg-[#116b89] hover:bg-[#0e5b74] p-3 px-5 my-4 rounded-md font-medium font-dmsans text-sm text-[#fff]">
+                {buttonLabel}
               </button>
             </a>
           </div>
@@ -31,8 +29,8 @@ const Section = ({ title, text, buttonLabel, image, isImageRight }) => {
             </h2>
             <p className="text-[#4c4e4e] w-11/12">{text}</p>
             <a href="#contactus">
-              <button className="border-2 border-[#116b89] p-2 px-5 my-4 rounded-md font-medium font-dmsans text-sm text-[#116b89]">
-              <p className="hover:border-b-2 border-[#116b89] duration-100 ease-in">{buttonLabel}</p>
+              <button className="bg-[#116b89] hover:bg-[#0e5b74] p-3 px-5 my-4 rounded-md font-medium font-dmsans text-sm text-[#fff]">
+                {buttonLabel}
               </button>
             </a>
           </div>

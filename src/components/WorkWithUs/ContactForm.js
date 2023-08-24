@@ -9,7 +9,6 @@ const ContactForm = () => {
   return (
     <section
       className="py-16 px-5 sm:px-8 bg-white text-center flex flex-col justify-center items-center"
-      
       id="contactus"
     >
       <h2 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
@@ -19,7 +18,9 @@ const ContactForm = () => {
         onSubmit={handleSubmit}
         className="flex flex-col  text-[#4c4e4e] w-full sm:w-1/3 text-left"
       >
-        <label htmlFor="name" className="text-sm">Name : </label>
+        <label htmlFor="name" className="text-sm">
+          Name :{" "}
+        </label>
         <input
           id="name"
           type="text"
@@ -27,7 +28,9 @@ const ContactForm = () => {
           className="border-2 border-[#f4f4f4] rounded p-1 my-1"
         />
         <ValidationError prefix="name" field="name" errors={state.errors} />
-        <label htmlFor="email" className="text-sm">Email Address : </label>
+        <label htmlFor="email" className="text-sm">
+          Email Address :{" "}
+        </label>
         <input
           id="email"
           type="email"
@@ -35,7 +38,9 @@ const ContactForm = () => {
           className="border-2 border-[#f4f4f4] rounded p-1 my-1"
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
-        <label htmlFor="message" className="text-sm">Message : </label>
+        <label htmlFor="message" className="text-sm">
+          Message :{" "}
+        </label>
         <textarea
           id="message"
           name="message"
@@ -46,10 +51,11 @@ const ContactForm = () => {
           field="message"
           errors={state.errors}
         />
+
         <button
           type="submit"
           disabled={state.submitting}
-          className="border-2 bg-[#116b89] p-2 px-5 my-4 rounded-md font-medium font-dmsans text-sm text-[#fff]"
+          className="bg-[#116b89] hover:bg-[#0e5b74] p-2 px-5 my-4 rounded-md font-medium font-dmsans text-sm text-[#fff]"
         >
           Submit
         </button>

@@ -13,9 +13,11 @@ const Error = () => {
           Great things are coming!
         </h1>
         <img src={errorimg} alt="error" className="sm:w-1/3 m-5 " />
-        <p>We are working hard so you do not have to see this page in the future.</p>
         <p>
-          In the meanwhile, chill at one of our hostels🌊
+          We are working hard so you do not have to see this page in the future.
+        </p>
+        <p>
+          In the meanwhile, chill at one of our hostels. &nbsp;
           <HashLink to="/" className="underline">
             Book Here
           </HashLink>
