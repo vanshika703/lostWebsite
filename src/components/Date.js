@@ -14,7 +14,7 @@ const DateInput = ({ onChange }) => {
       type="date"
       min={new Date().toISOString().split("T")[0]}
       value={value}
-      className="text-black"
+      className="text-black bg-transparent"
       onChange={onChangeDate}
       placeholder="Date"
     />
