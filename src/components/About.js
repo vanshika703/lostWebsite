@@ -3,8 +3,8 @@ import about2 from "../img/about2.webp";
 import about3 from "../img/about3.webp";
 import about5 from "../img/about5.webp";
 import { useEffect } from "react";
-import lottie from 'lottie-web'
-import swipe from '../img/swipe.json'
+import lottie from "lottie-web";
+import swipe from "../img/swipe.json";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -15,19 +15,15 @@ import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 
 const About = () => {
-
   useEffect(() => {
     lottie.loadAnimation({
       container: document.querySelector("#swipe"),
-      animationData: swipe
+      animationData: swipe,
     });
   }, []);
 
   return (
-    <div
-      className="w-[100vw] flex flex-col sm:flex-row"
-      id="our-story"
-    >
+    <div className="w-[100vw] flex flex-col sm:flex-row" id="our-story">
       <div className=" w-[100vw] sm:w-[50vw] md:min-h-[100vh] flex justify-center items-center relative">
         <Swiper
           effect={"cards"}
@@ -64,7 +60,7 @@ const About = () => {
             />
           </SwiperSlide>
         </Swiper>
-        <div id="swipe" className="absolute z-50 w-32"/>
+        <div id="swipe" className="absolute z-50 w-32 opacity-70" />
       </div>
       <div className=" w-[100vw] sm:w-[50vw] md:min-h-screen flex flex-col justify-center items-start mx-auto sm:pr-32 px-10">
         <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
@@ -77,10 +73,10 @@ const About = () => {
           create unforgettable memories.<br></br>
           <br></br>
           At The Lost Hostels, we pride ourselves on providing affordable and
-          comfortable accommodations in some of India and Sri Lanka's most famous
-          destinations. Each hostel is strategically located, allowing guests to
-          easily access the city's top attractions, nightlife, and cultural
-          experiences.<br></br>
+          comfortable accommodations in some of India and Sri Lanka's most
+          famous destinations. Each hostel is strategically located, allowing
+          guests to easily access the city's top attractions, nightlife, and
+          cultural experiences.<br></br>
           <br></br>
           Whether you're a solo traveller or part of a group, The Lost Hostels
           offers the perfect blend of adventure and comfort. Book your stay with
