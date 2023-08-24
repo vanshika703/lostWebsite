@@ -193,6 +193,9 @@ const Hero = () => {
           </button>
         </div>
       </div>
+      <div>
+        <input type="date" />
+      </div>
     </section>
   );
 };
