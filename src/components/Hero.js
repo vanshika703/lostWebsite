@@ -131,7 +131,7 @@ const Hero = () => {
             )}
             {!errors.hostel && <p className="mb-5"></p>}
           </div>
-          <div className="flex flex-col hover:outline-none items-start cursor-pointer relative">
+          <div className="flex flex-col items-start cursor-pointer relative">
             <label
               for="Checkin"
               className="flex items-center text-base uppercase font-medium"

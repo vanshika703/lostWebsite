@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const DateInput = ({ onChange }) => {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState("select date");
 
   const onChangeDate = ({ target }) => {
     console.log(target.value);
@@ -14,7 +14,7 @@ const DateInput = ({ onChange }) => {
       type="date"
       min={new Date().toISOString().split("T")[0]}
       value={value}
-      className="bg-transparent border-b-2 border-white py-2 hover:outline-none"
+      className="text-black bg-transparent"
       onChange={onChangeDate}
       placeholder="Date"
     />
