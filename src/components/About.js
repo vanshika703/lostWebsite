@@ -2,7 +2,7 @@ import about1 from "../img/about1.webp";
 import about2 from "../img/about2.webp";
 import about3 from "../img/about3.webp";
 import about5 from "../img/about5.webp";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import lottie from "lottie-web";
 import swipe from "../img/swipe.json";
 
@@ -15,12 +15,23 @@ import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 
 const About = () => {
+  const [showIcon, setShowIcon] = useState(true);
+
   useEffect(() => {
     lottie.loadAnimation({
       container: document.querySelector("#swipe"),
       animationData: swipe,
     });
-  }, []);
+
+    const timer = setInterval(() => {
+      console.log("fheuih");
+      setShowIcon(!showIcon);
+    }, 2000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [showIcon]);
 
   return (
     <div className="w-[100vw] flex flex-col sm:flex-row" id="our-story">
@@ -60,7 +71,9 @@ const About = () => {
             />
           </SwiperSlide>
         </Swiper>
-        <div id="swipe" className="absolute z-50 w-32 opacity-70" />
+        {showIcon && (
+          <div id="swipe" className="absolute z-50 w-32 opacity-70" />
+        )}
       </div>
       <div className=" w-[100vw] sm:w-[50vw] md:min-h-screen flex flex-col justify-center items-start mx-auto sm:pr-32 px-10">
         <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
