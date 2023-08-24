@@ -47,10 +47,10 @@ body {
   background-position: center center;
   filter: brightness(70%);
 }
-/* 
+
 .hero ::-webkit-calendar-picker-indicator {
   filter: invert(1);
-} */
+}
 
 .locationslider {
   width: 85%;
@@ -219,7 +219,7 @@ body {
   }
 }
 
-/* input[type="date"]::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-calendar-picker-indicator {
   background: transparent;
   bottom: 0;
   color: transparent;
@@ -231,4 +231,3 @@ body {
   top: 0;
   width: auto;
 }
- */
