@@ -193,9 +193,11 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div>
-        <input type="date" />
-      </div>
+      <form action="/action_page.php">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" />
+        <input type="submit" />
+      </form>
     </section>
   );
 };
