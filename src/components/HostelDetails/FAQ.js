@@ -24,7 +24,7 @@ const FAQ = ({ hostelData }) => {
       {hostelData?.FAQs?.map((faq, index) => {
         return (
           <div
-            className="border-b-2 border-[#afd1dc] p-2 m-2 w-full sm:w-1/2"
+            className="border-b-2 border-[#afd1dc] p-2 m-2 w-full sm:w-1/2 cursor-pointer"
             onClick={() => handleToggleFaq(index)}
           >
             <div className="flex justify-between py-2">
