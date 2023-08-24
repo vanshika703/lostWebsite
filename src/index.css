@@ -32,3 +32,10 @@ code {
   filter: brightness(0.65);
   transition: filter 700ms ease;
 }
+
+input[type="date"] {
+  display: block;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  min-height: 1.2em;
+}
