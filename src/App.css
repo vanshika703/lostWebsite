@@ -47,10 +47,10 @@ body {
   background-position: center center;
   filter: brightness(70%);
 }
-
+/* 
 .hero ::-webkit-calendar-picker-indicator {
   filter: invert(1);
-}
+} */
 
 .locationslider {
   width: 85%;

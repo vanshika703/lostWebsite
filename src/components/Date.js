@@ -14,7 +14,7 @@ const DateInput = ({ onChange }) => {
       type="date"
       min={new Date().toISOString().split("T")[0]}
       value={value}
-      className="bg-transparent border-b-2 border-white py-2 hover:outline-none"
+      className="text-black"
       onChange={onChangeDate}
       placeholder="Date"
     />
