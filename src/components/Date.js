@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const DateInput = ({ onChange }) => {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState("select date");
 
   const onChangeDate = ({ target }) => {
     console.log(target.value);
