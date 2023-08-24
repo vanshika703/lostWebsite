@@ -81,7 +81,7 @@ const Hero = () => {
       className="hero relative min-h-screen w-[100vw] flex flex-col justify-center items-start text-white"
       id="#hero"
     >
-      <div className="hero-content relative mx-auto text-left sm:w-7/12">
+      <div className="hero-content relative mx-auto text-left md:w-7/12">
         <h1 className=" text-3xl sm:text-5xl font-playfair text-center px-10 md:ml-0 mt-20 leading-snug">
           S
           <span className="lowercase">
