@@ -33,6 +33,9 @@ code {
   transition: filter 700ms ease;
 }
 
-input {
-  -webkit-appearance: none;
-}
+/* input[type="date"] {
+  display: block;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  min-height: 1.2em;
+} */
