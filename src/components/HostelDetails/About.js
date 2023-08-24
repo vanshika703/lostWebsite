@@ -66,23 +66,21 @@ const amenities = [
 
 const About = ({ hostelData }) => {
   return (
-    <div className=" flex flex-col sm:flex-row mx-5 sm:mx-28 my-2 justify-center items-start">
-      <div className="w-full sm:w-2/3 p-5">
+    <div className="flex flex-col sm:flex-row w-11/12 md:w-10/12 mx-auto my-2 justify-center items-start gap-8">
+      <div className="w-full sm:w-2/3 px-0 py-5">
         <div className="flex justify-between items-center">
           <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
             {hostelData?.header}
           </h1>
           <a href={hostelData?.bookingLink} target="_blank" rel="noreferrer">
-            <button className="border-2 border-[#116b89] p-2 px-5 my-4 rounded-md font-medium font-dmsans text-lg text-[#116b89]">
-              <p className=" hover:border-b-2 border-[#116b89] duration-100 ease-in">
-                Book Now
-              </p>
+            <button className="bg-[#116b89] hover:bg-[#0e5b74] p-3 px-8 my-4 rounded-md font-medium font-dmsans text-sm text-[#fff]">
+              Book Now
             </button>
           </a>
         </div>
         <TextComponent text={hostelData?.info} maxLength={705} />
       </div>
-      <div className="w-full sm:w-1/3 p-5">
+      <div className="w-full sm:w-1/3 px-0 py-5">
         <div class="w-full sm:flex-grow py-2 mt-4 sm:mt-0">
           <h3 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
             Amenities

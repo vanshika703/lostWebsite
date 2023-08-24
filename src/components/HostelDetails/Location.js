@@ -4,7 +4,7 @@ import { ReactComponent as Beach } from "../../icons/beach.svg";
 
 const Location = ({ hostelData }) => {
   return (
-    <div className="mx-5 sm:mx-28 flex flex-col sm:flex-row justify-center items-start">
+    <div className="w-11/12 md:w-10/12 mx-auto flex flex-col sm:flex-row justify-center items-start">
       <div className="w-full sm:w-1/2">
         <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
           Around The Lost Hostels

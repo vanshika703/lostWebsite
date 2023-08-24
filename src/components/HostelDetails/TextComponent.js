@@ -15,9 +15,12 @@ const TextComponent = ({ text, maxLength }) => {
   return (
     <div>
       {truncatedText?.split("\n").map((i, key) => {
-        return <p key={key} className="text-[#4c4e4e]">
-          {i}<br></br>
-        </p>;
+        return (
+          <p key={key} className="text-[#4c4e4e]">
+            {i}
+            <br></br>
+          </p>
+        );
       })}
       {shouldTruncate && (
         <button
