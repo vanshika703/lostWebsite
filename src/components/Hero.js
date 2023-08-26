@@ -54,7 +54,7 @@ const Hero = () => {
     );
 
     console.log(daysDifference);
-    if (daysDifference < 0) {
+    if (daysDifference <= 0) {
       setErrors({ ...errors, checkOutDate: true });
       return;
     }
