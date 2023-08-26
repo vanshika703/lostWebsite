@@ -3,8 +3,10 @@ import DateInput from "./Date";
 
 const Hero = () => {
   const [formData, setFormData] = useState({
-    checkOutDate: null,
-    checkInDate: null,
+    checkOutDate: new Date(+new Date() + 96400000 * 1)
+      .toISOString()
+      .split("T")[0],
+    checkInDate: new Date().toISOString().split("T")[0],
     hostel: "thelosthostelsgoapalolembeach",
     adult: 1,
     room: 1,
@@ -51,22 +53,28 @@ const Hero = () => {
       (checkoutDate - checkInDate) / (24 * 60 * 60 * 1000)
     );
 
+    console.log(daysDifference);
+    if (daysDifference < 0) {
+      setErrors({ ...errors, checkOutDate: true });
+      return;
+    }
+
     setErrors({
       hostel: false,
       checkInDate: false,
       checkoutDate: false,
     });
 
-    window.open(
-      `https://live.ipms247.com/booking/mroominfo.php?HotelId=${
-        formData.hostel
-      }&eZ_chkout=${formatDate(formData.checkOutDate)}&eZ_chkin=${formatDate(
-        formData.checkInDate
-      )}&eZ_Nights=${daysDifference}&eZ_adult=${formData.adult}&eZ_room=${
-        formData.room
-      }&executepage=mroominfo`,
-      "_blank"
-    );
+    // window.open(
+    //   `https://live.ipms247.com/booking/mroominfo.php?HotelId=${
+    //     formData.hostel
+    //   }&eZ_chkout=${formatDate(formData.checkOutDate)}&eZ_chkin=${formatDate(
+    //     formData.checkInDate
+    //   )}&eZ_Nights=${daysDifference}&eZ_adult=${formData.adult}&eZ_room=${
+    //     formData.room
+    //   }&executepage=mroominfo`,
+    //   "_blank"
+    // );
   };
 
   const onChangeChekout = (value) => {
@@ -74,6 +82,25 @@ const Hero = () => {
   };
   const onChangeCheckin = (value) => {
     console.log("setting checkin date", value);
+    // const checkInDate = new Date(value);
+    // const checkoutDate = new Date(formData.checkOutDate);
+    // const daysDifference = Math.round(
+    //   (checkoutDate - checkInDate) / (24 * 60 * 60 * 1000)
+    // );
+
+    // console.log(daysDifference);
+    // console.log(
+    //   new Date(+new Date(value) + 96400000 * 1).toISOString().split("T")[0]
+    // );
+    // if (daysDifference < 0) {
+    //   setFormData({
+    //     ...formData,
+    //     checkInDate: value,
+    //     checkOutDate: new Date(+new Date(value) + 96400000 * 1)
+    //       .toISOString()
+    //       .split("T")[0],
+    //   });
+    // }
     setFormData({ ...formData, checkInDate: value });
   };
   return (
@@ -129,7 +156,7 @@ const Hero = () => {
                 Please select a location
               </p>
             )}
-            {!errors.hostel && <p className="mb-5"></p>}
+            {!errors.hostel && <p className="mb-8"></p>}
           </div>
           <div className="flex flex-col hover:outline-none items-start cursor-pointer relative w-full">
             <label
@@ -153,12 +180,13 @@ const Hero = () => {
             </label>
             <DateInput
               onChange={onChangeCheckin}
+              min={new Date().toISOString().split("T")[0]}
               defaultValue={new Date().toISOString().split("T")[0]}
             />
             {errors.checkInDate && (
               <p className="text pt-1 text-red-600">Please select a date</p>
             )}
-            {!errors.checkInDate && <p className="mb-5"></p>}
+            {!errors.checkInDate && <p className="mb-8"></p>}
           </div>
           <div className="flex flex-col items-start cursor-pointer relative w-full">
             <label
@@ -182,27 +210,32 @@ const Hero = () => {
             </label>
             <DateInput
               onChange={onChangeChekout}
+              min={
+                new Date(+new Date() + 96400000 * 1).toISOString().split("T")[0]
+              }
               defaultValue={
                 new Date(+new Date() + 96400000 * 1).toISOString().split("T")[0]
               }
+              value={formData.checkOutDate}
             />
             {errors.checkOutDate && (
-              <p className="text pt-1 text-red-600">Please select a date</p>
+              <p className="text pt-1 text-red-600">Invalid Date</p>
             )}
-            {!errors.checkOutDate && <p className="mb-5"></p>}
+            {/* {+new Date(formData.checkInDate) >
+              +new Date(formData.checkOutDate) && (
+              <p className="text pt-1 text-red-600">Invalid Date</p>
+            )} */}
+            {!errors.checkOutDate && <p className="mb-8"></p>}
           </div>
           <button
             className="border-2 border-white p-2 px-5 min-w-max rounded-md font-medium font-dmsans text-lg w-full mt-5 sm:-mt-5 hover:bg-black hover:bg-opacity-40 duration-200 ease-in"
-            onClick={() => {
-              forwardUser();
-            }}
+            onClick={forwardUser}
           >
             Book Now
           </button>
         </div>
       </div>
       <div class="down-arrow"></div>
-      
     </section>
   );
 };
