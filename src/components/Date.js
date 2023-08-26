@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const DateInput = ({ onChange, defaultValue }) => {
+const DateInput = ({ onChange, defaultValue, min }) => {
   const [value, setValue] = useState();
 
   const onChangeDate = ({ target }) => {
@@ -12,9 +12,9 @@ const DateInput = ({ onChange, defaultValue }) => {
   return (
     <input
       type="date"
-      min={new Date().toISOString().split("T")[0]}
       defaultValue={defaultValue}
       value={value}
+      min={min}
       className="bg-transparent border-b-2 border-white py-2 hover:outline-none w-full"
       onChange={onChangeDate}
       placeholder="dd/mm/yyyy"
