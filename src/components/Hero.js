@@ -65,16 +65,16 @@ const Hero = () => {
       checkoutDate: false,
     });
 
-    // window.open(
-    //   `https://live.ipms247.com/booking/mroominfo.php?HotelId=${
-    //     formData.hostel
-    //   }&eZ_chkout=${formatDate(formData.checkOutDate)}&eZ_chkin=${formatDate(
-    //     formData.checkInDate
-    //   )}&eZ_Nights=${daysDifference}&eZ_adult=${formData.adult}&eZ_room=${
-    //     formData.room
-    //   }&executepage=mroominfo`,
-    //   "_blank"
-    // );
+    window.open(
+      `https://live.ipms247.com/booking/mroominfo.php?HotelId=${
+        formData.hostel
+      }&eZ_chkout=${formatDate(formData.checkOutDate)}&eZ_chkin=${formatDate(
+        formData.checkInDate
+      )}&eZ_Nights=${daysDifference}&eZ_adult=${formData.adult}&eZ_room=${
+        formData.room
+      }&executepage=mroominfo`,
+      "_blank"
+    );
   };
 
   const onChangeChekout = (value) => {
