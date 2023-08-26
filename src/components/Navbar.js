@@ -55,7 +55,7 @@ const Navbar = () => {
         </div>
       )}
 
-      <div className="fixed top-0 left-0 w-[100vw] bg-transparent h-[10vh] flex justify-between items-center sm:px-28 px-5 font-medium navbar z-20 text-white">
+      <div className="fixed top-0 left-0 w-[100vw] bg-transparent h-[10vh] flex justify-between items-center sm:px-28 px-5 font-medium navbar z-50 text-white">
         <HashLink to="/#home">
           <p className="text-xl font-playfair relative flex items-center">
             <img src={logo} className="mr-2 w-12" alt="lost hostel logo"></img>
