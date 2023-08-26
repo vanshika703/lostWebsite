@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DateInput from "./Date";
 
 const Hero = () => {
@@ -82,27 +82,26 @@ const Hero = () => {
   };
   const onChangeCheckin = (value) => {
     console.log("setting checkin date", value);
-    // const checkInDate = new Date(value);
-    // const checkoutDate = new Date(formData.checkOutDate);
-    // const daysDifference = Math.round(
-    //   (checkoutDate - checkInDate) / (24 * 60 * 60 * 1000)
-    // );
 
-    // console.log(daysDifference);
-    // console.log(
-    //   new Date(+new Date(value) + 96400000 * 1).toISOString().split("T")[0]
-    // );
-    // if (daysDifference < 0) {
-    //   setFormData({
-    //     ...formData,
-    //     checkInDate: value,
-    //     checkOutDate: new Date(+new Date(value) + 96400000 * 1)
-    //       .toISOString()
-    //       .split("T")[0],
-    //   });
-    // }
     setFormData({ ...formData, checkInDate: value });
   };
+
+  useEffect(() => {
+    const checkInDate = new Date(formData.checkInDate);
+    const checkoutDate = new Date(formData.checkOutDate);
+    const daysDifference = Math.round(
+      (checkoutDate - checkInDate) / (24 * 60 * 60 * 1000)
+    );
+
+    if (daysDifference < 0) {
+      setFormData({
+        ...formData,
+        checkOutDate: new Date(+new Date(formData.checkInDate) + 96400000 * 1)
+          .toISOString()
+          .split("T")[0],
+      });
+    }
+  }, [formData.checkInDate]);
   return (
     <section
       className="hero relative min-h-screen w-[100vw] flex flex-col justify-center items-start text-white"
@@ -178,10 +177,12 @@ const Hero = () => {
                 <path d="M16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-6.664-1.21c-1.11 0-1.656-.767-1.703-1.407h.683c.043.37.387.82 1.051.82.844 0 1.301-.848 1.305-2.164h-.027c-.153.414-.637.79-1.383.79-.852 0-1.676-.61-1.676-1.77 0-1.137.871-1.809 1.797-1.809 1.172 0 1.953.734 1.953 2.668 0 1.805-.742 2.871-2 2.871zm-2.89-5.435v5.332H5.77V8.079h-.012c-.29.156-.883.52-1.258.777V8.16a12.6 12.6 0 0 1 1.313-.805h.632z"></path>
               </svg> */}
             </label>
+
             <DateInput
               onChange={onChangeCheckin}
               min={new Date().toISOString().split("T")[0]}
               defaultValue={new Date().toISOString().split("T")[0]}
+              value={formData.checkInDate}
             />
             {errors.checkInDate && (
               <p className="text pt-1 text-red-600">Please select a date</p>
@@ -211,10 +212,14 @@ const Hero = () => {
             <DateInput
               onChange={onChangeChekout}
               min={
-                new Date(+new Date() + 96400000 * 1).toISOString().split("T")[0]
+                new Date(+new Date(formData.checkInDate) + 96400000 * 1)
+                  .toISOString()
+                  .split("T")[0]
               }
               defaultValue={
-                new Date(+new Date() + 96400000 * 1).toISOString().split("T")[0]
+                new Date(+new Date(formData.checkInDate) + 96400000 * 1)
+                  .toISOString()
+                  .split("T")[0]
               }
               value={formData.checkOutDate}
             />
