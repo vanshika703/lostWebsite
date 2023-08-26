@@ -24,9 +24,8 @@ const About = () => {
     });
 
     const timer = setInterval(() => {
-      console.log("fheuih");
       setShowIcon(!showIcon);
-    }, 2000);
+    }, 4000);
 
     return () => {
       clearInterval(timer);
@@ -72,7 +71,7 @@ const About = () => {
           </SwiperSlide>
         </Swiper>
         {showIcon && (
-          <div id="swipe" className="absolute z-50 w-32 opacity-70" />
+          <div id="swipe" className="absolute bottom-2 z-50 w-20 sm:w-32 opacity-70" />
         )}
       </div>
       <div className=" w-[100vw] sm:w-[50vw] md:min-h-screen flex flex-col justify-center items-start mx-auto sm:pr-32 px-10">

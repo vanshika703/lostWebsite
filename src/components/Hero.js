@@ -82,7 +82,7 @@ const Hero = () => {
       id="home"
     >
       <div className="hero-content relative mx-auto text-left md:w-7/12">
-        <h1 className=" text-3xl sm:text-5xl font-playfair text-center px-10 md:ml-0 mt-20 leading-snug">
+        <h1 className=" text-3xl sm:text-5xl font-playfair text-center px-10 md:ml-0 mt-10 sm:mt-20 leading-snug">
           S
           <span className="lowercase">
             ome BEAUTIFUL PATHS CAN ONLY BE DISCOVERED WHEN YOU ARE LOST...
@@ -201,6 +201,8 @@ const Hero = () => {
           </button>
         </div>
       </div>
+      <div class="down-arrow"></div>
+      
     </section>
   );
 };
