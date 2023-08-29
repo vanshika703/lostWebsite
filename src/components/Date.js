@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
-const DateInput = ({ onChange, defaultValue, min }) => {
-  const [value, setValue] = useState();
-
+const DateInput = ({ onChange, defaultValue, min, value }) => {
   const onChangeDate = ({ target }) => {
     console.log(target.value);
-    setValue(target.value);
     onChange(target.value);
   };
 
