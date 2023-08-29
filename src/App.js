@@ -13,8 +13,8 @@ import Guest from "./components/RulesAndLegal/Guest";
 import Cancellation from "./components/RulesAndLegal/Cancellation";
 import TourGroups from "./components/RulesAndLegal/TourGroups";
 import Error from "./components/Error";
-/* import Blog from "./components/Blog/Blog.js";
-import Merch from "./components/Merch/Merch.js"; */
+import Blog from "./components/Error";
+import Merch from "./components/Error";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -68,14 +68,14 @@ const appRouter = createBrowserRouter([
         path: "/tourgroups",
         element: <TourGroups />,
       },
-      /* {
+      {
         path: "/blog",
         element: <Blog />,
       },
       {
         path: "/merch",
         element: <Merch />,
-      }, */
+      },
     ],
   },
 ]);

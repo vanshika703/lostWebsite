@@ -1,4 +1,4 @@
-/* import React from "react";
+import React from "react";
 import "tailwindcss/tailwind.css";
 import blogimg from "../../img/blog.svg";
 
@@ -64,4 +64,3 @@ const Blog = () => {
 };
 
 export default Blog;
- */
