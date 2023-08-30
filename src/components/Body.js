@@ -1,4 +1,5 @@
 import About from "./About";
+import Featured from "./Featured";
 import Gallery from "./Gallery";
 import Hero from "./Hero";
 import Locations from "./Locations";
@@ -8,10 +9,12 @@ const Body = () => {
   return (
     <div>
       <Hero />
-      <About />
+
       <Locations />
       <Gallery />
-      <Testimonials />
+      {/* <Testimonials /> */}
+      <About />
+      <Featured/>
     </div>
   );
 };

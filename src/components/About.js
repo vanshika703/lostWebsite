@@ -71,7 +71,7 @@ const About = () => {
           </SwiperSlide>
         </Swiper>
         {showIcon && (
-          <div id="swipe" className="absolute bottom-2 z-50 w-20 sm:w-32 opacity-70" />
+          <div id="swipe" className="absolute bottom-10 z-50 w-20 sm:w-32 opacity-70" />
         )}
       </div>
       <div className=" w-[100vw] sm:w-[50vw] md:min-h-screen flex flex-col justify-center items-start mx-auto sm:pr-32 px-10">

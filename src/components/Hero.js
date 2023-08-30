@@ -107,6 +107,8 @@ const Hero = () => {
       className="hero relative min-h-screen w-[100vw] flex flex-col justify-center items-start text-white"
       id="home"
     >
+    
+    
       <div className="hero-content relative mx-auto text-left md:w-7/12">
         <h1 className=" text-3xl sm:text-5xl font-playfair text-center px-10 md:ml-0 mt-12 sm:mt-20 leading-snug">
           S
@@ -114,6 +116,7 @@ const Hero = () => {
             ome BEAUTIFUL PATHS CAN ONLY BE DISCOVERED WHEN YOU ARE LOST...
           </span>
         </h1>
+        
         <div className="flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-5 lg:gap-10 py-2 my-5 justify-around items-center mx-auto md:w-2/3 mt-16">
           <div className="flex flex-col w-full sm:w-fit cursor-pointer">
             <label for="locations" className="text-base uppercase font-medium">
