@@ -107,17 +107,15 @@ const Hero = () => {
       className="hero relative min-h-screen w-[100vw] flex flex-col justify-center items-start text-white"
       id="home"
     >
-    
-    
       <div className="hero-content relative mx-auto text-left md:w-7/12">
-        <h1 className=" text-3xl sm:text-5xl font-playfair text-center px-10 md:ml-0 mt-12 sm:mt-20 leading-snug">
+        <h1 className=" text-3xl sm:text-5xl font-playfair text-center px-10 md:ml-0 mt-20 sm:mt-40 leading-snug">
           S
           <span className="lowercase">
             ome BEAUTIFUL PATHS CAN ONLY BE DISCOVERED WHEN YOU ARE LOST...
           </span>
         </h1>
-        
-        <div className="flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-5 lg:gap-10 py-2 my-5 justify-around items-center mx-auto md:w-2/3 mt-16">
+
+        <div className="flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-5 lg:gap-10 py-2 my-5 justify-around items-center mx-auto md:w-2/3">
           <div className="flex flex-col w-full sm:w-fit cursor-pointer">
             <label for="locations" className="text-base uppercase font-medium">
               Location:
@@ -242,8 +240,75 @@ const Hero = () => {
             Book Now
           </button>
         </div>
+        <div>
+          <ul className="flex flex-col sm:flex-row  justify-center items-start sm:items-center gap-5 text-lg uppercase mt-20 bg-black bg-opacity-40 p-5 m-5 rounded">
+            <li className="flex justify-center gap-2 items-center">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                height="1.5em"
+                width="1.5em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+                <path d="M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25"></path>
+                <path d="M12.5 15.5l2 2"></path>
+                <path d="M15 13l2 2"></path>
+              </svg>
+              Community and Culture
+            </li>
+            <li className="flex justify-center gap-2 items-center">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                height="1.5em"
+                width="1.5em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M384 112V84.4c0-29-24.5-52.4-54.8-52.4H182.9C152.5 32 128 55.4 128 84.4V112h152v37H128v43h152v37H128v43h152v37H128v41.8c0 29 24.5 52.2 54.9 52.2H213v77h86v-77h30.2c30.3 0 54.8-23.2 54.8-52.2V309h-56v-37h56v-43h-56v-37h56v-43h-56v-37h56z"></path>
+              </svg>
+              Unforgettable Events
+            </li>
+            <li className="flex justify-center gap-2 items-center">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                height="1.5em"
+                width="1.5em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M20 20.0001C20 20.5524 19.5523 21.0001 19 21.0001H5C4.44772 21.0001 4 20.5524 4 20.0001V11.0001H1L11.3273 1.61162C11.7087 1.26488 12.2913 1.26488 12.6727 1.61162L23 11.0001H20V20.0001ZM18 19.0001V9.15757L12 3.70302L6 9.15757V19.0001H18ZM12 17.0001L8.64124 13.6413C7.76256 12.7627 7.76256 11.338 8.64124 10.4594C9.51992 9.58068 10.9445 9.58068 11.8232 10.4594L12 10.6361L12.1768 10.4594C13.0555 9.58068 14.4801 9.58068 15.3588 10.4594C16.2374 11.338 16.2374 12.7627 15.3588 13.6413L12 17.0001Z"></path>
+              </svg>
+              Comfort and Quality
+            </li>
+            <li className="flex justify-center gap-2 items-center">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 1024 1024"
+                height="1.5em"
+                width="1.5em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3zM664.8 561.6l36.1 210.3L512 672.7 323.1 772l36.1-210.3-152.8-149L417.6 382 512 190.7 606.4 382l211.2 30.7-152.8 148.9z"></path>
+              </svg>
+              Local Expertise
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="down-arrow"></div>
+
+      {/* <div class="down-arrow"></div> */}
     </section>
   );
 };
