@@ -65,27 +65,24 @@ const Locations = () => {
           </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="overflow-hidden rounded-md w-full h-full">
-            <img
-              src={hiriketiyaimg}
-              alt="hiriketiyaimg"
-              className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
-            />
-          </div>
-          <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
-            <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              Hiriketiya, Sri Lanka
-            </h3>
-            <p className="text-sm text-[#4c4e4e]">
-              Coming soon...
-            </p>
-            <a
-              href="https://live.ipms247.com/booking/book-rooms-thelosthostelsgoapalolembeach"
-              target="_blank"
-              rel="noreferrer"
-            >
-            </a>
-          </div>
+          <Link to="/hostel/hiriketiya">
+            <div className="overflow-hidden rounded-md w-full h-full">
+              <img
+                src={hiriketiyaimg}
+                alt="hiriketiyaimg"
+                className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+              />
+            </div>
+            <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
+              <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
+                Hiriketiya, Sri Lanka
+              </h3>
+              <p className="text-sm text-[#4c4e4e]">Coming soon...</p>
+              <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
+                Know More
+              </button>
+            </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
           <div className="overflow-hidden rounded-md w-full h-full">
@@ -115,7 +112,6 @@ const Locations = () => {
           },
         }}
         navigation={true}
-
         modules={[Pagination, Navigation, Autoplay]}
         className="mySwiper locationslider"
       >

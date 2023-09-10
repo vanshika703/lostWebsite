@@ -108,14 +108,14 @@ const Hero = () => {
       id="home"
     >
       <div className="hero-content relative mx-auto text-left md:w-7/12">
-        <h1 className=" text-3xl sm:text-5xl font-playfair text-center px-10 md:ml-0 mt-20 sm:mt-40 leading-snug">
+        <h1 className=" text-3xl sm:text-5xl font-playfair text-center px-10 md:ml-0 mt-20 sm:mt-28 leading-snug">
           S
           <span className="lowercase">
             ome BEAUTIFUL PATHS CAN ONLY BE DISCOVERED WHEN YOU ARE LOST...
           </span>
         </h1>
 
-        <div className="flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-5 lg:gap-10 py-2 my-5 justify-around items-center mx-auto md:w-2/3">
+        <div className="flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-5 lg:gap-10 py-2 my-16 justify-around items-center mx-auto md:w-2/3">
           <div className="flex flex-col w-full sm:w-fit cursor-pointer">
             <label for="locations" className="text-base uppercase font-medium">
               Location:
@@ -241,7 +241,7 @@ const Hero = () => {
           </button>
         </div>
         <div>
-          <ul className="flex flex-col sm:flex-row  justify-center items-start sm:items-center gap-5 text-lg uppercase mt-20 bg-black bg-opacity-40 p-5 m-5 rounded">
+          <ul className="flex flex-col sm:flex-row  justify-center items-start sm:items-center gap-5 text-lg uppercase mt-10 px-5 pb-5 sm:px-0 sm:pb-0">
             <li className="flex justify-center gap-2 items-center">
               <svg
                 stroke="currentColor"

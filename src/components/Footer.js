@@ -192,7 +192,7 @@ const Footer = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <p> &lt;Made by V /&gt;</p>
+          <p> &lt;Site by V /&gt;</p>
         </a>
       </div>
     </>
