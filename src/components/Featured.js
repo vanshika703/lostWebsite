@@ -80,7 +80,7 @@ const Featured = () => {
           <a target="_blank" href={feature.backlink}>
             <img
               src={feature.imagelink}
-              className="h-20 object-contain w-52 px-5"
+              className="h-28 object-contain w-52 px-5"
             ></img>
           </a>
         ))}
