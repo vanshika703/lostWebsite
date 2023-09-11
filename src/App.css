@@ -236,7 +236,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: auto;
 } */
 
-
 input[type="date"] {
   display: block;
   -webkit-appearance: textfield;
@@ -283,6 +282,12 @@ input[type="date"] {
   animation: jumpInfinite 1.5s infinite;
 }
 
-.shadow-box{
+.shadow-box {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.blogContent p {
+  margin-bottom: 10px !important;
+  line-height: 34px;
+  font-size: 20px;
 }

@@ -15,6 +15,8 @@ import TourGroups from "./components/RulesAndLegal/TourGroups";
 import Error from "./components/Error";
 import Blog from "./components/Error";
 import Merch from "./components/Merch/Merch";
+import AllPosts from "./components/AllPosts.js";
+import OnePost from "./components/OnePost.js";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -70,7 +72,11 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/blog",
-        element: <Blog />,
+        element: <AllPosts />,
+      },
+      {
+        path: "/blog/:slug",
+        element: <OnePost />,
       },
       {
         path: "/merch",
