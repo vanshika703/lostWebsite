@@ -14,7 +14,7 @@ import Cancellation from "./components/RulesAndLegal/Cancellation";
 import TourGroups from "./components/RulesAndLegal/TourGroups";
 import Error from "./components/Error";
 import Blog from "./components/Error";
-import Merch from "./components/Error";
+import Merch from "./components/Merch/Merch";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

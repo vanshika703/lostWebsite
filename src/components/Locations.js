@@ -77,7 +77,10 @@ const Locations = () => {
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
                 Hiriketiya, Sri Lanka
               </h3>
-              <p className="text-sm text-[#4c4e4e]">Coming soon...</p>
+              <p className="text-sm text-[#4c4e4e]">
+                Located on the famous surfing beach of Sri Lanka, the hostel offers a laid-back homely vibe
+                with unique facilities in a relaxing and peaceful atmosphere.
+              </p>
               <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
                 Know More
               </button>
