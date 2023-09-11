@@ -22,11 +22,11 @@ export default function Events() {
   console.log("a[p", allPosters);
 
   return (
-    <div className="min-h-screen text-black mt-20 text-center sm:mx-28">
+    <div className="min-h-screen text-black mt-20 text-center mx-5 sm:mx-28">
       <h3 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
         Events
       </h3>
-      <p className="w-2/3 mx-auto text-[#4c4e4e] mb-10">
+      <p className="sm:w-2/3 mx-auto text-[#4c4e4e] mb-10">
         Lost Hostels: Where Everyone Finds Their Beat! Whether it's art, music,
         or yoga, boredom is the last thing on our menu. Join us for
         unforgettable events and depart with a treasure trove of memories that
