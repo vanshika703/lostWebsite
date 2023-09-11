@@ -22,7 +22,7 @@ export default function Events() {
   console.log("a[p", allPosters);
 
   return (
-    <div className="min-h-screen text-black mt-20 text-center mx-5 sm:mx-28">
+    <div className="min-h-screen text-black mt-20 text-center mx-5 sm:mx-28" id="events">
       <h3 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
         Events
       </h3>

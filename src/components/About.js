@@ -33,7 +33,7 @@ const About = () => {
   }, [showIcon]);
 
   return (
-    <div className="w-[100vw] flex flex-col sm:flex-row" id="our-story">
+    <div className="w-[100vw] flex flex-col sm:flex-row sm:-mt-20" id="our-story">
       <div className=" w-[100vw] sm:w-[50vw] md:min-h-[100vh] flex justify-center items-center relative">
         <Swiper
           effect={"cards"}

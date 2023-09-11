@@ -9,13 +9,23 @@ const Navbar = () => {
       title: "Home",
       link: "/#home",
     },
+
     {
-      title: "Our Story",
-      link: "/#our-story",
+      title: "Events",
+      link: "/#events",
     },
+
     {
       title: "Locations",
       link: "/#locations",
+    },
+    {
+      title: "Social",
+      link: "/#gallery",
+    },
+    {
+      title: "Our Story",
+      link: "/#our-story",
     },
     {
       title: "Work with Us",
@@ -95,7 +105,7 @@ const Navbar = () => {
             </defs>
           </svg>
         </div>
-        <ul className="sm:flex w-[50VW] justify-between text-sm hidden font-dmsans relative mt-3">
+        <ul className="sm:flex w-[60VW] justify-between text-sm hidden font-dmsans relative mt-3">
           {navItems.map((navItem, index) => (
             <HashLink to={navItem.link} key={navItem.link}>
               <li className="uppercase tracking-wider cursor-pointer">
