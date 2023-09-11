@@ -291,3 +291,7 @@ input[type="date"] {
   line-height: 34px;
   font-size: 20px;
 }
+
+.event-card{
+  filter: drop-shadow(-10px 10px 0px #116b89);
+}

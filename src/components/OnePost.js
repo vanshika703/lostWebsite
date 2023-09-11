@@ -6,12 +6,12 @@ import { sanityClient } from "../client.js";
 import BlockContent from "@sanity/block-content-to-react";
 import imageUrlBuilder from "@sanity/image-url";
 
-const builder = imageUrlBuilder(sanityClient);
-function urlFor(source) {
-  return builder.image(source);
-}
-
 export default function OnePost() {
+  const builder = imageUrlBuilder(sanityClient);
+  function urlFor(source) {
+    return builder.image(source);
+  }
+
   const [postData, setPostData] = useState(null);
   const { slug } = useParams();
 
@@ -68,7 +68,9 @@ export default function OnePost() {
                 )}
                 <div className="flex flex-col justify-start items-start pl-2 text-lg">
                   <h4 className="text-gray-600">{postData.name}</h4>
-                  <p className="text-sm text-gray-400">{postData.publishedAt.substring(0, 10)}</p>
+                  <p className="text-sm text-gray-400">
+                    {postData.publishedAt.substring(0, 10)}
+                  </p>
                 </div>
               </div>
             </div>

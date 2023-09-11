@@ -7,21 +7,21 @@ import courseimg from "../../img/course.png";
 
 const Blog = () => {
   return (
-    <div className="p-6 container">
+    <div className="p-6 container mx-auto">
       <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89] text-center mt-16">
         The Lost Merch
       </h1>
       <div className="flex flex-col gap-5 sm:mx-28 text-[#4c4e4e]">
-        <div className="flex gap-5 h-3/4 flex-1">
-          <div className="w-1/3 h-[528px] rounded-md shadow-box flex-1 p-5 items-stretch">
+        <div className="flex flex-col sm:flex-row gap-5 h-3/4 flex-1">
+          <div className="  sm:w-1/3 h-[528px] rounded-md shadow-box flex-1 p-5 items-stretch">
             <h3 className="text-2xl font-playfair font-semibold py-4 text-[#116b89] text-center">
               Unlock the Lost Vibe with our signature tee!
             </h3>
             <img src={tshirtimg} alt="tshirt" />
             <p>Grab yours at any hostel reception and join the family today</p>
           </div>
-          <div className="flex flex-col w-2/3 h-full gap-4">
-            <div className="flex rounded-md shadow-box h-64 p-5">
+          <div className="flex flex-col sm:w-2/3 h-full gap-4">
+            <div className="flex flex-col sm:flex-row rounded-md shadow-box sm:h-64 p-5">
               <img src={lostsoulimg} alt="tshirt" className="w-36" />
               <div className="flex flex-col justify-between items-start p-5">
                 <p>
@@ -43,7 +43,7 @@ const Blog = () => {
                 </a>
               </div>
             </div>
-            <div className="flex rounded-md shadow-box h-64 p-5">
+            <div className="flex flex-col-reverse sm:flex-row rounded-md shadow-box sm:h-64 p-5">
               <div className="flex flex-col justify-between items-start p-5">
                 <p>
                   Love ignites on an Indian surf beach, but as J backpacks
@@ -68,13 +68,13 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="w-full rounded-md shadow-box p-5 flex">
+        <div className="w-full rounded-md shadow-box p-5 flex flex-col sm:flex-row">
           <img
             src={courseimg}
             alt="course"
-            className="h-72 w-3/5 object-cover rounded"
+            className="sm:h-72 sm:w-3/5 object-cover rounded"
           />
-          <div className="w-2/5 flex flex-col justify-around items-start p-5">
+          <div className="sm:w-2/5 flex flex-col justify-around items-start p-5">
             <p className="text-xl font-playfair font-semibold py-2 text-[#116b89]">
               Turn your dream of owning a backpacker's haven into reality! Learn
               everything from market research to guest satisfaction in our
