@@ -44,18 +44,17 @@ export default function OnePost() {
   return (
     <div>
       <img
-        className="w-full object-cover mt-[10vh]"
+        className="w-full object-cover mt-[10vh] sm:h-[480px] "
         src={urlFor(postData.mainImage).url()}
         alt=""
-        style={{ height: "480px" }}
       />
 
       <div className="min-h-screen">
         <div className="mx-auto rounded-lg">
           <div className="relative"></div>
-          <div className="w-7/12 mx-auto py-12 lg:py-10 prose lg:prose-xl max-w-3/4">
+          <div className="sm:w-7/12 mx-5 sm:mx-auto py-12 lg:py-10 prose lg:prose-xl sm:max-w-3/4">
             <div className="rounded mb-10">
-              <h2 className="text-5xl leading-[56px] font-playfair font-semibold py-2 text-[#116b89]">
+              <h2 className="text-2xl sm:text-5xl sm:leading-[56px] font-playfair font-semibold py-2 text-[#116b89]">
                 {postData.title}
               </h2>
               <div className="flex justify-start items-center text-gray-300 mt-4">
