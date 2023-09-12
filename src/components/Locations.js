@@ -5,6 +5,7 @@ import weligamaimg from "../img/weligama.webp";
 import hiriketiyaimg from "../img/hiriketiya.webp";
 import comingsoonimg from "../img/beach.webp";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -78,8 +79,9 @@ const Locations = () => {
                 Hiriketiya, Sri Lanka
               </h3>
               <p className="text-sm text-[#4c4e4e]">
-                Located on the famous surfing beach of Sri Lanka, the hostel offers a laid-back homely vibe
-                with unique facilities in a relaxing and peaceful atmosphere.
+                Located on the famous surfing beach of Sri Lanka, the hostel
+                offers a laid-back homely vibe with unique facilities in a
+                relaxing and peaceful atmosphere.
               </p>
               <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
                 Know More
@@ -88,18 +90,20 @@ const Locations = () => {
           </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="overflow-hidden rounded-md w-full h-full">
-            <img
-              src={comingsoonimg}
-              alt="comingsoonimg"
-              className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
-            />
-          </div>
-          <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
-            <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-              Where do you want to see us next?
-            </h3>
-          </div>
+          <HashLink to="/workwithus#contactus">
+            <div className="overflow-hidden rounded-md w-full h-full">
+              <img
+                src={comingsoonimg}
+                alt="comingsoonimg"
+                className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+              />
+            </div>
+            <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
+              <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
+                Where do you want to see us next?
+              </h3>
+            </div>
+          </HashLink>
         </SwiperSlide>
       </Swiper>
       <h1 className="text-3xl font-playfair font-semibold text-[#116b89] my-5 pt-8">

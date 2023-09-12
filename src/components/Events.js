@@ -43,6 +43,7 @@ export default function Events() {
         }}
         modules={[Pagination, Navigation, Autoplay]}
         navigation={true}
+        autoplay={{ delay: 2000 }}
         className="mySwiper container mx-auto mt-5 flex flex-wrap justify-between items-center gap-16"
       >
         {allPosters?.map((poster) => (

@@ -8,10 +8,10 @@ import courseimg from "../../img/course.png";
 const Blog = () => {
   return (
     <div className="p-6 container mx-auto">
-      <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89] text-center mt-16">
+      {/* <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89] text-center mt-16">
         The Lost Merch
-      </h1>
-      <div className="flex flex-col gap-5 sm:mx-28 text-[#4c4e4e]">
+      </h1> */}
+      <div className="flex flex-col gap-5 sm:mx-28 text-[#4c4e4e] mt-20">
         <div className="flex flex-col sm:flex-row gap-5 h-3/4 flex-1">
           <div className="  sm:w-1/3 h-[528px] rounded-md shadow-box flex-1 p-5 items-stretch">
             <h3 className="text-2xl font-playfair font-semibold py-4 text-[#116b89] text-center">
@@ -21,7 +21,7 @@ const Blog = () => {
             <p>Grab yours at any hostel reception and join the family today</p>
           </div>
           <div className="flex flex-col sm:w-2/3 h-full gap-4">
-            <div className="flex flex-col sm:flex-row rounded-md shadow-box sm:h-64 p-5">
+            <div className="flex flex-col sm:flex-row rounded-md shadow-box sm:min-h-64 p-5">
               <img src={lostsoulimg} alt="tshirt" className="w-36 mx-auto" />
               <div className="flex flex-col justify-between items-start p-5">
                 <p>
@@ -36,7 +36,7 @@ const Blog = () => {
                 <a
                   href="https://www.amazon.in/Lost-Soul-backpackers-journey-discovery-ebook/dp/B08C71M1Q5/ref=sr_1_3?crid=27ASXNRM6NWWW&keywords=lost+soul&qid=1694368172&sprefix=lost+soul%2Caps%2C233&sr=8-3"
                   target="_blank"
-                  className="w-full sm:w-1/4"
+                  className="sm:min-w-1/4"
                 >
                   <button className="w-full bg-[#116b89] hover:bg-[#0e5b74] p-3 px-8 rounded-md font-medium font-dmsans text-sm text-[#fff]">
                     Buy Now
@@ -44,7 +44,7 @@ const Blog = () => {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col-reverse sm:flex-row rounded-md shadow-box sm:h-64 p-5">
+            <div className="flex flex-col-reverse sm:flex-row rounded-md shadow-box sm:min-h-64 p-5">
               <div className="flex flex-col justify-between items-start p-5">
                 <p>
                   Love ignites on an Indian surf beach, but as J backpacks
@@ -59,7 +59,7 @@ const Blog = () => {
                 <a
                   href="https://www.amazon.in/Lost-Love-backpackers-Journey-Oneness/dp/B0BYKCF228/ref=sr_1_8?crid=1DOO5XLWFLTX8&keywords=lost+love&qid=1694368312&sprefix=lost+love%2Caps%2C250&sr=8-8"
                   target="_blank"
-                  className="w-full sm:w-1/4"
+                  className="sm:min-w-1/4"
                 >
                   <button className="w-full bg-[#116b89] hover:bg-[#0e5b74] p-3 px-8 rounded-md font-medium font-dmsans text-sm text-[#fff]">
                     Buy Now
@@ -86,7 +86,7 @@ const Blog = () => {
             <a
               href="https://jiteshagrawal.graphy.com/courses/Idea-to-Reality---Opening-your-own-Backpacking-Hostel-63c7b927e4b00645150ea5ca"
               target="_blank"
-              className="w-full sm:w-1/2"
+              className="sm:min-w-1/2"
             >
               <button className="w-full bg-[#116b89] hover:bg-[#0e5b74] p-3 px-8 rounded-md font-medium font-dmsans text-sm text-[#fff]">
                 Get started today!
