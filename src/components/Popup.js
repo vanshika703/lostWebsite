@@ -1,16 +1,17 @@
-/* import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import SpinAndWin from "./Spin";
 // import SpinAndWin from "react-spin-game";
 // import "react-spin-game/dist/index.css";
 
 const Popup = () => {
   const freeSpinGifts = [
-    ["10% off", "#116b89"],
-    ["Try Again", "#5897AC"],
-    ["15% off", "#116b89"],
-    ["Better Luck Next Time", "#5897AC"],
-    ["Free Beer", "#116b89"],
-    ["So Close", "#5897AC"],
+    ["10% off on t-shirt", "#BA81FF"],
+    ["Try Again", "#4F67AD "],
+    ["Free Lost Love book", "#E54846 "],
+    ["Free Beer", "#FFCF3C "],
+    ["1 free beer", "#B2FF9F "],
+    ["So Close", "#FF5E80 "],
+    ["20% off on Yoga", "#6FF0EA "],
   ];
 
   const ref = useRef(null);
@@ -33,18 +34,18 @@ const Popup = () => {
   return (
     <>
       {isPopupOpen && (
-        <div className="wheel-div fixed inset-0 m-auto py-20 bg-white z-50 w-3/4 h-4/5 flex flex-col items-center justify-center rounded-md">
+        <div className="wheel-div fixed right-0 top-0 z-[100] m-auto py-20 bg-white w-1/3 h-full flex flex-col items-center justify-center rounded-md">
           <button className="absolute top-5 right-8" onClick={handleClosePopup}>
             X
           </button>
-          <p className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
+          <p className="text-3xl font-playfair font-semibold py-4 text-[#F3CD35]">
             Spin to win!
           </p>
           <SpinAndWin
             data={freeSpinGifts}
             handleCheckWinner={handleCheckWinner}
           />
-          Spin to win a prize{prize && <p>Your prize is : {prize}</p>}
+          <p className="text-[#F3CD35]">{prize && <span>Your prize is : {prize}</span>}</p>
         </div>
       )}
     </>
@@ -52,4 +53,3 @@ const Popup = () => {
 };
 
 export default Popup;
- */

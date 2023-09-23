@@ -55,7 +55,7 @@ const SpinAndWin = forwardRef(
         wheel.moveTo(wheelX, wheelY);
         wheel.fill();
 
-        wheel.fillStyle = "white";
+        wheel.fillStyle = "black";
         horizantalText
           ? (wheel.textAlign = "start")
           : (wheel.textAlign = "end");
@@ -128,18 +128,19 @@ const SpinAndWin = forwardRef(
               </span>
             )}
           </div>
-          <span className="arrow absolute top-4">
+          <span className="arrow absolute -top-3">
             <svg
               id="arrow"
               stroke="#181818"
-              fill="black"
+              fill="#F3CD35"
               stroke-width="0"
               viewBox="0 0 24 24"
-              height="2em"
-              width="2em"
+              height="4em"
+              width="4em"
               xmlns="http://www.w3.org/2000/svg"
+              
             >
-              <path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path>
+              <path className="shadow-lg" d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path>
             </svg>
           </span>
         </div>

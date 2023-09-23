@@ -176,23 +176,27 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 500;
+  color: #F3CD35!important;
 }
 
 .wheel-div {
   background-color: rgba(255, 255, 255, 0.9) !important;
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/031/750/small/dark-blue-wide-background-with-radial-blurred-gradient-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 #wheel {
-  border: 5px solid white;
+  border: 5px solid #181818;
   zoom: 1;
-  color: #2f2f2f !important;
+  color: #000 !important;
 }
 
 .canvas-container {
   background: #181818;
-  color: #000 !important;
-  box-shadow: 0 0 10px rgb(188, 188, 188);
-  border: 5px solid white;
+  color: #181818 !important;
+  box-shadow: 0 0 10px rgb(31, 30, 30);
+  border: 5px solid #F3CD35;
   opacity: 100%;
   font-family: dm;
 }
@@ -204,8 +208,11 @@ body {
 }
 
 #spin {
-  background: #181818;
-  color: white;
+  background: #F3CD35;
+  color: black;
+  border: 3px solid #181818;
+  font-weight: 600;
+  padding: 10px;
 }
 
 .swiper-button-next {
@@ -292,6 +299,6 @@ input[type="date"] {
   font-size: 18px;
 }
 
-.event-card{
+.event-card {
   filter: drop-shadow(-10px 10px 0px #116b89);
 }
