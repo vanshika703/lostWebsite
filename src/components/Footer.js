@@ -2,6 +2,13 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
+  const openWhatsAppChat = (phoneNumber) => {
+    window.open(
+      `https://wa.me/${phoneNumber}`,
+      "_blank" // <- This is what makes it open in a new window.
+    );
+  };
+
   return (
     <>
       <div className="w-[100vw] bg-[#116b89] flex flex-col sm:flex-row  justify-between px-10 sm:px-28 py-12 text-white">
@@ -85,19 +92,49 @@ const Footer = () => {
           <ul>
             <li className="text-sm">Contact Us</li>
             <li className="text-sm text-[#8cb6c4]">
-              Varkala: <Link to="tel:+917012416343">+91 7012416343</Link>
+              Varkala:
+              <span
+                onClick={() => openWhatsAppChat("+917012416343")}
+                style={{ cursor: "pointer" }}
+              >
+                +91 7012416343
+              </span>
             </li>
             <li className="text-sm text-[#8cb6c4]">
-              Goa: <Link to="tel:+919307762867">+91 9307762867</Link>
+              Goa:
+              <span
+                onClick={() => openWhatsAppChat("+919307762867")}
+                style={{ cursor: "pointer" }}
+              >
+                +91 9307762867
+              </span>
             </li>
             <li className="text-sm text-[#8cb6c4]">
-              Bir: <Link to="tel:+916230267754">+91 6230267754</Link>
+              Bir:
+              <span
+                onClick={() => openWhatsAppChat("+916230267754")}
+                style={{ cursor: "pointer" }}
+              >
+                +91 6230267754
+              </span>
             </li>
             <li className="text-sm text-[#8cb6c4]">
-              Weligama: +94 77 834 0685
+              Weligama:{" "}
+              <span
+                onClick={() => openWhatsAppChat("+916230267754")}
+                style={{ cursor: "pointer" }}
+              >
+                +94 77 834 0685
+              </span>
             </li>
             <li className="text-sm text-[#8cb6c4]">
-              Hiriketiya: +94 74 220 4478
+              Hiriketiya:{" "}
+              <span
+                onClick={() => openWhatsAppChat("+916230267754")}
+                style={{ cursor: "pointer" }}
+              >
+                +94 74 220 4478
+              </span>
             </li>
             <div class="flex items-center mt-2">
               <a
