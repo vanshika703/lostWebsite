@@ -44,8 +44,8 @@ const Navbar = () => {
   return (
     <>
       {isPhoneNavOpen && (
-        <div class="block md:flex md:items-center md:justify-between w-full flex-1 bg-none fixed top-16 z-50 bg-[#116b89]">
-          <div class="flex sm:hidden bg-transparent flex-col md:flex-row md:items-center mx-5">
+        <div class="block md:flex md:items-center md:justify-between w-full flex-1 bg-none fixed top-16 z-[99] bg-[#116b89]">
+          <div class="flex md:hidden bg-transparent flex-col md:flex-row md:items-center mx-5">
             {navItems.map(({ title, link }) => {
               return (
                 <HashLink
@@ -55,7 +55,7 @@ const Navbar = () => {
                     setIsPhoneNavOpen(false);
                   }}
                 >
-                  <p class="text-white md:my-2 mx-2 my-2 px-2 py-1 transition duration-500 ease-in-out hover:border-orange300 cursor-pointer border-b-2 border-transparent underline">
+                  <p class="text-white md:my-2 mx-2 my-2 px-2 py-1 transition duration-ƒ0 ease-in-out hover:border-orange300 cursor-pointer border-b-2 border-transparent underline">
                     {title}
                   </p>
                 </HashLink>
@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
       )}
 
-      <div className="fixed top-0 left-0 w-[100vw] bg-transparent h-[10vh] flex justify-between items-center sm:px-28 px-5 font-medium navbar z-50 text-white">
+      <div className="fixed top-0 left-0 w-[100vw] bg-transparent h-[10vh] flex justify-between items-center sm:px-28 px-5 font-medium navbar z-[99] text-white">
         <HashLink to="/#home">
           <p className="text-xl font-playfair relative flex items-center">
             <img src={logo} className="mr-2 w-12" alt="lost hostel logo"></img>
@@ -73,7 +73,7 @@ const Navbar = () => {
           </p>
         </HashLink>
         <div
-          className="z-10 block sm:hidden"
+          className="z-10 block md:hidden"
           onClick={() => {
             setIsPhoneNavOpen(!isPhoneNavOpen);
           }}
@@ -105,7 +105,7 @@ const Navbar = () => {
             </defs>
           </svg>
         </div>
-        <ul className="sm:flex w-[60VW] justify-between text-sm hidden font-dmsans relative mt-3">
+        <ul className="md:flex w-[60VW] justify-between text-sm hidden font-dmsans relative mt-3">
           {navItems.map((navItem, index) => (
             <HashLink to={navItem.link} key={navItem.link}>
               <li className="uppercase tracking-wider cursor-pointer">
