@@ -44,8 +44,8 @@ const Popup = () => {
         </p>
       </div>
       {isPopupOpen && (
-        <>
-          <div className="wheel-div fixed right-0 top-0 z-[100] m-auto py-20 bg-white w-full sm:w-1/3 h-full flex flex-col items-center justify-center rounded-md">
+        <div className="overlay fixed inset-0 h-full w-full z-[100]">
+          <div className="wheel-div fixed right-0 top-0 z-[101] m-auto py-20 bg-white w-full sm:w-1/3 h-full flex flex-col items-center justify-center rounded-md">
             <button
               className="absolute top-5 right-8 text-[#F3CD35]"
               onClick={handleTogglePopup}
@@ -71,7 +71,7 @@ const Popup = () => {
               )}
             </p>
           </div>
-        </>
+        </div>
       )}
     </>
   );
