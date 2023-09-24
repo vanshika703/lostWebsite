@@ -176,7 +176,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 500;
-  color: #F3CD35!important;
+  color: #f3cd35 !important;
 }
 
 .wheel-div {
@@ -184,6 +184,16 @@ body {
   background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/031/750/small/dark-blue-wide-background-with-radial-blurred-gradient-vector.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+/* .wheel-button {
+  background-image: url("./img/wheel.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} */
+
+.vertical{
+  writing-mode: vertical-lr;
 }
 
 #wheel {
@@ -196,7 +206,7 @@ body {
   background: #181818;
   color: #181818 !important;
   box-shadow: 0 0 10px rgb(31, 30, 30);
-  border: 5px solid #F3CD35;
+  border: 5px solid #f3cd35;
   opacity: 100%;
   font-family: dm;
 }
@@ -208,7 +218,7 @@ body {
 }
 
 #spin {
-  background: #F3CD35;
+  background: #f3cd35;
   color: black;
   border: 3px solid #181818;
   font-weight: 600;
