@@ -117,15 +117,14 @@ const SpinAndWin = forwardRef(
     return (
       <div>
         <div className="rewards-spin-game">
-          <div className="canvas-container">
+          <div
+            onClick={() => (removeButtonEffect ? "" : handleSpin())}
+            className="canvas-container cursor-pointer"
+          >
             <canvas id="wheel" width="450px" height="450px" />
             {!hideButton && (
-              <span
-                id="spin"
-                onClick={() => (removeButtonEffect ? "" : handleSpin())}
-                className="text-xs sm:text-xl"
-              >
-                SPIN
+              <span id="spin" className="">
+                <p className="text-xs sm:text-lg">SPIN</p>
               </span>
             )}
           </div>
@@ -136,11 +135,13 @@ const SpinAndWin = forwardRef(
               fill="#F3CD35"
               stroke-width="0"
               viewBox="0 0 24 24"
-              
               xmlns="http://www.w3.org/2000/svg"
               className="w-10 h-10"
             >
-              <path className="shadow-lg" d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path>
+              <path
+                className="shadow-lg"
+                d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"
+              ></path>
             </svg>
           </span>
         </div>
