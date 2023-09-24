@@ -6,13 +6,13 @@ import wheelimg from "../img/wheel.png";
 
 const Popup = () => {
   const freeSpinGifts = [
-    ["10% off on t-shirt", "#BA81FF"],
-    ["Try Again", "#4F67AD "],
-    ["Free Lost Love book", "#E54846 "],
-    ["Better Luck Next Time", "#FFCF3C "],
-    ["1 free beer", "#B2FF9F "],
-    ["So Close", "#FF5E80 "],
-    ["20% off on Yoga", "#6FF0EA "],
+    ["10% off on t-shirt", "#BA81FF", "LOSTTEE10"],
+    ["Try Again", "#4F67AD ", "Try Again"],
+    ["Free Lost Love book", "#E54846 ", "LOSTLOVE"],
+    ["Better Luck Next Time", "#FFCF3C ", "Try Again"],
+    ["1 free beer", "#B2FF9F ", "LOSTBEER"],
+    ["So Close", "#FF5E80 ", "Try Again"],
+    ["20% off on Yoga", "#6FF0EA ", "LOSTYOGA20"],
   ];
 
   const ref = useRef(null);
@@ -40,7 +40,7 @@ const Popup = () => {
       >
         <img src={wheelimg} alt="wheel" className="rounded m-1" />
         <p className="text-[#F3CD35] vertical z-[110] p-2 font-medium">
-          Try your luck
+          Feel lucky?
         </p>
       </div>
       {isPopupOpen && (
@@ -59,8 +59,12 @@ const Popup = () => {
               data={freeSpinGifts}
               handleCheckWinner={handleCheckWinner}
             />
-            <p className="text-[#F3CD35]">
-              {prize && <span>Your prize is : {prize}</span>}
+            <p className="text-[#F3CD35] my-4 font-medium text-center">
+              {prize === "Try Again" ? (
+                <span>Sorry, {prize}</span>
+              ) : (
+                <span>Congratulations!<br></br>Use coupon code {prize} to claim.</span>
+              )}
             </p>
           </div>
         </>

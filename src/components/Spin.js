@@ -90,10 +90,10 @@ const SpinAndWin = forwardRef(
         wheelCanvas.style.transition = transitionTime + "s";
 
         // Replace this TODO
-        const random = 1;
+        const random = Math.floor(Math.random() * 7);
         let winner = data[random];
 
-        handleCheckWinner(winner);
+        handleCheckWinner(winner[2]);
         console.log("hi", winner);
         if (!winner) {
           winner = [""];
