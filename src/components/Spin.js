@@ -121,14 +121,14 @@ const SpinAndWin = forwardRef(
             onClick={() => (removeButtonEffect ? "" : handleSpin())}
             className="canvas-container cursor-pointer"
           >
-            <canvas id="wheel" width="450px" height="450px" />
+            <canvas id="wheel" width="500px" height="500px" />
             {!hideButton && (
               <span id="spin" className="">
-                <p className="text-xs sm:text-lg">SPIN</p>
+                <p className="text-[10px] sm:text-lg">SPIN</p>
               </span>
             )}
           </div>
-          <span className="arrow absolute -top-2">
+          <span className="arrow absolute -top-1">
             <svg
               id="arrow"
               stroke="#181818"
@@ -136,7 +136,7 @@ const SpinAndWin = forwardRef(
               stroke-width="0"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-10 h-10"
+              className="w-8 h-8"
             >
               <path
                 className="shadow-lg"
