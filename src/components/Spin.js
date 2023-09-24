@@ -123,6 +123,7 @@ const SpinAndWin = forwardRef(
               <span
                 id="spin"
                 onClick={() => (removeButtonEffect ? "" : handleSpin())}
+                className="text-xs sm:text-xl"
               >
                 SPIN
               </span>
