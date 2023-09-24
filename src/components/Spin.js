@@ -129,17 +129,16 @@ const SpinAndWin = forwardRef(
               </span>
             )}
           </div>
-          <span className="arrow absolute -top-3">
+          <span className="arrow absolute -top-2">
             <svg
               id="arrow"
               stroke="#181818"
               fill="#F3CD35"
               stroke-width="0"
               viewBox="0 0 24 24"
-              height="4em"
-              width="4em"
-              xmlns="http://www.w3.org/2000/svg"
               
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-10 h-10"
             >
               <path className="shadow-lg" d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path>
             </svg>
