@@ -63,7 +63,11 @@ const Popup = () => {
               {prize === "Try Again" ? (
                 <span>Sorry, {prize}</span>
               ) : (
-                <span>Congratulations!<br></br>Use coupon code {prize} to claim.</span>
+                prize && (
+                  <span>
+                    Congratulations!<br></br>Use coupon code {prize} to claim.
+                  </span>
+                )
               )}
             </p>
           </div>
