@@ -40,7 +40,7 @@ const Popup = () => {
       >
         <img src={wheelimg} alt="wheel" className="rounded m-1" />
         <p className="text-[#F3CD35] vertical z-[110] p-2 font-medium">
-          Feel lucky?
+          Feeling lucky?
         </p>
       </div>
       {isPopupOpen && (
