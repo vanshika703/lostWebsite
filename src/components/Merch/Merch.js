@@ -36,7 +36,7 @@ const Blog = () => {
                 <a
                   href="https://www.amazon.in/Lost-Soul-backpackers-journey-discovery-ebook/dp/B08C71M1Q5/ref=sr_1_3?crid=27ASXNRM6NWWW&keywords=lost+soul&qid=1694368172&sprefix=lost+soul%2Caps%2C233&sr=8-3"
                   target="_blank"
-                  className="sm:min-w-1/4"
+                  className="sm:min-w-1/4" rel="noreferrer"
                 >
                   <button className="w-full bg-[#116b89] hover:bg-[#0e5b74] p-3 px-8 rounded-md font-medium font-dmsans text-sm text-[#fff]">
                     Buy Now
