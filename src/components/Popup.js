@@ -9,9 +9,9 @@ const Popup = () => {
     ["10% off on t-shirt", "#BA81FF", "LOSTTEE10"],
     ["Try Again", "#4F67AD ", "Try Again"],
     ["Free Lost Love book", "#E54846 ", "LOSTLOVE"],
-    ["Better Luck Next Time", "#FFCF3C ", "Better Luck Next Time"],
+    ["Better Luck Next Time", "#FFCF3C ", "Try Again"],
     ["1 free beer", "#B2FF9F ", "LOSTBEER"],
-    ["So Close", "#FF5E80 ", "So Close"],
+    ["So Close", "#FF5E80 ", "Try Again"],
     ["20% off on Yoga", "#6FF0EA ", "LOSTYOGA20"],
   ];
 
