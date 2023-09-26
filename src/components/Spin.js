@@ -7,13 +7,14 @@ const SpinAndWin = forwardRef(
     time,
     minTime,
     maxTime,
-    removeButtonEffect,
     fontSize,
     fontFamily,
     horizantalText,
     handleCheckWinner,
   }) => {
     const [state] = useState({ winnerAngle: 0 });
+
+    const [isSpinning, setIsSpinning] = useState(false);
     useLayoutEffect(() => {
       var wheelCanvas = document.getElementById("wheel");
       if (wheelCanvas && isCanvas(wheelCanvas)) {
@@ -80,6 +81,7 @@ const SpinAndWin = forwardRef(
       });
     };
     const handleSpin = () => {
+      setIsSpinning(true);
       let wheelCanvas = document.getElementById("wheel");
       if (wheelCanvas) {
         let transitionTime = time
@@ -93,7 +95,6 @@ const SpinAndWin = forwardRef(
         const random = Math.floor(Math.random() * 7);
         let winner = data[random];
 
-        handleCheckWinner(winner[2]);
         console.log("hi", winner);
         if (!winner) {
           winner = [""];
@@ -112,19 +113,26 @@ const SpinAndWin = forwardRef(
           offset;
         let deg = "rotate(" + state.winnerAngle + "deg)";
         wheelCanvas.style.transform = deg;
+
+        setTimeout(() => {
+          handleCheckWinner(winner[2]);
+          setIsSpinning(false);
+        }, transitionTime * 1000);
       }
     };
     return (
       <div>
         <div className="rewards-spin-game">
           <div
-            onClick={() => (removeButtonEffect ? "" : handleSpin())}
+            onClick={() => {
+              if (!isSpinning) handleSpin();
+            }}
             className="canvas-container cursor-pointer"
           >
             <canvas id="wheel" width="500px" height="500px" />
             {!hideButton && (
               <span id="spin" className="">
-                <p className="text-[10px] sm:text-lg">SPIN</p>
+                <p className="text-[14px] sm:text-lg">SPIN</p>
               </span>
             )}
           </div>

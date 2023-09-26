@@ -192,7 +192,7 @@ body {
   background-size: 100% 100%;
 } */
 
-.vertical{
+.vertical {
   writing-mode: vertical-lr;
 }
 
@@ -213,7 +213,7 @@ body {
 
 @media (max-width: 768px) {
   .canvas-container {
-    zoom: 0.5;
+    zoom: 0.75;
   }
 }
 
@@ -225,8 +225,8 @@ body {
   padding: 10px;
 }
 
-.overlay{
-  background:  rgba(0, 0, 0, 0.5);
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .swiper-button-next {
