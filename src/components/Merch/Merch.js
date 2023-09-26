@@ -13,7 +13,7 @@ const Blog = () => {
       </h1> */}
       <div className="flex flex-col gap-5 sm:mx-28 text-[#4c4e4e] mt-20">
         <div className="flex flex-col sm:flex-row gap-5 h-3/4 flex-1">
-          <div className="  sm:w-1/3 h-[528px] rounded-md shadow-box flex-1 p-5 items-stretch">
+          <div className="h-auto  sm:w-1/3 rounded-md shadow-box flex-1 p-5 items-stretch">
             <h3 className="text-2xl font-playfair font-semibold py-4 text-[#116b89] text-center">
               Unlock the Lost Vibe with our signature tee!
             </h3>
