@@ -59,21 +59,17 @@ const Popup = () => {
               data={freeSpinGifts}
               handleCheckWinner={handleCheckWinner}
             />
-            {prize ? (
-              <p className="text-[#F3CD35] my-4 font-medium text-center">
-                {prize === "Try Again" ? (
-                  <span>Sorry, {prize}</span>
-                ) : (
-                  prize && (
-                    <span>
-                      Congratulations!<br></br>Use coupon code {prize} to claim.
-                    </span>
-                  )
-                )}
-              </p>
-            ) : (
-              <p className="my-4">Loading...</p>
-            )}
+            <p className="text-[#F3CD35] my-4 font-medium text-center">
+              {prize === "Try Again" ? (
+                <span>Sorry, {prize}</span>
+              ) : (
+                prize && (
+                  <span>
+                    Congratulations!<br></br>Use coupon code {prize} to claim.
+                  </span>
+                )
+              )}
+            </p>
           </div>
         </div>
       )}
