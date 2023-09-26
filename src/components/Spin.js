@@ -7,13 +7,14 @@ const SpinAndWin = forwardRef(
     time,
     minTime,
     maxTime,
-    removeButtonEffect,
     fontSize,
     fontFamily,
     horizantalText,
     handleCheckWinner,
   }) => {
     const [state] = useState({ winnerAngle: 0 });
+
+    const [isSpinning, setIsSpinning] = useState(false);
     useLayoutEffect(() => {
       var wheelCanvas = document.getElementById("wheel");
       if (wheelCanvas && isCanvas(wheelCanvas)) {
@@ -55,7 +56,7 @@ const SpinAndWin = forwardRef(
         wheel.moveTo(wheelX, wheelY);
         wheel.fill();
 
-        wheel.fillStyle = "white";
+        wheel.fillStyle = "black";
         horizantalText
           ? (wheel.textAlign = "start")
           : (wheel.textAlign = "end");
@@ -80,6 +81,7 @@ const SpinAndWin = forwardRef(
       });
     };
     const handleSpin = () => {
+      setIsSpinning(true);
       let wheelCanvas = document.getElementById("wheel");
       if (wheelCanvas) {
         let transitionTime = time
@@ -90,10 +92,9 @@ const SpinAndWin = forwardRef(
         wheelCanvas.style.transition = transitionTime + "s";
 
         // Replace this TODO
-        const random = 1;
+        const random = Math.floor(Math.random() * 7);
         let winner = data[random];
 
-        handleCheckWinner(winner);
         console.log("hi", winner);
         if (!winner) {
           winner = [""];
@@ -112,34 +113,43 @@ const SpinAndWin = forwardRef(
           offset;
         let deg = "rotate(" + state.winnerAngle + "deg)";
         wheelCanvas.style.transform = deg;
+
+        setTimeout(() => {
+          handleCheckWinner(winner[2]);
+          setIsSpinning(false);
+        }, transitionTime * 1000);
       }
     };
     return (
       <div>
         <div className="rewards-spin-game">
-          <div className="canvas-container">
-            <canvas id="wheel" width="450px" height="450px" />
+          <div
+            onClick={() => {
+              if (!isSpinning) handleSpin();
+            }}
+            className="canvas-container cursor-pointer"
+          >
+            <canvas id="wheel" width="500px" height="500px" />
             {!hideButton && (
-              <span
-                id="spin"
-                onClick={() => (removeButtonEffect ? "" : handleSpin())}
-              >
-                SPIN
+              <span id="spin" className="">
+                <p className="text-[14px] sm:text-lg">SPIN</p>
               </span>
             )}
           </div>
-          <span className="arrow absolute top-4">
+          <span className="arrow absolute -top-1">
             <svg
               id="arrow"
               stroke="#181818"
-              fill="black"
+              fill="#F3CD35"
               stroke-width="0"
               viewBox="0 0 24 24"
-              height="2em"
-              width="2em"
               xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8"
             >
-              <path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path>
+              <path
+                className="shadow-lg"
+                d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"
+              ></path>
             </svg>
           </span>
         </div>
