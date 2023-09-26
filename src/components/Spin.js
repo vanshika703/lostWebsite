@@ -132,7 +132,7 @@ const SpinAndWin = forwardRef(
             <canvas id="wheel" width="500px" height="500px" />
             {!hideButton && (
               <span id="spin" className="">
-                <p className="text-[10px] sm:text-lg">SPIN</p>
+                <p className="text-[14px] sm:text-lg">SPIN</p>
               </span>
             )}
           </div>
