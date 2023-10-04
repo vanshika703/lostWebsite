@@ -5,6 +5,8 @@ import yoga2 from "../../img/yoga2.svg";
 import yoga3 from "../../img/yoga3.svg";
 import yoga4 from "../../img/yoga4.svg";
 import yoga5 from "../../img/yoga5.svg";
+import yoga6 from "../../img/yoga6.svg";
+
 
 import img1 from "../../img/yogaimg1.JPG";
 import img2 from "../../img/yogaimg2.JPG";
@@ -108,7 +110,8 @@ const YogaSchoolPage = () => {
             alt="Experienced Instructors"
             className="rounded-full w-40 h-40 mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
           />
-          <p className="mt-2 font-semibold">Experienced Instructors</p>
+          <p className="mt-2 font-medium">Experienced Instructors</p>
+          <p className="text-gray-500">Learn from seasoned yoga teachers.</p>
         </div>
         <div className="w-full sm:w-1/2 lg:w-1/4 text-center">
           <img
@@ -116,7 +119,9 @@ const YogaSchoolPage = () => {
             alt="Secluded Beach Location"
             className="rounded-full w-40 h-40 object-cover mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
           />
-          <p className="mt-2 font-semibold">Secluded Beach Location</p>
+          <p className="mt-2 font-medium">Secluded Beach Location</p>
+          <p className="text-gray-500">Practice yoga in a serene seaside location.</p>
+
         </div>
         <div className="w-full sm:w-1/2 lg:w-1/4 text-center">
           <img
@@ -124,7 +129,8 @@ const YogaSchoolPage = () => {
             alt="Yoga Workshops and Retreats"
             className="rounded-full w-40 h-40 object-cover mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
           />
-          <p className="mt-2 font-semibold">Yoga Workshops and Retreats</p>
+          <p className="mt-2 font-medium">Yoga Workshops and Retreats</p>
+          <p className="text-gray-500">Discover the art of mindful living.</p>
         </div>
         <div className="w-full sm:w-1/2 lg:w-1/4 text-center">
           <img
@@ -132,7 +138,8 @@ const YogaSchoolPage = () => {
             alt="Sound Healing Therapy"
             className="rounded-full w-40 h-40 object-cover mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
           />
-          <p className="mt-2 font-semibold">Sound Healing Therapy</p>
+          <p className="mt-2 font-medium">Sound Healing Therapy</p>
+          <p className="text-gray-500">Experience the soothing power of sound for relaxation and well-being.</p>
         </div>
         <div className="w-full sm:w-1/2 lg:w-1/4 text-center">
           <img
@@ -140,7 +147,17 @@ const YogaSchoolPage = () => {
             alt="Wellness Retreats"
             className="rounded-full w-40 h-40 object-cover mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
           />
-          <p className="mt-2 font-semibold">Wellness Retreats</p>
+          <p className="mt-2 font-medium">Wellness Retreats</p>
+          <p className="text-gray-500">Embark on rejuvenating wellness getaways.</p>
+        </div>
+        <div className="w-full sm:w-1/2 lg:w-1/4 text-center">
+          <img
+            src={yoga6}
+            alt="Wellness Retreats"
+            className="rounded-full w-40 h-40 mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
+          />
+          <p className="mt-2 font-medium">Community Driven</p>
+          <p className="text-gray-500">Connect with like-minded individuals on your journey to well-being.</p>
         </div>
       </section>
       <section className="flex flex-wrap justify-center items-center p-8 space-y-4 lg:space-y-0 px-5 sm:px-28">
