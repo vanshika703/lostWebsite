@@ -23,6 +23,7 @@ import "aos/dist/aos.css";
 import { useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
 import Popup from "./components/Popup";
+import YogaSchoolPage from "./components/Yoga/YogaSchoolPage";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -81,6 +82,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/merch",
         element: <Merch />,
+      },
+      {
+        path: "/yoga",
+        element: <YogaSchoolPage />,
       },
     ],
   },

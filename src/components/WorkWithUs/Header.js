@@ -2,9 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header
-      className="text-center py-8 mt-40 flex flex-col items-center justify-center mx-5"     
-    >
+    <header className="text-center py-8 mt-20 flex flex-col items-center justify-center mx-5">
       <h1 className="text-3xl font-playfair font-semibold py-4 text-[#116b89]">
         Work With Us
       </h1>
