@@ -30,11 +30,11 @@ const YogaSchoolPage = () => {
             The Lost Yoga School
           </h1>
 
-          <p className="text-[#4c4e4e] text-xl font-medium">
+          <p className="text-white text-xl font-medium">
             Community | Mindfulness | Wellness
           </p>
         </div>
-        <p className="text-[#4c4e4e] text-2xl absolute sm:right-10 sm:top-10 font-playfair italic">
+        <p className="text-white text-2xl absolute sm:right-10 sm:top-10 font-playfair italic">
           "Discover Inner Peace and Harmony"
         </p>
       </div>

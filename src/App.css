@@ -321,7 +321,7 @@ input[type="date"] {
 }
 
 .yogaHero {
-  background: url("https://img.freepik.com/free-photo/young-woman-doing-sport-exercises-sunrise-beach-morning_285396-258.jpg?w=996&t=st=1696426976~exp=1696427576~hmac=84d5ef58c2793c737ee7ccccf73ee988407755217425344f8ca1408364807eb3");
+  background: url("./img/yoga.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -330,8 +330,8 @@ input[type="date"] {
   padding: 12px;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .yogaHero {
-    background-position: 75% 80%;
+    background-position: 70% 80%;
   }
-} */
+}
