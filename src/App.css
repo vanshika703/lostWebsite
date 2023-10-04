@@ -330,8 +330,8 @@ input[type="date"] {
   padding: 12px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .yogaHero {
     background-position: 75% 80%;
   }
-}
+} */
