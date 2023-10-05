@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import DateInput from "./Date";
+import poster from "../img/cover.webp";
 
 const Hero = () => {
   const [formData, setFormData] = useState({
@@ -108,16 +109,24 @@ const Hero = () => {
       id="home"
     >
       <video
-        playsinline
+        playsInline
         autoPlay
         muted
         loop
         type="video/mp4"
         src="/lostvideo.mp4"
-        className="absolute top-0 right-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 right-0 left-0 w-full h-full object-cover hidden md:block"
+        poster={poster}
       >
         Your browser does not support the video tag.
       </video>
+
+{/*     
+      <img
+        src={poster}
+        alt="Cover"
+        className="w-full h-full object-cover md:hidden"
+      /> */}
 
       <div className="hero-content relative mx-auto text-left md:w-7/12">
         {/* <h1 className=" text-3xl sm:text-5xl font-playfair text-center px-10 md:ml-0 mt-20 sm:mt-28 leading-snug">
@@ -127,7 +136,7 @@ const Hero = () => {
           </span>
         </h1> */}
 
-        <div className="booking flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-5 lg:gap-10 py-2 my-16 mt-96  justify-around items-center mx-auto">
+        <div className="booking flex flex-col sm:flex-row rounded-lg px-5 gap-0 sm:gap-5 lg:gap-10 py-2 my-16 mt-32 sm:mt-96  justify-around items-center mx-auto">
           <div className="flex flex-col w-full sm:w-fit cursor-pointer">
             <label for="locations" className="text-base uppercase font-medium">
               Location:

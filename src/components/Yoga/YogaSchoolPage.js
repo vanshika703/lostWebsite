@@ -1,5 +1,5 @@
 import React from "react";
-import beachImage from "../../img/yoga-main.jpg";
+import beachImage from "../../img/yoga.webp";
 import yoga1 from "../../img/yoga1.svg";
 import yoga2 from "../../img/yoga2.svg";
 import yoga3 from "../../img/yoga3.svg";
