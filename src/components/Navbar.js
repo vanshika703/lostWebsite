@@ -39,6 +39,10 @@ const Navbar = () => {
       title: "Merch",
       link: "/merch",
     },
+    {
+      title: "Yoga school",
+      link: "/yoga",
+    }
   ];
 
   return (

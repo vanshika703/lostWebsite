@@ -1,41 +1,55 @@
 import { useState, useEffect, useRef } from "react";
 import SpinAndWin from "./Spin";
-// import SpinAndWin from "react-spin-game";
-// import "react-spin-game/dist/index.css";
 import wheelimg from "../img/wheel.png";
 
 const Popup = () => {
   const freeSpinGifts = [
     ["10% off on t-shirt", "#BA81FF", "LOSTTEE10"],
-    ["Try Again", "#4F67AD ", "Try Again"],
-    ["Free Lost Love book", "#E54846 ", "LOSTLOVE"],
-    ["Better Luck Next Time", "#FFCF3C ", "Try Again"],
-    ["1 free beer", "#B2FF9F ", "LOSTBEER"],
-    ["So Close", "#FF5E80 ", "Try Again"],
-    ["20% off on Yoga", "#6FF0EA ", "LOSTYOGA20"],
+    ["Try Again", "#4F67AD", "Try Again"],
+    ["Free Lost Love book", "#E54846", "LOSTLOVE"],
+    ["Better Luck Next Time", "#FFCF3C", "Try Again"],
+    ["1 free beer", "#B2FF9F", "LOSTBEER"],
+    ["So Close", "#FF5E80", "Try Again"],
+    ["20% off on Yoga", "#6FF0EA", "LOSTYOGA20"],
+    // Add more gifts here
   ];
 
   const ref = useRef(null);
 
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [prize, setPrize] = useState(null);
+  const [triesExceeded, setTriesExceeded] = useState(false);
 
   useEffect(() => {
-    console.log(ref);
+    // Check if the user has already spun the wheel by looking into local storage
+    const hasSpunWheel = localStorage.getItem("hasSpunWheel");
+    if (hasSpunWheel === "true") {
+      setTriesExceeded(true); // Mark that all tries have been exceeded
+    }
   }, []);
 
   const handleTogglePopup = () => {
+
     setIsPopupOpen(!isPopupOpen);
   };
 
   const handleCheckWinner = (winner) => {
-    setPrize(winner);
-    console.log("eheheh, winner is", winner);
+    // Check if the user has already spun the wheel
+    const hasSpunWheel = localStorage.getItem("hasSpunWheel");
+
+    if (hasSpunWheel === "true") {
+      setTriesExceeded(true); // Mark that all tries have been exceeded
+    } else {
+      // Set the prize and mark that the user has spun the wheel
+      setPrize(winner);
+      localStorage.setItem("hasSpunWheel", "true");
+    }
   };
+
   return (
     <>
       <div
-        className="wheel-button fixed top-[40%] right-0 w-10 h-auto text-white bg-[#0a56a8] z-[100] cursor-pointer flex flex-col justify-center gap-1 items-center rounded shadow-md  "
+        className="wheel-button fixed top-[40%] right-0 w-10 h-auto text-white bg-[#0a56a8] z-[100] cursor-pointer flex flex-col justify-center gap-1 items-center rounded shadow-md"
         onClick={handleTogglePopup}
       >
         <img src={wheelimg} alt="wheel" className="rounded m-1" />
@@ -55,21 +69,31 @@ const Popup = () => {
             <p className="text-3xl font-playfair font-semibold py-4 text-[#F3CD35]">
               Spin to win!
             </p>
-            <SpinAndWin
-              data={freeSpinGifts}
-              handleCheckWinner={handleCheckWinner}
-            />
-            <p className="text-[#F3CD35] my-4 font-medium text-center">
-              {prize === "Try Again" ? (
-                <span>Sorry, {prize}</span>
-              ) : (
-                prize && (
-                  <span>
-                    Congratulations!<br></br>Use coupon code {prize} to claim.
-                  </span>
-                )
-              )}
-            </p>
+            {triesExceeded ? (
+              <p className="text-[#F3CD35] my-4 font-medium text-center">
+                All tries exceeded. Please try again later.
+              </p>
+            ) : (
+              <>
+                <SpinAndWin
+                  data={freeSpinGifts}
+                  handleCheckWinner={handleCheckWinner}
+                />
+                <p className="text-[#F3CD35] my-4 font-medium text-center">
+                  {prize === "Try Again" ? (
+                    <span>Sorry, {prize}</span>
+                  ) : (
+                    prize && (
+                      <span>
+                        Congratulations!<br></br>To claim your prize, just show
+                        a screenshot of the coupon code {prize} at the
+                        reception.
+                      </span>
+                    )
+                  )}
+                </p>
+              </>
+            )}
           </div>
         </div>
       )}

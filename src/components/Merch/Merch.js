@@ -13,7 +13,7 @@ const Blog = () => {
       </h1> */}
       <div className="flex flex-col gap-5 sm:mx-28 text-[#4c4e4e] mt-20">
         <div className="flex flex-col sm:flex-row gap-5 h-3/4 flex-1">
-          <div className="  sm:w-1/3 h-[528px] rounded-md shadow-box flex-1 p-5 items-stretch">
+          <div className="h-auto  sm:w-1/3 rounded-md shadow-box flex-1 p-5 items-stretch">
             <h3 className="text-2xl font-playfair font-semibold py-4 text-[#116b89] text-center">
               Unlock the Lost Vibe with our signature tee!
             </h3>
@@ -36,7 +36,7 @@ const Blog = () => {
                 <a
                   href="https://www.amazon.in/Lost-Soul-backpackers-journey-discovery-ebook/dp/B08C71M1Q5/ref=sr_1_3?crid=27ASXNRM6NWWW&keywords=lost+soul&qid=1694368172&sprefix=lost+soul%2Caps%2C233&sr=8-3"
                   target="_blank"
-                  className="sm:min-w-1/4"
+                  className="sm:min-w-1/4" rel="noreferrer"
                 >
                   <button className="w-full bg-[#116b89] hover:bg-[#0e5b74] p-3 px-8 rounded-md font-medium font-dmsans text-sm text-[#fff]">
                     Buy Now
