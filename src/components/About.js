@@ -69,6 +69,7 @@ const About = () => {
               className="w-full h-full shadow-none"
             />
           </SwiperSlide>
+          
         </Swiper>
         {showIcon && (
           <div id="swipe" className="absolute bottom-10 z-50 w-20 sm:w-32 opacity-70" />
