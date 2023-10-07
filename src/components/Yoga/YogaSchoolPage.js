@@ -7,11 +7,12 @@ import yoga4 from "../../img/yoga4.svg";
 import yoga5 from "../../img/yoga5.svg";
 import yoga6 from "../../img/yoga6.svg";
 
-
 import img1 from "../../img/yogaimg1.JPG";
 import img2 from "../../img/yogaimg2.JPG";
 import img3 from "../../img/yogaimg3.JPG";
 import img4 from "../../img/yogaimg4.JPG";
+
+import arrow from "../../img/left arrow.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -25,16 +26,16 @@ const YogaSchoolPage = () => {
   return (
     <div className="m-0 p-0">
       <div className="yogaHero w-[95vw] h-[80vh] mt-[14vh] mx-auto relative rounded-md text-center">
-        <div className="absolute top-32 sm:top-[200px] sm:left-72">
+        <div className="absolute top-32 sm:top-[100px] sm:left-44">
           <h1 className="text-3xl sm:text-5xl font-playfair font-semibold py-4 text-[#116b89]">
             The Lost Yoga School
           </h1>
 
-          <p className="text-white text-xl font-medium">
+          <p className="text-xl font-medium">
             Community | Mindfulness | Wellness
           </p>
         </div>
-        <p className="text-white text-2xl absolute sm:right-10 sm:top-10 font-playfair italic">
+        <p className="text-2xl absolute sm:right-10 sm:top-10 font-playfair italic">
           "Discover Inner Peace and Harmony"
         </p>
       </div>
@@ -42,12 +43,12 @@ const YogaSchoolPage = () => {
         className="w-[100vw] flex flex-col sm:flex-row sm:-mt-20"
         id="our-story"
       >
-        <div className=" w-[100vw] sm:w-[50vw] md:min-h-[100vh] flex justify-center items-center relative">
+        <div className=" w-[100vw] sm:w-[50vw] md:min-h-[100vh] flex justify-center items-center">
           <Swiper
             effect={"cards"}
             grabCursor={true}
             modules={[EffectCards]}
-            className="mySwiper w-1/2 h-60 sm:h-2/3 mt-10"
+            className="mySwiper w-1/2 h-60 sm:h-2/3 mt-10 relative"
           >
             <SwiperSlide className="w-full h-full shadow-none">
               <img
@@ -77,6 +78,7 @@ const YogaSchoolPage = () => {
                 className="w-full h-full shadow-none"
               />
             </SwiperSlide>
+            <img src={arrow} alt="arrow" className="absolute top-40 sm:top-96 -left-10 z-[99] h-28 w-28"/>
           </Swiper>
         </div>
         <div className=" w-[100vw] sm:w-[50vw] md:min-h-screen flex flex-col justify-center items-start mx-auto sm:pr-32 px-10">
@@ -120,8 +122,9 @@ const YogaSchoolPage = () => {
             className="rounded-full w-40 h-40 object-cover mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
           />
           <p className="mt-2 font-medium">Secluded Beach Location</p>
-          <p className="text-gray-500">Practice yoga in a serene seaside location.</p>
-
+          <p className="text-gray-500">
+            Practice yoga in a serene seaside location.
+          </p>
         </div>
         <div className="w-full sm:w-1/2 lg:w-1/4 text-center">
           <img
@@ -139,7 +142,10 @@ const YogaSchoolPage = () => {
             className="rounded-full w-40 h-40 object-cover mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
           />
           <p className="mt-2 font-medium">Sound Healing Therapy</p>
-          <p className="text-gray-500">Experience the soothing power of sound for relaxation and well-being.</p>
+          <p className="text-gray-500">
+            Experience the soothing power of sound for relaxation and
+            well-being.
+          </p>
         </div>
         <div className="w-full sm:w-1/2 lg:w-1/4 text-center">
           <img
@@ -148,7 +154,9 @@ const YogaSchoolPage = () => {
             className="rounded-full w-40 h-40 object-cover mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
           />
           <p className="mt-2 font-medium">Wellness Retreats</p>
-          <p className="text-gray-500">Embark on rejuvenating wellness getaways.</p>
+          <p className="text-gray-500">
+            Embark on rejuvenating wellness getaways.
+          </p>
         </div>
         <div className="w-full sm:w-1/2 lg:w-1/4 text-center">
           <img
@@ -157,7 +165,9 @@ const YogaSchoolPage = () => {
             className="rounded-full w-40 h-40 mx-auto hover:opacity-80 transition-opacity duration-300 ease-in-out"
           />
           <p className="mt-2 font-medium">Community Driven</p>
-          <p className="text-gray-500">Connect with like-minded individuals on your journey to well-being.</p>
+          <p className="text-gray-500">
+            Connect with like-minded individuals on your journey to well-being.
+          </p>
         </div>
       </section>
       <section className="flex flex-wrap justify-center items-center p-8 space-y-4 lg:space-y-0 px-5 sm:px-28">
@@ -174,12 +184,15 @@ const YogaSchoolPage = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2 text-left flex flex-col justify-center items-start pl-10">
-          <p  className="text-2xl font-playfair font-semibold text-[#116b89]">Location:</p>
+          <p className="text-2xl font-playfair font-semibold text-[#116b89]">
+            Location:
+          </p>
           <p>Lost Hostel Roof Top, Helipad Cliff, Varkala Beach, Kerala.</p>
-          <p  className="text-2xl font-playfair font-semibold text-[#116b89] mt-5">Contact Details:</p>
+          <p className="text-2xl font-playfair font-semibold text-[#116b89] mt-5">
+            Contact Details:
+          </p>
           <p>+91 7012416343</p>
           <p>events@thelosthostels.com</p>
-          <p>@thelosthostels</p>
         </div>
       </section>
     </div>
