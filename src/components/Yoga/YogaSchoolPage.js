@@ -28,7 +28,7 @@ const YogaSchoolPage = () => {
       <div className="yogaHero w-[95vw] h-[80vh] mt-[14vh] mx-auto relative rounded-md text-center">
         <div className="absolute top-32 sm:top-[100px] sm:left-44">
           <h1 className="text-3xl sm:text-5xl font-playfair font-semibold py-4 text-[#116b89]">
-            The Lost Yoga School
+            Lost Yoga School
           </h1>
 
           <p className="text-xl font-medium">
