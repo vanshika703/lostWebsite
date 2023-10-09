@@ -53,7 +53,7 @@ body {
 
 @media (max-width: 768px) {
   .hero::before {
-    background: url(./img/cover.webp);
+    background: url(./img/cover.png);
   }
 }
 
