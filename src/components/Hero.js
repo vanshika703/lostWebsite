@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import DateInput from "./Date";
-import poster from "../img/cover.png";
+import poster from "../img/videocover.webp";
 
 const Hero = () => {
   const [formData, setFormData] = useState({
