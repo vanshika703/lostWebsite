@@ -42,6 +42,33 @@ const Locations = () => {
         navigation={true}
         className="mySwiper locationslider"
       >
+        <SwiperSlide>
+          <HashLink to="/hostelnew/manali">
+            <div className="overflow-hidden rounded-md w-full h-full relative ribbon ribbon-top-left">
+              <div className="absolute top-2 rounded left-2 w-12 h-6 bg-white z-10 text-[#116b89] text-xs font-semibold py-1 shadow-lg border border-[#116b89]">
+                NEW!
+              </div>
+              <img
+                src={manalihero}
+                alt="manali"
+                className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
+              />
+            </div>
+            <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
+              <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
+                Manali, Himachal Pradesh
+              </h3>
+              <p className="text-sm text-[#4c4e4e]">
+                The Lost Hostels Manali stands as your sanctuary amidst the
+                clouds, harmoniously nestled in the heart of the Himalayas. Our
+                doors welcome you to an extraordinary experience.
+              </p>
+              <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
+                Know More
+              </button>
+            </div>
+          </HashLink>
+        </SwiperSlide>
         <SwiperSlide className="relative">
           <Link to="/hostel/weligama">
             <div className="overflow-hidden rounded-md w-full h-full">
@@ -90,31 +117,7 @@ const Locations = () => {
             </div>
           </Link>
         </SwiperSlide>
-        <SwiperSlide>
-          <HashLink to="/hostelnew/manali">
-            <div className="overflow-hidden rounded-md w-full h-full">
-              <img
-                src={manalihero}
-                alt="manali"
-                className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
-              />
-            </div>
-            <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
-              <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-                Manali, Himachal Pradesh
-              </h3>
-              <p className="text-sm text-[#4c4e4e]">
-                The Lost Hostels Manali stands as your sanctuary amidst the
-                clouds, harmoniously nestled in the heart of the Himalayas. Our
-                doors welcome you to an extraordinary experience that transcends
-                the realms of the ordinary.
-              </p>
-              <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
-                Know More
-              </button>
-            </div>
-          </HashLink>
-        </SwiperSlide>
+        
       </Swiper>
       <h1 className="text-3xl font-playfair font-semibold text-[#116b89] my-5 pt-8">
         Explore more Destinations
