@@ -336,6 +336,17 @@ input[type="date"] {
   padding: 12px;
 }
 
+.manaliHero {
+  background: url("./img/manaliHero.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 12px;
+  padding: 12px;
+}
+
+
 @media (max-width: 768px) {
   .yogaHero {
     background-position: 70% 80%;

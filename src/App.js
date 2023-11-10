@@ -24,6 +24,7 @@ import { useLocation } from "react-router-dom";
 import { useLayoutEffect } from "react";
 import Popup from "./components/Popup";
 import YogaSchoolPage from "./components/Yoga/YogaSchoolPage";
+import Manali from "./components/Manali.js";
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -46,6 +47,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/hostel/:id",
         element: <HostelDetails />,
+      },
+      {
+        path: "/hostelnew/manali",
+        element: <Manali />,
       },
       {
         path: "/workwithus",

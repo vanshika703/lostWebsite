@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import manalihero from "../img/manaliHero.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -90,18 +91,27 @@ const Locations = () => {
           </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <HashLink to="/workwithus#contactus">
+          <HashLink to="/hostelnew/manali">
             <div className="overflow-hidden rounded-md w-full h-full">
               <img
-                src={comingsoonimg}
-                alt="comingsoonimg"
+                src={manalihero}
+                alt="manali"
                 className="rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in"
               />
             </div>
             <div className="bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md">
               <h3 className=" text-[#116b89] font-playfair font-semibold text-lg mb-1">
-                Where do you want to see us next?
+                Manali, Himachal Pradesh
               </h3>
+              <p className="text-sm text-[#4c4e4e]">
+                The Lost Hostels Manali stands as your sanctuary amidst the
+                clouds, harmoniously nestled in the heart of the Himalayas. Our
+                doors welcome you to an extraordinary experience that transcends
+                the realms of the ordinary.
+              </p>
+              <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
+                Know More
+              </button>
             </div>
           </HashLink>
         </SwiperSlide>
