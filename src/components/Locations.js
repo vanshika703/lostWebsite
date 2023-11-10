@@ -59,9 +59,9 @@ const Locations = () => {
                 Manali, Himachal Pradesh
               </h3>
               <p className="text-sm text-[#4c4e4e]">
-                The Lost Hostels Manali stands as your sanctuary amidst the
-                clouds, harmoniously nestled in the heart of the Himalayas. Our
-                doors welcome you to an extraordinary experience.
+                Lost Hostels Manali: A Himalayan sanctuary, where every
+                interaction weaves the extraordinary essence of the mountains
+                into your retreat.
               </p>
               <button className="font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]">
                 Know More
@@ -117,7 +117,6 @@ const Locations = () => {
             </div>
           </Link>
         </SwiperSlide>
-        
       </Swiper>
       <h1 className="text-3xl font-playfair font-semibold text-[#116b89] my-5 pt-8">
         Explore more Destinations
