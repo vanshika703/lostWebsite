@@ -10,22 +10,22 @@ const Navbar = () => {
       link: "/#home",
     },
 
-    {
+   /*  {
       title: "Events",
       link: "/#events",
-    },
+    }, */
 
     {
       title: "Locations",
       link: "/#locations",
     },
-    {
+    /* {
       title: "Social",
       link: "/#gallery",
-    },
+    }, */
     {
       title: "Our Story",
-      link: "/#our-story",
+      link: "/ourstory",
     },
     {
       title: "Work with Us",

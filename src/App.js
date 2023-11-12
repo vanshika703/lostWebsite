@@ -17,6 +17,7 @@ import Blog from "./components/Error";
 import Merch from "./components/Merch/Merch";
 import AllPosts from "./components/AllPosts.js";
 import OnePost from "./components/OnePost.js";
+import Timeline from "./components/Timeline.js";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -92,6 +93,10 @@ const appRouter = createBrowserRouter([
         path: "/yoga",
         element: <YogaSchoolPage />,
       },
+      {
+        path: "/ourstory",
+        element: <Timeline />,
+      },
     ],
   },
 ]);
@@ -105,7 +110,8 @@ function App() {
   return (
     <Wrapper>
       <div className="font-dmsans">
-        <Navbar />
+      
+       <Navbar />
         <Popup />
         <Outlet />
         <Footer />
