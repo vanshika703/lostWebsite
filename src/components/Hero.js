@@ -171,6 +171,18 @@ const Hero = () => {
               <option value="185812" className="text-black">
                 Weligama, Sri Lanka
               </option>
+               <option
+                value="thelosthostelshiriketiyabeachsrilanka"
+                className="text-black"
+              >
+                Hiriketiya, Sri Lanka
+              </option>
+              <option
+                value="tlhmanali"
+                className="text-black"
+              >
+                Manali, Himachal Pradesh
+              </option>
             </select>
             {errors.hostel && (
               <p className="text-xs pt-1 text-red-600">
