@@ -1,97 +1,198 @@
-import { Chrono } from "react-chrono";
+import { Chrono } from 'react-chrono';
+import './Timeline.css';
+import { items } from './Timeline/Items';
+import LazyLoad from 'react-lazy-load';
+import TL1 from '../img/TL1.webp';
+import TL2 from '../img/TL2.webp';
+import TL3 from '../img/TL3.jpeg';
+import TL4 from '../img/TL4.jpeg';
+import TL5 from '../img/TL5.jpeg';
+import TL6 from '../img/lostsoul.jpg';
+import TL7 from '../img/TL7.avif';
+import TL8 from '../img/TL8.jpg';
+import TL9 from '../img/TL9.jpeg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Timeline = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="sm:w-1/2 mx-auto text-center mt-20">
-      <h1 className="text-3xl font-playfair font-semibold text-[#116b89] mt-16 sm:my-5 mb-4">
-        Our Story
-      </h1>
-      <Chrono
-        items={[
-          {
-            title: "2017",
-            cardTitle: "Where It All Began",
-            url: "http://google.com",
-            cardSubtitle: "May",
-            cardDetailedText:
-              "The first chapter unfolds in Varkala, a surfers' paradise in Kerala. The Lost Hostels opens its doors with a mission to bring together the global travel community.",
-          },
-          {
-            title: "2018",
-            cardTitle: "Expanding Horizons",
-            url: "",
-            cardSubtitle: "The Community Grows",
-            cardDetailedText:
-              "As stories spread of our unique ethos, new locations spring up in Madurai, Kovalam, Munnar, and Kochi. A tribe of travelers starts to form.",
-          },
-          {
-            title: "2019",
-            cardTitle: "Celebrating Love and Friendship",
-            url: "",
-            cardSubtitle: "Weddings and Reunions",
-            cardDetailedText:
-              "The hostels become a stage for life's grand events—weddings celebrated, lifelong friendships forged.",
-          },
-          {
-            title: "2020",
-            cardTitle: "The Test of Time",
-            url: "",
-            cardSubtitle: "Pandemic Shutdown",
-            cardDetailedText:
-              "The world changes overnight. With heavy hearts, we close several of our homes, holding on to the memories created.",
-          },
-          {
-            title: "2021",
-            cardTitle: "Resilience and Rebirth",
-            url: "",
-            cardSubtitle: "Reopening and Reimagining",
-            cardDetailedText:
-              "Varkala and Goa welcome back old friends and new souls, while the birth of Bir adds a fresh chapter to our story.",
-          },
-          {
-            title: "2022",
-            cardTitle: "A Year of Renewal",
-            url: "",
-            cardSubtitle: "Soul by the Lost",
-            cardDetailedText:
-              "Our sister property in Varkala touches 30,000 lives, becoming a sanctuary for those seeking peace.",
-          },
-          {
-            title: "2023",
-            cardTitle: "New Adventures, New Memories",
-            url: "",
-            cardSubtitle: "May",
-            cardDetailedText:
-              "We embrace the island spirit, bringing The Lost Hostels' magic to Weligama and Hiriketiya in Sri Lanka.",
-          },
-          {
-            title: "2023",
-            cardTitle: "New Adventures, New Memories",
-            url: "",
-            cardSubtitle: "November",
-            cardDetailedText:
-              "The Lost Hostels Manali opens, inviting travelers to the Himalayas.",
-          },
-          {
-            title: "2024 and Beyond",
-            cardTitle: "The Lost Wave Yoga Festival",
-            url: "",
-            cardSubtitle: "On the Horizon",
-            cardDetailedText:
-              "The upcoming Lost Wave Yoga Festival at Varkala promises a confluence of energy, tranquility, and community.",
-          },
-        ]}
-        mode="VERTICAL_ALTERNATING"
-        theme={{
-          primary: "#116b89",
-          secondary: "#ffde1a",
-          cardBgColor: "#e7f0f3",
-          cardForeColor: "#e7f0f3",
-          titleColor: "#116b89",
-          titleColorActive: "#116b89",
-          cardTitleColor: "#116b89",
-        }}
-      />
+    <div className=' w-screen h-full bg-[#e4f2f7]'>
+      <div className='text-center mt-20 mx-auto md:w-4/5'>
+        <div className='p-6 md:ml-8'>
+          <h1 className='text-4xl font-playfair font-semibold text-black mt-16 md:my-5 tracking-widest'>
+            HOW IT All
+          </h1>
+          <h1 className='text-4xl font-playfair font-semibold text-[#116b89] mt-3 md:my-5 tracking-widest'>
+            STARTED
+          </h1>
+        </div>
+
+        <Chrono
+          flipLayout
+          borderLessCards={true}
+          hideControls
+          lineWidth={70}
+          classNames={{
+            card: 'my-card',
+            cardMedia: 'my-card-media',
+            cardSubTitle: 'my-card-subtitle',
+            cardText: 'my-card-text',
+            cardTitle: 'my-card-title',
+            controls: 'my-controls',
+            title: 'my-title',
+          }}
+          slideShow
+          scrollable
+          disableNavOnKey
+          slideItemDuration={2500}
+          slideShowType='slide_from_sides'
+          items={[
+            {
+              title: (
+                <div
+                  className='title'
+                  data-aos='fade-up-right'
+                  data-aos-duration='1500'
+                >
+                  <img className='title' src={TL1} />
+                </div>
+              ),
+              url: 'http://google.com',
+            },
+            {
+              title: (
+                <div
+                  className='title'
+                  data-aos='fade-up-right'
+                  data-aos-duration='1500'
+                >
+                  <img className='title' src={TL2} />
+                </div>
+              ),
+              url: 'http://google.com',
+            },
+            {
+              title: (
+                <div
+                  className='title'
+                  data-aos='fade-up-right'
+                  data-aos-duration='1500'
+                >
+                  <img className='title' src={TL3} />
+                </div>
+              ),
+              url: 'http://google.com',
+            },
+            {
+              title: (
+                <div
+                  className='title'
+                  data-aos='fade-up-right'
+                  data-aos-duration='1500'
+                >
+                  <img className='title' src={TL4} />
+                </div>
+              ),
+              url: 'http://google.com',
+            },
+            {
+              title: (
+                <div
+                  className='title'
+                  data-aos='fade-up-right'
+                  data-aos-duration='1500'
+                >
+                  <img className='title' src={TL5} />
+                </div>
+              ),
+              url: 'http://google.com',
+            },
+            {
+              title: (
+                <div
+                  className='title'
+                  data-aos='fade-up-right'
+                  data-aos-duration='1500'
+                >
+                  <img className='title' src={TL6} />
+                </div>
+              ),
+              url: 'http://google.com',
+            },
+            {
+              title: (
+                <div
+                  className='title'
+                  data-aos='fade-up-right'
+                  data-aos-duration='1500'
+                >
+                  <img className='title' src={TL7} />
+                </div>
+              ),
+              url: 'http://google.com',
+            },
+            {
+              title: (
+                <div
+                  className='title'
+                  data-aos='fade-up-right'
+                  data-aos-duration='1500'
+                >
+                  <img className='title' src={TL8} />
+                </div>
+              ),
+              url: 'http://google.com',
+            },
+            {
+              title: (
+                <div
+                  className='title'
+                  data-aos='fade-up-right'
+                  data-aos-duration='1500'
+                >
+                  <img className='title' src={TL9} />
+                </div>
+              ),
+              url: 'http://google.com',
+            },
+          ]}
+          mode='VERTICAL_ALTERNATING'
+          theme={{
+            primary: '#116b89',
+            secondary: 'none',
+            cardBgColor: '#e7f0f3',
+            cardForeColor: '#e7f0f3',
+            titleColor: '#116b89',
+            titleColorActive: '#000000',
+            cardTitleColor: '#116b89',
+          }}
+        >
+          {items.map((item) => (
+            <div
+              className='border-none w-full'
+              data-aos='zoom-in-left'
+              data-aos-duration='1500'
+              key={item.cardTitle}
+            >
+              <p className='mb-2 font-light'>{item.year}</p>
+              <p className=' text-xl text-start font-bold text-[#116b89] mb-0.5'>
+                {item.cardTitle}
+              </p>
+              <p className='text-[#116b89e2] font-semibold mb-2'>
+                {item.cardSubtitle}
+              </p>
+              <p className='text-[#116b89b5] font-light'>
+                {item.cardDetailedText}
+              </p>
+            </div>
+          ))}
+        </Chrono>
+      </div>
     </div>
   );
 };
