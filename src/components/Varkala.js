@@ -149,7 +149,7 @@ const Varkala = () => {
           Embrace Your Peace{' '}
           <a
             className='text-[#116b89] font-semibold underline cursor-pointer'
-            href='https://live.ipms247.com/booking/book-rooms-tlhmanali'
+            href='https://live.ipms247.com/booking/book-rooms-thelosthostelvarkalahelipad'
             target='_blank'
           >
             now
