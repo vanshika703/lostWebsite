@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "react-alice-carousel/lib/alice-carousel.css";
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:wght@400;500;600&display=swap");
+@import 'react-alice-carousel/lib/alice-carousel.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:wght@400;500;600&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -12,7 +12,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "DM Sans", sans-serif;
+  font-family: 'DM Sans', sans-serif;
   overflow-x: hidden;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .navbar::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -37,7 +37,7 @@ body {
 }
 
 .hero::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -101,7 +101,7 @@ body {
 }
 
 .testimonials::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -190,7 +190,7 @@ body {
 
 .wheel-div {
   background-color: rgba(255, 255, 255, 0.9) !important;
-  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/031/750/small/dark-blue-wide-background-with-radial-blurred-gradient-vector.jpg");
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/031/750/small/dark-blue-wide-background-with-radial-blurred-gradient-vector.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -266,7 +266,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: auto;
 } */
 
-input[type="date"] {
+input[type='date'] {
   display: block;
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
@@ -284,7 +284,7 @@ input[type="date"] {
 }
 
 .down-arrow:after {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 12px;
   left: -8px;
@@ -327,7 +327,7 @@ input[type="date"] {
 }
 
 .yogaHero {
-  background: url("./img/yoga.webp");
+  background: url('./img/yoga.webp');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -337,7 +337,16 @@ input[type="date"] {
 }
 
 .manaliHero {
-  background: url("./img/manaliHero.jpg");
+  background: url('./img/manaliHero.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 12px;
+  padding: 12px;
+}
+.varkalaHero {
+  background: url('./img/varkala-img.jpeg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -363,7 +372,7 @@ input[type="date"] {
 .ribbon::after {
   position: absolute;
   z-index: -1;
-  content: "";
+  content: '';
   display: block;
   border: 5px solid #2980b9;
 }
@@ -375,7 +384,7 @@ input[type="date"] {
   background-color: #3498db;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   color: #fff;
-  font: 700 18px/1 "Lato", sans-serif;
+  font: 700 18px/1 'Lato', sans-serif;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   text-align: center;

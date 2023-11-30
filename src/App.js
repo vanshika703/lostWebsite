@@ -26,6 +26,7 @@ import { useLayoutEffect } from "react";
 import Popup from "./components/Popup";
 import YogaSchoolPage from "./components/Yoga/YogaSchoolPage";
 import Manali from "./components/Manali.js";
+import Varkala from './components/Varkala.js';
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -37,64 +38,68 @@ const Wrapper = ({ children }) => {
 
 const appRouter = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
     errorElement: <Error />,
     children: [
       {
-        path: "/",
+        path: '/',
         element: <Body />,
       },
       {
-        path: "/hostel/:id",
+        path: '/hostel/:id',
         element: <HostelDetails />,
       },
       {
-        path: "/hostelnew/manali",
+        path: '/hostelnew/manali',
         element: <Manali />,
       },
       {
-        path: "/workwithus",
+        path: '/hostelnew/varkala',
+        element: <Varkala/>,
+      },
+      {
+        path: '/workwithus',
         element: <WorkWithUsPage />,
       },
       {
-        path: "/terms",
+        path: '/terms',
         element: <Terms />,
       },
       {
-        path: "/privacy",
+        path: '/privacy',
         element: <Privacy />,
       },
       {
-        path: "/guest",
+        path: '/guest',
         element: <Guest />,
       },
       {
-        path: "/cancellation",
+        path: '/cancellation',
         element: <Cancellation />,
       },
       {
-        path: "/tourgroups",
+        path: '/tourgroups',
         element: <TourGroups />,
       },
       {
-        path: "/blog",
+        path: '/blog',
         element: <AllPosts />,
       },
       {
-        path: "/blog/:slug",
+        path: '/blog/:slug',
         element: <OnePost />,
       },
       {
-        path: "/merch",
+        path: '/merch',
         element: <Merch />,
       },
       {
-        path: "/yoga",
+        path: '/yoga',
         element: <YogaSchoolPage />,
       },
       {
-        path: "/ourstory",
+        path: '/ourstory',
         element: <Timeline />,
       },
     ],
