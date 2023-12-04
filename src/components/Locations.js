@@ -1,5 +1,6 @@
 import GOA_IMG from '../img/goa.webp';
 import BIR from '../img/bir.webp';
+import Varakal from '../img/Varkala-img.webp';
 import varkalaimg from '../img/varkala.webp';
 import weligamaimg from '../img/weligama.webp';
 import hiriketiyaimg from '../img/hiriketiya.webp';
@@ -159,7 +160,7 @@ const Locations = () => {
           </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <Link to='/hostelnew/varkala'>
+          <Link to='/hostel/varkala'>
             <div className='overflow-hidden rounded-md w-full h-full'>
               <img
                 src={varkalaimg}
@@ -205,6 +206,30 @@ const Locations = () => {
                 Located near the Paragliding landing site, The Lost Hostels Bir
                 offers river stream & mountain view with unique facilities in a
                 relaxing and peaceful atmosphere.
+              </p>
+              <button className='font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]'>
+                Know More
+              </button>
+            </div>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link to='/hostelnew/varkala'>
+            <div className='overflow-hidden rounded-md w-full h-full'>
+              <img
+                src={Varakal}
+                alt='varkala'
+                className='rounded-md shadow-lg hover:scale-105 overflow-hidden duration-100 ease-in'
+              />
+            </div>
+            <div className='bg-white absolute top-[50%] w-[80%] rounded-md p-5 mx-10 text-left shadow-md'>
+              <h3 className=' text-[#116b89] font-playfair font-semibold text-lg mb-1'>
+                Soul, Varkala
+              </h3>
+              <p className='text-sm text-[#4c4e4e]'>
+                Located on Varkala's Black beach, Soul is an oasis of calm and
+                comfort with a wide range of and a breathtaking view of the
+                ocean.
               </p>
               <button className='font-medium font-playfair text-sm text-[#116b89] hover:border-b-2 border-[#116b89] duration-100 ease-intext-[#116b89]   decoration-[1.5px]'>
                 Know More

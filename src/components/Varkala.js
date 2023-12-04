@@ -1,15 +1,15 @@
 import React from 'react';
-import mountainbg from '../img/mountainbg.jpg';
+import mountainbg from '../img/soul_varkala1.webp';
 
 const Varkala = () => {
   return (
     <div className='m-0 p-0'>
       <div className='varkalaHero w-[95vw] h-[80vh] mt-[14vh] mx-auto relative rounded-md text-center'>
         <div className='absolute top-10 left-12 text-left sm:w-1/3'>
-          <h1 className='text-3xl font-playfair font-semibold py-4 text-white'>
+          <h1 className='text-3xl font-playfair font-semibold py-4 text-[#116b89]'>
             Unwind at Soul, <br></br>The Lost Hostels' Secluded Sanctuary
           </h1>
-          <p className='text-l font-medium text-white'>
+          <p className='text-l font-medium text-[#116b89]'>
             Where the soulful serenity of the black beach meets the heartwarming
             intimacy of community.
           </p>
@@ -28,10 +28,10 @@ const Varkala = () => {
         className='w-[100vw] flex flex-col sm:flex-row sm:-mt-20'
         id='our-story'
       >
-        <div className=' w-[100vw] sm:w-[50vw] md:min-h-[100vh] flex justify-center items-center'>
+        <div className=' w-[100vw] sm:w-[50vw] md:min-h-[100vh] flex justify-center items-center mb-8'>
           <img
             src={
-              'https://static.toiimg.com/thumb/100289608/Munroe-Island-Kollam.jpg?width=1200&height=900'
+              'https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/315943/q72q103jb9ljgbvbbkfl'
             }
             alt='manali'
             height={500}
@@ -119,14 +119,14 @@ const Varkala = () => {
         <div className='flex flex-col sm:flex-row  justify-between items-center w-full gap-10'>
           <img
             src={
-              'https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/2/279580/zyrnrlwfnuinjxy4g4gm'
+              'https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/315943/vvrfu2bq6tvjq46rkipg'
             }
             alt=''
             className='sm:w-1/3 h-52'
           />
           <img
             src={
-              'https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/2/279580/iqmuz97wchylpbhjnmed'
+              'https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/315943/py5ydaqbrahvvgwgoju3'
             }
             alt=''
             className='sm:w-1/3 h-52'
@@ -134,7 +134,7 @@ const Varkala = () => {
 
           <img
             src={
-              'https://cf.bstatic.com/xdata/images/hotel/max1024x768/339369155.jpg?k=937d4c56e76def4620350eeb8413f1304eaf41d98f55cb9a5561ffab6f0d7962&o=&hp=1'
+              'https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/315943/fzgekyoeglqjog9mzwh4'
             }
             alt=''
             className='sm:w-1/3 h-52'
@@ -143,7 +143,7 @@ const Varkala = () => {
         <img
           src={mountainbg}
           alt=''
-          className='absolute top-0 sm:-top-52 left-0  -z-10 opacity-10'
+          className='absolute top-0 sm:-top-52  -z-10 opacity-10 w-full'
         />
         <h1 className='text-2xl font-medium'>
           Embrace Your Peace{' '}
