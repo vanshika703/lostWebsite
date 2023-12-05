@@ -6,15 +6,15 @@ const Varkala = () => {
     <div className='m-0 p-0'>
       <div className='varkalaHero w-[95vw] h-[80vh] mt-[14vh] mx-auto relative rounded-md text-center'>
         <div className='absolute top-10 left-12 text-left sm:w-1/3'>
-          <h1 className='text-3xl font-playfair font-semibold py-4 text-[#116b89]'>
+          <h1 className='text-3xl font-playfair font-semibold py-4 text-white'>
             Unwind at Soul, <br></br>The Lost Hostels' Secluded Sanctuary
           </h1>
-          <p className='text-l font-medium text-[#116b89]'>
+          <p className='text-l font-medium text-white'>
             Where the soulful serenity of the black beach meets the heartwarming
             intimacy of community.
           </p>
           <a
-            href='https://live.ipms247.com/booking/book-rooms-thelosthostelvarkalahelipad'
+            href='/'
             target='_blank'
           >
             <button className='md:block bg-[#116b89] hover:bg-[#0e5b74] p-3 px-8 my-4 rounded-md font-medium font-dmsans text-sm text-[#fff] shadow-sm'>
@@ -119,7 +119,7 @@ const Varkala = () => {
         <div className='flex flex-col sm:flex-row  justify-between items-center w-full gap-10'>
           <img
             src={
-              'https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/315943/vvrfu2bq6tvjq46rkipg'
+              'https://a.hwstatic.com/image/upload/f_auto,q_auto,w_1900,h_823,c_limit,e_sharpen,e_improve,e_vibrance:60/v1/propertyimages/3/315943/rewayv5xmrvu3ykrew5i'
             }
             alt=''
             className='sm:w-1/3 h-52'
@@ -149,7 +149,7 @@ const Varkala = () => {
           Embrace Your Peace{' '}
           <a
             className='text-[#116b89] font-semibold underline cursor-pointer'
-            href='https://live.ipms247.com/booking/book-rooms-thelosthostelvarkalahelipad'
+            href='/'
             target='_blank'
           >
             now
